@@ -14,14 +14,16 @@ namespace BehavioralPatterns
     {
         public static void Main(string[] args)
         {            
-            IteratorPatternExamples.Run();
-            Console.ReadKey();
+           
             //Chain of responsibillity
             //This is usefull when you have a request and you don't know who should process it
             ChainOfResponsibillityExamples.Run();
             Console.ReadKey();
 
             CommandPatternExamples.Run();
+            Console.ReadKey();
+
+            IteratorPatternExamples.Run();
             Console.ReadKey();
 
         }

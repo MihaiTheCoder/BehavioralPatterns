@@ -1,10 +1,6 @@
 ﻿using IteratorPattern.FileExample;
 using IteratorPattern.TVExample.TVEnumerable;
 using IteratorPattern.TvIterator;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace IteratorPattern
 {
@@ -14,16 +10,14 @@ namespace IteratorPattern
     {
         public static void Run()
         {
-            ReadBigFilesExample bigFileExample = new ReadBigFilesExample();
-            bigFileExample.Run();
-
             TVIteratorExample tvIteratorExample = new TVIteratorExample();
             tvIteratorExample.Run();
 
             TVEnumerableExample tvEnumerableExample = new TVEnumerableExample();
-            tvEnumerableExample.Run();     
+            tvEnumerableExample.Run();
 
-
+            ReadBigFilesExample bigFileExample = new ReadBigFilesExample();
+            bigFileExample.Run();
         }
     }
 }
