@@ -1,12 +1,16 @@
 {
   "version": "1.0.0-*",
   "buildOptions": {
-    "emitEntryPoint": true
+    "emitEntryPoint": true,
+    "copyToOutput": {
+      "include": "../IteratorPattern/FileExample/SampleFiles/**"
+    }
   },
 
   "dependencies": {
     "ChainOfResponssibility": "1.0.0-*",
     "CommandPattern": "1.0.0-*",
+    "IteratorPattern": "1.0.0-*",
     "Microsoft.NETCore.App": {
       "type": "platform",
       "version": "1.0.0-rc2-3002702"
