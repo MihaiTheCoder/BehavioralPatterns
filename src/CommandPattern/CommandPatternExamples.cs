@@ -15,11 +15,12 @@ namespace CommandPattern
 
             StockExampleRunner stockExampleRunner = new StockExampleRunner();
             Console.WriteLine(stockExampleRunner.GetDescriptionOfExample());
+
             GoToNextStep();
-            stockExampleRunner.Run();
-            stockExampleRunner.Run();
-            stockExampleRunner.Run();
-            stockExampleRunner.Run();
+            stockExampleRunner.RunWithRealStockSchedule();
+            stockExampleRunner.RunWithMarketClosed();
+            stockExampleRunner.RunWithMarketOpened();
+            stockExampleRunner.RunWithMarketOpeningInTwoSeconds();
         }
 
         private static void GoToNextStep()

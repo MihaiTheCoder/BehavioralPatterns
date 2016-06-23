@@ -12,9 +12,9 @@ namespace CommandPattern.StocksExample
     {
         Stack<Order> ordersNotExecuted;
         FixedSizedQueue<Order> ordersPlaced;
-        StockSchedule stockSchedule;
+        IStockSchedule stockSchedule;
 
-        public Agent(StockSchedule stockSchedule)
+        public Agent(IStockSchedule stockSchedule)
         {
             ordersNotExecuted = new Stack<Order>();
             ordersPlaced = new FixedSizedQueue<Order>(10);

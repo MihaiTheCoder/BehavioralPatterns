@@ -8,11 +8,45 @@ namespace CommandPattern.StocksExample
 {
     public class StockExampleRunner
     {
-        public void Run()
+        public void RunWithRealStockSchedule()
         {
-            StocksAPI stocksAPI = new StocksAPI();
+            Console.WriteLine("Buy/Sell stock with real stock schedule");
+            
             Agent agent = new Agent(new StockSchedule());
 
+            BuyAndSellApplStock(agent);
+        }
+
+        public void RunWithMarketClosed()
+        {
+            Console.WriteLine("Buy/Sell stock when the market is closed, and not opening soon");
+
+            Agent agent = new Agent(new FakeStockSchedule(false, TimeSpan.FromHours(10)));
+
+            BuyAndSellApplStock(agent);
+        }                
+
+        public void RunWithMarketOpened()
+        {
+            Console.WriteLine("Buy/Sell stock when the market is opened");
+
+            Agent agent = new Agent(new FakeStockSchedule(true, TimeSpan.FromHours(10)));
+
+            BuyAndSellApplStock(agent);
+        }
+
+        public void RunWithMarketOpeningInTwoSeconds()
+        {
+            Console.WriteLine("Buy/Sell stock when the market is closed, but opening in 2 seconds");
+
+            Agent agent = new Agent(new FakeStockSchedule(false, TimeSpan.FromSeconds(2)));
+
+            BuyAndSellApplStock(agent);
+        }
+
+        private static void BuyAndSellApplStock(Agent agent)
+        {
+            StocksAPI stocksAPI = new StocksAPI();
             Stock stock = new Stock { Name = "AAPL", Quantity = 20 };
 
             agent.PlaceOrder(new BuyStockOrder(stocksAPI, stock));

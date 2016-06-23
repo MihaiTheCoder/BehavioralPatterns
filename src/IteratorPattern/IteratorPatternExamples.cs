@@ -18,6 +18,8 @@ namespace IteratorPattern
 
             ReadBigFilesExample bigFileExample = new ReadBigFilesExample();
             bigFileExample.Run();
+
+            //Iterator that selects in batches
         }
     }
 }

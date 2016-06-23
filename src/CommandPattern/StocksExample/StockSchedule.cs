@@ -3,7 +3,32 @@ using System.Threading;
 
 namespace CommandPattern.StocksExample
 {
-    public class StockSchedule
+    public class FakeStockSchedule : IStockSchedule
+    {
+        TimeSpan timeWhenMarketOpens;
+        bool isStockOpen;
+        public FakeStockSchedule(bool isStockOpen, TimeSpan dueTime)
+        {
+            this.isStockOpen = isStockOpen;
+            if (!isStockOpen)
+            {
+                var timer = new Timer((obj) =>
+                {
+                    this.isStockOpen = true;
+                    StockExchangedOpened?.Invoke(this, null);
+                }, null, Timeout.Infinite, Timeout.Infinite);
+
+                timer.Change((int)dueTime.TotalMilliseconds, Timeout.Infinite);
+            }
+        }
+        public event EventHandler StockExchangedOpened;
+
+        public bool IsStockOpen()
+        {
+            return isStockOpen;
+        }
+    }
+    public class StockSchedule : IStockSchedule
     {
         TimeSpan openingTime;
         TimeSpan closingTime;
