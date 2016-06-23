@@ -3,6 +3,7 @@ using ChainOfResponssibility.PurchaseExample;
 using CommandPattern;
 using IteratorPattern;
 using MediatorPattern;
+using MememntoPattern;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -15,6 +16,9 @@ namespace BehavioralPatterns
     {
         public static void Main(string[] args)
         {
+
+            MementoPatternExamples mementoPattern = new MementoPatternExamples();
+            mementoPattern.Run();
 
             MediatorPatternExamples.Run();
             //Chain of responsibillity

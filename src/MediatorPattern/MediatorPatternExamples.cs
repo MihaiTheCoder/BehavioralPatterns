@@ -9,22 +9,25 @@ namespace MediatorPattern
     {
         public static void Run()
         {
-            //Console.WriteLine(GetPatternDescription());
-            //Console.WriteLine(GetActors());
-            //Console.WriteLine(WhenToUseIt());
-            //GoToNextStep();
+            Console.WriteLine(GetPatternDescription());
+            Console.WriteLine(GetActors());
+            Console.WriteLine(WhenToUseIt());
+            Console.WriteLine(GetDisadvances());
+            GoToNextStep();
 
-            //StockExchangeExample stockExample = new StockExchangeExample();
-            //stockExample.Run();
+            StockExchangeExample stockExample = new StockExchangeExample();
+            stockExample.Run();
 
-            //GoToNextStep();
-            //GroundAirTrafficControlExample groundAirControl = new GroundAirTrafficControlExample();
-            //groundAirControl.Run();
+            GoToNextStep();
+            GroundAirTrafficControlExample groundAirControl = new GroundAirTrafficControlExample();
+            groundAirControl.Run();
 
-            //GoToNextStep();
+            GoToNextStep();
 
             FlightAirTrafficControlExample flightAirControl = new FlightAirTrafficControlExample();
             flightAirControl.Run();
+
+            
         }
 
         static string GetPatternDescription()
@@ -52,6 +55,12 @@ Get a new abstract class that encapsulates that interaction
 Create a instance of that class and redo the interaction with that class alone
 But, don’t play God!
 ";
+        }
+
+        static string GetDisadvances()
+        {
+            return @"Disatvantages:
+Mediator can become ver complicated as more colleagues are handled";
         }
 
         private static void GoToNextStep()
