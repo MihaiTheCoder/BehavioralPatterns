@@ -13,11 +13,11 @@ namespace MediatorPattern
         {
             Console.WriteLine(GetPatternDescription());
             Console.WriteLine(GetActors());
+            Console.WriteLine(WhenToUseIt());
+            GoToNextStep();
 
-            //GoToNextStep();
-
-            //StockExchangeExample stockExample = new StockExchangeExample();
-            //stockExample.Run();
+            StockExchangeExample stockExample = new StockExchangeExample();
+            stockExample.Run();
 
             GoToNextStep();
             AirTrafficControlExample airTraficExample = new AirTrafficControlExample();
@@ -38,6 +38,16 @@ This reduces the dependencies between communicating objects, thereby lowering th
 Mediator: interface of the mediator, that defines what messages does it mediate between colleagues.
 Concrete Mediator: implementation of the interface
 Colleague: objects that communicate through the mediator
+";
+        }
+
+        static string WhenToUseIt()
+        {
+            return @"When to use it:
+Identify a collection of interacting objects whose interaction needs simplification
+Get a new abstract class that encapsulates that interaction
+Create a instance of that class and redo the interaction with that class alone
+But, don’t play God!
 ";
         }
 
