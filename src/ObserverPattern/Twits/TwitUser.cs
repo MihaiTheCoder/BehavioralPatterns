@@ -15,7 +15,7 @@ namespace ObserverPattern.Twits
         IDisposable channel;
         public TwitUser(string name, TwitObservable twits)
         {
-            this.Name = name;
+            Name = name;
             channel = twits.Subscribe(this);
             this.twits = twits;
         }
