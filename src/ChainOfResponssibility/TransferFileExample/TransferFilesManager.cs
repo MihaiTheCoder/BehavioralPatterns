@@ -42,9 +42,10 @@ namespace ChainOfResponssibility.TransferFileExample
             return "exit".Equals(input, StringComparison.OrdinalIgnoreCase);
         }
 
-        public string GetDescriptionOfClass()
+        public string GetDescriptionOfExample()
         {
-            return @"TransferFilesManager will try to transfer the file to the destination by trying FTP, SFTP, Http, and simple file copy";
+            return @"Description of example:
+TransferFilesManager will try to transfer the file to the destination by trying FTP, SFTP, Http, and simple file copy";
         }
     }
 }

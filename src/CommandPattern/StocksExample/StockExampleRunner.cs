@@ -55,7 +55,7 @@ namespace CommandPattern.StocksExample
 
         public string GetDescriptionOfExample()
         {
-            return @"
+            return @"Example description:
 Buy or sell a stock on the market. 
 If the market is closed save the orders for when the market opens again.
 When the market opens place all the orders.";

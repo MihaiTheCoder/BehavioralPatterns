@@ -19,9 +19,11 @@ namespace BehavioralPatterns
             //This is usefull when you have a request and you don't know who should process it
             ChainOfResponsibillityExamples.Run();
             Console.ReadKey();
+            Console.Clear();
 
             CommandPatternExamples.Run();
             Console.ReadKey();
+            Console.Clear();
 
             IteratorPatternExamples.Run();
             Console.ReadKey();

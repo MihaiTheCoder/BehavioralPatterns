@@ -17,7 +17,7 @@ namespace ChainOfResponssibility
 
             CheckAuthority moneySpender = new CheckAuthority();
 
-            Console.WriteLine(moneySpender.GetDescriptionOfClass());
+            Console.WriteLine(moneySpender.GetDescriptionOfExample());
             GoToNextStep();
 
             moneySpender.PrintHowMuchEachCanSpend();
@@ -26,7 +26,7 @@ namespace ChainOfResponssibility
 
             TransferFilesManager transferFilesManager = new TransferFilesManager();
 
-            Console.WriteLine(transferFilesManager.GetDescriptionOfClass());
+            Console.WriteLine(transferFilesManager.GetDescriptionOfExample());
             GoToNextStep();
             transferFilesManager.TransferFiles();
 
@@ -50,7 +50,7 @@ namespace ChainOfResponssibility
 
         public static string GetPatternDescription()
         {
-            return @"
+            return @"Pattern description:
 Decouples sender and receiver (as a sender you don't know who will handle the request/ as a receiver you don't know who the sender is necessary)
 Hierarchical in nature
 When using the Chain of Responsibility is more effective:
@@ -67,7 +67,7 @@ Examples in real life:
 
         public static string GetPitfalls()
         {
-            return @"
+            return @"Pitfalls:
 Handling/Handler guarantee - you won't be sure that someone can process the request
 Runtime configuration risk - the order matters/and it might be that the chain is not configured correctly
 Chain length/performance issues - in theory you could see a chain that is too big, and it would be a bottleneck in performance";

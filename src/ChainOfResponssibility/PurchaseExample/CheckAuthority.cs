@@ -80,9 +80,10 @@ namespace ChainOfResponssibility.PurchaseExample
         }
         
 
-        public string GetDescriptionOfClass()
+        public string GetDescriptionOfExample()
         {
-            return @"CheckAuthority allows an employee to spend money
+            return @"Description of example:
+CheckAuthority allows an employee to spend money
  if(manager can approve it) manager will process the request
  if (director can approve it) director will process the request
  if (vice president can approve it) vice president will process the request
