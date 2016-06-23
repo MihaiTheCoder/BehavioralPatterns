@@ -27,23 +27,4 @@ namespace ChainOfResponssibility.Validators
 
         public bool IsValid { get; set; }
     }
-
-    public class ValidationResult<T> : ValidationResult
-    {
-        public ValidationResult(bool isValid, Exception e, T model) : base(isValid, e)
-        {
-        }
-
-        public static ValidationResult<T> GetValidResult(T model)
-        {
-            return new ValidationResult<T>(true, null, model);
-        }
-
-        public static ValidationResult<T> GetInvalidResult(Exception e)
-        {
-            return new ValidationResult<T>(false, e, default(T));
-        }
-
-        public T Result { get; set; }
-    }
 }
