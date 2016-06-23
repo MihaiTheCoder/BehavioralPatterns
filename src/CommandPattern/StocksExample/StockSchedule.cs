@@ -6,17 +6,24 @@ namespace CommandPattern.StocksExample
     public class StockSchedule
     {
         TimeSpan openingTime;
+        TimeSpan closingTime;
         public StockSchedule()
         {
             CheckForOpeningOfStockExchange();
             openingTime = new TimeSpan(9, 0, 0);
+            closingTime = new TimeSpan(17, 0, 0);
         }        
 
         public event EventHandler StockExchangedOpened;
         
         public bool IsStockOpen()
         {
-            return new Random().NextDouble() > 0.5;
+            var timeOfDay = DateTime.Now.TimeOfDay;
+            if(timeOfDay.CompareTo(openingTime) > 0 && timeOfDay.CompareTo(closingTime) < 0)
+            {
+                return true;
+            }
+            return false;
         }
 
         private void OnStockExchangedOpened(object state)
