@@ -5,7 +5,6 @@ namespace CommandPattern.StocksExample
 {
     public class FakeStockSchedule : IStockSchedule
     {
-        TimeSpan timeWhenMarketOpens;
         bool isStockOpen;
         public FakeStockSchedule(bool isStockOpen, TimeSpan dueTime)
         {
