@@ -11,21 +11,16 @@ namespace ObserverPattern.Twits
         {
             TwitObservable observable = new TwitObservable();
 
-            TwitUser t100 = new TwitUser("t100");
-            TwitUser r2d2 = new TwitUser("r2d2");
-            
-            var t100Subscription = observable.Subscribe(t100);
-            var r2d2Subscription = observable.Subscribe(r2d2);
+            TwitUser t100 = new TwitUser("t100", observable);
+            TwitUser r2d2 = new TwitUser("R2-D2", observable);
 
-            observable.AddTwit("El chupacapra");
+            t100.Twit("El chupacapra - BOOM BOOM");
 
-            t100Subscription.Dispose();
+            r2d2.Twit("Vamos vamos mi amor");
 
-            observable.AddTwit("Vamos vamos mi amor");
+            t100.Dispose();
 
-            observable.ItsGoingHomeTime();
-
-            
+            observable.ItsGoingHomeTime();            
         }
     }
 }

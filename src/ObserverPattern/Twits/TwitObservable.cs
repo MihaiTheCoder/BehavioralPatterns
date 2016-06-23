@@ -8,14 +8,14 @@ namespace ObserverPattern.Twits
     /// <summary>
     /// Concrete observable
     /// </summary>
-    public class TwitObservable : IObservable<string>
+    public class TwitObservable : IObservable<Twit>
     {
-        List<IObserver<string>> observers;
+        List<IObserver<Twit>> observers;
         public TwitObservable()
         {
-            observers = new List<IObserver<string>>();
+            observers = new List<IObserver<Twit>>();
         }
-        public IDisposable Subscribe(IObserver<string> observer)
+        public IDisposable Subscribe(IObserver<Twit> observer)
         {
             if (!observers.Contains(observer))
                 observers.Add(observer);
@@ -23,9 +23,9 @@ namespace ObserverPattern.Twits
             return new Unsubscriber(observers, observer);
         }
 
-        public void AddTwit(string twit)
+        public void AddTwit(Twit twit)
         {
-            foreach (var observer in observers)
+            foreach (var observer in observers.Where(o => o != twit.Emiter))
             {
                 observer.OnNext(twit);
             }
@@ -41,10 +41,10 @@ namespace ObserverPattern.Twits
 
         private class Unsubscriber : IDisposable
         {
-            private List<IObserver<string>> _observers;
-            private IObserver<string> _observer;
+            private List<IObserver<Twit>> _observers;
+            private IObserver<Twit> _observer;
 
-            public Unsubscriber(List<IObserver<string>> observers, IObserver<string> observer)
+            public Unsubscriber(List<IObserver<Twit>> observers, IObserver<Twit> observer)
             {
                 _observers = observers;
                 _observer = observer;
