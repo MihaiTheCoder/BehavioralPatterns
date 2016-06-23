@@ -41,7 +41,9 @@ namespace MememntoPattern
         {
             return @"When to use:
 When you need to be able to track the state of an object,or/and restore previous states as needed
-When you cannot use simple operation undo/redo, by saving the commands (when there are side effects to the operations) - example translation";
+When you cannot use simple operation undo/redo, by saving the commands (when there are side effects to the operations) - example translation
+Database transactions.
+";
         }
 
         
