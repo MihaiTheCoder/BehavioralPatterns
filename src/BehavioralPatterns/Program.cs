@@ -2,6 +2,7 @@
 using ChainOfResponssibility.PurchaseExample;
 using CommandPattern;
 using IteratorPattern;
+using MediatorPattern;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -13,8 +14,8 @@ namespace BehavioralPatterns
     public class Program
     {
         public static void Main(string[] args)
-        {            
-           
+        {
+
             //Chain of responsibillity
             //This is usefull when you have a request and you don't know who should process it
             ChainOfResponsibillityExamples.Run();
@@ -27,6 +28,9 @@ namespace BehavioralPatterns
 
             IteratorPatternExamples.Run();
             Console.ReadKey();
+
+
+            MediatorPatternExamples.Run();
 
         }
     }
