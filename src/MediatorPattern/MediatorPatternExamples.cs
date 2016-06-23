@@ -1,27 +1,30 @@
-﻿using MediatorPattern.AirTrafficControl;
+﻿using MediatorPattern.FlightAirTrafficControl;
+using MediatorPattern.GroundAirTrafficControl;
 using MediatorPattern.StockExchange;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MediatorPattern
-{    
+{
     public class MediatorPatternExamples
     {
         public static void Run()
         {
-            Console.WriteLine(GetPatternDescription());
-            Console.WriteLine(GetActors());
-            Console.WriteLine(WhenToUseIt());
-            GoToNextStep();
+            //Console.WriteLine(GetPatternDescription());
+            //Console.WriteLine(GetActors());
+            //Console.WriteLine(WhenToUseIt());
+            //GoToNextStep();
 
-            StockExchangeExample stockExample = new StockExchangeExample();
-            stockExample.Run();
+            //StockExchangeExample stockExample = new StockExchangeExample();
+            //stockExample.Run();
 
-            GoToNextStep();
-            AirTrafficControlExample airTraficExample = new AirTrafficControlExample();
-            airTraficExample.Run();
+            //GoToNextStep();
+            //GroundAirTrafficControlExample groundAirControl = new GroundAirTrafficControlExample();
+            //groundAirControl.Run();
+
+            //GoToNextStep();
+
+            FlightAirTrafficControlExample flightAirControl = new FlightAirTrafficControlExample();
+            flightAirControl.Run();
         }
 
         static string GetPatternDescription()

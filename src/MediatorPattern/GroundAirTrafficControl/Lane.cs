@@ -1,4 +1,4 @@
-﻿namespace MediatorPattern.AirTrafficControl
+﻿namespace MediatorPattern.GroundAirTrafficControl
 {
     public class Lane
     {

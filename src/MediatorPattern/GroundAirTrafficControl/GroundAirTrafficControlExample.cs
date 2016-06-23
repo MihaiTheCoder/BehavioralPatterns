@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MediatorPattern.AirTrafficControl
+namespace MediatorPattern.GroundAirTrafficControl
 {
-    public class AirTrafficControlExample
+    public class GroundAirTrafficControlExample
     {
         public void Run()
         {

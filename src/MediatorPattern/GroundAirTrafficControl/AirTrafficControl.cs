@@ -1,10 +1,8 @@
-﻿using MediatorPattern.AirTrafficControl;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
-namespace MediatorPattern.AirTrafficControl
+namespace MediatorPattern.GroundAirTrafficControl
 {
     public class AirTrafficControl : IAirTrafficControlTower
     {

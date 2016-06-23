@@ -16,6 +16,7 @@ namespace BehavioralPatterns
         public static void Main(string[] args)
         {
 
+            MediatorPatternExamples.Run();
             //Chain of responsibillity
             //This is usefull when you have a request and you don't know who should process it
             ChainOfResponsibillityExamples.Run();
@@ -29,8 +30,8 @@ namespace BehavioralPatterns
             IteratorPatternExamples.Run();
             Console.ReadKey();
 
-
-            MediatorPatternExamples.Run();
+            IteratorPatternExamples.Run();
+            Console.ReadKey();
 
         }
     }

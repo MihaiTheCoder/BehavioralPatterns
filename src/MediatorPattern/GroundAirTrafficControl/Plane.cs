@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MediatorPattern.AirTrafficControl
+namespace MediatorPattern.GroundAirTrafficControl
 {
     public class Plane
     {
