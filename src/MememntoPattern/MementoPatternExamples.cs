@@ -6,17 +6,11 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace MememntoPattern
-{
-    // This project can output the Class library as a NuGet Package.
-    // To enable this option, right-click on the project and select the Properties menu item. In the Build tab select "Produce outputs on build".
+{    
     public class MementoPatternExamples
     {
-        public MementoPatternExamples()
-        {
-                       
-        }
 
-        public void Run()
+        public static void Run()
         {
             Console.WriteLine(GetWhenToUse());
             Console.WriteLine(GetActors());
@@ -37,7 +31,7 @@ namespace MememntoPattern
             Console.WriteLine(GetPitfalls());
         }
 
-        string GetWhenToUse()
+        static string GetWhenToUse()
         {
             return @"When to use:
 When you need to be able to track the state of an object,or/and restore previous states as needed
@@ -46,16 +40,16 @@ Database transactions.
 ";
         }
 
-        
 
-        string GetAlternatives()
+
+        static string GetAlternatives()
         {
             return @"Alternatives:
 Command undo - when operations maybe undone
 Iterative Memento - Save the changes, instead of storing the entire state again like GIT";
         }
 
-        string GetActors()
+        static string GetActors()
         {
             return @"Actors:
 Originator: object that we want to save. It will create the actual memento.
@@ -63,7 +57,7 @@ Caretaker: keeps the mementos
 Memento: (Magic cookie) internal state of the object";
         }
 
-        string GetPitfalls()
+        static string GetPitfalls()
         {
             return @"
 Can be expensive
