@@ -1,4 +1,5 @@
 ﻿using MememntoPattern.Employee;
+using MememntoPattern.EmployeeSerialized;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,15 @@ namespace MememntoPattern
 
             EmployeeExample empExample = new EmployeeExample();
             empExample.Run();
+
+            GoToNextStep();
+
+            EmployeeSerializedExample empSerExample = new EmployeeSerializedExample();
+            empSerExample.Run();
+
+            GoToNextStep();
+
+            Console.WriteLine(GetPitfalls());
         }
 
         string GetWhenToUse()
@@ -49,6 +59,14 @@ Iterative Memento - Save the changes, instead of storing the entire state again 
 Originator: object that we want to save. It will create the actual memento.
 Caretaker: keeps the mementos
 Memento: (Magic cookie) internal state of the object";
+        }
+
+        string GetPitfalls()
+        {
+            return @"
+Can be expensive
+Deltes/history
+Exposing information only to memento so that we don't brake encapsulation";
         }
 
         private static void GoToNextStep()
