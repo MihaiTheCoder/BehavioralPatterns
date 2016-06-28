@@ -1,5 +1,4 @@
 ﻿using ChainOfResponssibility;
-using ChainOfResponssibility.PurchaseExample;
 using CommandPattern;
 using IteratorPattern;
 using MediatorPattern;
@@ -7,7 +6,6 @@ using MememntoPattern;
 using ObserverPattern;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -17,9 +15,6 @@ namespace BehavioralPatterns
     {
         public static void Main(string[] args)
         {
-
-            ObserverPatternExamples.Run();
-            Console.ReadKey();
             //Chain of responsibillity
             //This is usefull when you have a request and you don't know who should process it
             ChainOfResponsibillityExamples.Run();
@@ -42,6 +37,10 @@ namespace BehavioralPatterns
             Console.ReadKey();
 
             MementoPatternExamples.Run();
+
+
+            ObserverPatternExamples.Run();
+            Console.ReadKey();
         }
     }
 }

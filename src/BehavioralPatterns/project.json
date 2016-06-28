@@ -1,10 +1,7 @@
-{
+﻿{
   "version": "1.0.0-*",
   "buildOptions": {
-    "emitEntryPoint": true,
-    "copyToOutput": {
-      "include": "../IteratorPattern/FileExample/SampleFiles/**"
-    }
+    "emitEntryPoint": true
   },
 
   "dependencies": {
@@ -15,7 +12,7 @@
     "MememntoPattern": "1.0.0-*",
     "Microsoft.NETCore.App": {
       "type": "platform",
-      "version": "1.0.0-rc2-3002702"
+      "version": "1.0.0"
     },
     "ObserverPattern": "1.0.0-*"
   },

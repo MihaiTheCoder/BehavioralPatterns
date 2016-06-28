@@ -9,15 +9,15 @@ namespace ChainOfResponssibility.Validators.UserEntities
     {
         UserRepository userRepository;
         PrincipalHelper principalHelper;
-        Operation operation;
+        Operation inputOperation;
         ChainValidation<User> userCreationValidation;
         ChainValidation<User> authenticateUserValidation;
         public UserProcessor()
         {
             userRepository = new UserRepository();
             principalHelper = new PrincipalHelper();
-            operation = new AuthenticateOperation(AuthenticateUser);
-            operation.SetSuccessor(new CreateNewUserOperation(CreateNewUser));
+            inputOperation = new AuthenticateOperation(AuthenticateUser);
+            inputOperation.SetSuccessor(new CreateNewUserOperation(CreateNewUser));
 
             userCreationValidation = new IsAuthorisedToDoOperationsOnUser(principalHelper, Rights.Create);
             userCreationValidation.SetSuccessor(new ValidateNoDuplicateEmail(userRepository));
@@ -55,12 +55,12 @@ namespace ChainOfResponssibility.Validators.UserEntities
             string userInput;
             do
             {
-                operation.PrintMenu();
+                inputOperation.PrintMenu();
                 Console.Write(">");
                 userInput = Console.ReadLine();
 
                 if (!IsExitCode(userInput))
-                    operation.Execute(userInput);
+                    inputOperation.Execute(userInput);
 
             } while (!IsExitCode(userInput));
         }

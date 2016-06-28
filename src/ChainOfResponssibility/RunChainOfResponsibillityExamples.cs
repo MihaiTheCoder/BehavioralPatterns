@@ -55,9 +55,9 @@ Decouples sender and receiver (as a sender you don't know who will handle the re
 Hierarchical in nature
 When using the Chain of Responsibility is more effective:
 More than one object can handle a command
-The handler is not known in advance
+The handler is not known in advances
 The handler should be determined automatically
-It’s wished that the request is addressed to a group of objects without explicitly specifying its receiver
+It's wished that the request is addressed to a group of objects without explicitly specifying its receiver
 The group of objects that may handle the command must be specified in a dynamic way.
 Examples in real life:
  -java.util.logging.Logger.#log()
