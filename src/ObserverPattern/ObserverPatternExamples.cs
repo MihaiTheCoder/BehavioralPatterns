@@ -19,11 +19,21 @@ namespace ObserverPattern
             StockUpdateEventsExample stockExample = new StockUpdateEventsExample();
             stockExample.RunSimple();
 
-            GoToNextStep();
-            Console.WriteLine("Same business logic using RX");
-            stockExample.RunReactive();
+            GoToNextStep();            
 
             Console.WriteLine(GetLapsedLinstenerProblem());
+
+            GoToNextStep();
+
+            Console.WriteLine("Same business logic using events combined with RX library");
+            stockExample.RunReactiveWithEvents();
+
+            GoToNextStep();
+
+            Console.WriteLine("Same business logic using RX library");
+            stockExample.RunReactive();
+
+            GoToNextStep();
 
             ObservableTwitsExample obsTwits = new ObservableTwitsExample();
             obsTwits.Run();
