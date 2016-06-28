@@ -20,7 +20,7 @@ namespace ObserverPattern.Twits
             if (!observers.Contains(observer))
                 observers.Add(observer);
 
-            return new Unsubscriber(observers, observer);
+            return new Unsubscriber<Twit>(observers, observer);
         }
 
         public void AddTwit(Twit twit)
@@ -36,23 +36,6 @@ namespace ObserverPattern.Twits
             foreach (var observer in observers)
             {
                 observer.OnCompleted();
-            }
-        }     
-
-        private class Unsubscriber : IDisposable
-        {
-            private List<IObserver<Twit>> _observers;
-            private IObserver<Twit> _observer;
-
-            public Unsubscriber(List<IObserver<Twit>> observers, IObserver<Twit> observer)
-            {
-                _observers = observers;
-                _observer = observer;
-            }
-
-            public void Dispose()
-            {
-                if (!(_observer == null)) _observers.Remove(_observer);
             }
         }
     }

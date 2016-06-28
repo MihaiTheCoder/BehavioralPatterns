@@ -38,9 +38,11 @@ namespace BehavioralPatterns
 
             MementoPatternExamples.Run();
 
+            Console.ReadKey();
 
             ObserverPatternExamples.Run();
             Console.ReadKey();
+
         }
     }
 }

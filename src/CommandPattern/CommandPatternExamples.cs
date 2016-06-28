@@ -31,12 +31,6 @@ namespace CommandPattern
 
         }
 
-        private static void GoToNextStep()
-        {            
-            Console.ReadKey();
-            Console.Clear();
-        }
-
         public static string GetPatternDescription()
         {
             return @"Patttern description:
@@ -75,6 +69,12 @@ While it is true that it would be easy using Command pattern to implement at the
 level undo/redo functionality, in practice this only works for simple examples, 
 where all entities are at the same level. More details about undo can be seen at: 
 http://gernotklingler.com/blog/implementing-undoredo-with-the-command-pattern/";
+        }
+
+        private static void GoToNextStep()
+        {
+            Console.ReadKey();
+            Console.Clear();
         }
     }
 }
