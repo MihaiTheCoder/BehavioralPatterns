@@ -64,8 +64,10 @@ They simply communicate with the help of message queues.
         private static string GetActors()
         {
             return @"
-Subject -> Notifies interested observers when an event occurs
-Observer -> Registers to a subject, to be notified when a specific event happens
+Subject -> Interface/Abstract Notifies interested observers when an event occurs
+Concrete Subject -> Implementation of Subject
+Observer -> Interface/Abstract class -> Registers to a subject, to be notified when a specific event happens
+Concrete Observer -> Implementation of the observer
 ";
         }
 

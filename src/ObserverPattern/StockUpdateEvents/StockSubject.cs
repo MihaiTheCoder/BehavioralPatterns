@@ -4,7 +4,7 @@ using System.Reactive.Subjects;
 namespace ObserverPattern.StockUpdateEvents
 {
     /// <summary>
-    /// Subject
+    /// Subject to be observed
     /// </summary>
     public class StockSubject
     {
