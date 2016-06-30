@@ -8,7 +8,6 @@ namespace StatePattern.TVExample
 {
     public class TVContext : ITVState
     {
-        ITVState initialState;
         public TVContext(ITVState initialState)
         {
             State = initialState;
