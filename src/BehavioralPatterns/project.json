@@ -14,7 +14,8 @@
       "type": "platform",
       "version": "1.0.0"
     },
-    "ObserverPattern": "1.0.0-*"
+    "ObserverPattern": "1.0.0-*",
+    "StatePattern": "1.0.0-*"
   },
 
   "frameworks": {

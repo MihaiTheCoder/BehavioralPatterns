@@ -4,6 +4,7 @@ using IteratorPattern;
 using MediatorPattern;
 using MememntoPattern;
 using ObserverPattern;
+using StatePattern;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,34 +16,41 @@ namespace BehavioralPatterns
     {
         public static void Main(string[] args)
         {
-            ObserverPatternExamples.Run();
-            Console.ReadKey();
+            StatePatternExamples.Run();
+            GoToNextStep();
             //Chain of responsibillity
             //This is usefull when you have a request and you don't know who should process it
             ChainOfResponsibillityExamples.Run();
-            Console.ReadKey();
-            Console.Clear();
+            GoToNextStep();
 
             CommandPatternExamples.Run();
-            Console.ReadKey();
-            Console.Clear();
+            GoToNextStep();
 
             IteratorPatternExamples.Run();
-            Console.ReadKey();
+            GoToNextStep();
 
             IteratorPatternExamples.Run();
 
-            Console.ReadKey();
+            GoToNextStep();
 
             MediatorPatternExamples.Run();
 
-            Console.ReadKey();
+            GoToNextStep();
 
             MementoPatternExamples.Run();
 
+            GoToNextStep();
+
+            ObserverPatternExamples.Run();
+            GoToNextStep();
+
+
+        }
+
+        private static void GoToNextStep()
+        {
             Console.ReadKey();
-
-
+            Console.Clear();
         }
     }
 }
