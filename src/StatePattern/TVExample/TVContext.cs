@@ -8,11 +8,16 @@ namespace StatePattern.TVExample
 {
     public class TVContext : ITVState
     {
-        public TVContext(ITVState initialState)
-        {
-            State = initialState;
-        }
+        public ITVState TvOnState { get; private set; }
+        public ITVState TvOffState { get; private set; }
         public ITVState State { get; set; }
+        public TVContext()
+        {
+            TvOnState = new TVOnState(this);
+            TvOffState = new TVOffState(this);
+            State = TvOffState;
+        }
+        
         public void OnPowerButtonPresed()
         {
             State.OnPowerButtonPresed();

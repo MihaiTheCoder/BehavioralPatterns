@@ -10,14 +10,13 @@ namespace StatePattern.TVExample
     {
         public static void Run()
         {
-            ITVState tvOnState = new TVOnState();
-            ITVState tvOffState = new TVOffState();
-
-            TVContext context = new TVContext(tvOffState);
+            TVContext context = new TVContext();
 
             context.OnPowerButtonPresed();
 
-            context.State = tvOnState;
+            context.OnPowerButtonPresed();
+
+            context.OnPowerButtonPresed();
 
             context.OnPowerButtonPresed();
         }
