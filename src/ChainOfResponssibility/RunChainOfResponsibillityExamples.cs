@@ -1,4 +1,5 @@
-﻿using ChainOfResponssibility.PurchaseExample;
+﻿using ChainOfResponssibility.Poker;
+using ChainOfResponssibility.PurchaseExample;
 using ChainOfResponssibility.TransferFileExample;
 using ChainOfResponssibility.Validators.UserEntities;
 using System;
@@ -12,40 +13,63 @@ namespace ChainOfResponssibility
             Console.WriteLine(GetPatternDescription());
             GoToNextStep();
 
-            Console.WriteLine(ExeucteFirstWhenConditionMatchesFlavorDescription());
-            GoToNextStep();
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine(ExeucteFirstWhenConditionMatchesFlavorDescription());
+                Console.WriteLine(ExecuteAllUntilConditionIsFalseFlavorDescription());
+                Console.WriteLine(ExecuteAllFlavorDescritpion());
+                Console.WriteLine("1: Money Spender (flavor 1)");
+                Console.WriteLine("2: File Transfer (flavor 1)");
+                Console.WriteLine("3: User Processor (flavor 1 and 3)");
+                Console.WriteLine("4: pitfals");
+                Console.WriteLine("5: Poker Game (flavor 1)");
+                Console.Write("0: exit\r\n>");
 
-            CheckAuthority moneySpender = new CheckAuthority();
+                var keyChar = GoToNextStep();
 
-            Console.WriteLine(moneySpender.GetDescriptionOfExample());
-            GoToNextStep();
+                switch (keyChar)
+                {
+                    case '1':
+                        CheckAuthority moneySpender = new CheckAuthority();
 
-            moneySpender.PrintHowMuchEachCanSpend();
-            moneySpender.SpendMoney();
-            GoToNextStep();
+                        Console.WriteLine(moneySpender.GetDescriptionOfExample());
+                        GoToNextStep();
 
-            TransferFilesManager transferFilesManager = new TransferFilesManager();
+                        moneySpender.PrintHowMuchEachCanSpend();
+                        moneySpender.SpendMoney();
+                        break;
+                    case '2':
+                        TransferFilesManager transferFilesManager = new TransferFilesManager();
 
-            Console.WriteLine(transferFilesManager.GetDescriptionOfExample());
-            GoToNextStep();
-            transferFilesManager.TransferFiles();
+                        Console.WriteLine(transferFilesManager.GetDescriptionOfExample());
+                        GoToNextStep();
+                        transferFilesManager.TransferFiles();
+                        break;
+                    case '3':
+                        UserProcessor userProcessor = new UserProcessor();
+                        userProcessor.DoStuff();
+                        break;
+                    case '4':
+                        Console.WriteLine(GetPitfalls());
+                        GoToNextStep();
+                        break;
+                    case '5':
+                        PokerGame poke = new PokerGame();
+                        poke.newGame();
+                        break;
+                }
 
-            GoToNextStep();
-            Console.WriteLine(ExecuteAllUntilConditionIsFalseFlavorDescription());
-            Console.WriteLine(ExecuteAllFlavorDescritpion());
-            GoToNextStep();
-
-            UserProcessor userProcessor = new UserProcessor();
-            userProcessor.DoStuff();
-
-            GoToNextStep();
-            Console.WriteLine(GetPitfalls());
+                if (keyChar == '0')
+                    break;
+            }
         }
 
-        private static void GoToNextStep()
+        private static char GoToNextStep()
         {
-            Console.ReadKey();
+            var ch = Console.ReadKey().KeyChar;
             Console.Clear();
+            return ch;
         }
 
         public static string GetPatternDescription()
@@ -55,9 +79,9 @@ Decouples sender and receiver (as a sender you don't know who will handle the re
 Hierarchical in nature
 When using the Chain of Responsibility is more effective:
 More than one object can handle a command
-The handler is not known in advances
+The handler is not known in advance
 The handler should be determined automatically
-It's wished that the request is addressed to a group of objects without explicitly specifying its receiver
+It’s wished that the request is addressed to a group of objects without explicitly specifying its receiver
 The group of objects that may handle the command must be specified in a dynamic way.
 Examples in real life:
  -java.util.logging.Logger.#log()
@@ -80,12 +104,12 @@ Chain length/performance issues - in theory you could see a chain that is too bi
 
         public static string ExecuteAllUntilConditionIsFalseFlavorDescription()
         {
-            return @"Flavor 2 of chain of responssibility:Execute all elements of chain until the condition does not match";
+            return @"Flavor 2: Execute all elements of chain until the condition does not match";
         }
 
         public static string ExecuteAllFlavorDescritpion()
         {
-            return @"Flavor 3 of chain of responssibility: Execute all elements of chain";
+            return @"Flavor 3: Execute all elements of chain";
         }
     }
 }
