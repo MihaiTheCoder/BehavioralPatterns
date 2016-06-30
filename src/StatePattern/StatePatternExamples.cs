@@ -1,4 +1,5 @@
-﻿using StatePattern.TVExample;
+﻿using StatePattern.FanExample;
+using StatePattern.TVExample;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,14 @@ namespace StatePattern
             GoToNextStep();
 
             TVExampleRunner.Run();
+
+            GoToNextStep();
+
+            FanMotivationalExample.Run();
+
+            GoToNextStep();
+
+            FanWithStatePatternExample.Run();
         }
 
         private static void GoToNextStep()
