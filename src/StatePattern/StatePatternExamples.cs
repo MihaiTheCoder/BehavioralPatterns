@@ -1,4 +1,5 @@
 ﻿using StatePattern.FanExample;
+using StatePattern.ScrumExample;
 using StatePattern.TVExample;
 using System;
 using System.Collections.Generic;
@@ -24,6 +25,13 @@ namespace StatePattern
             GoToNextStep();
 
             FanWithStatePatternExample.Run();
+
+            GoToNextStep();
+
+            ScrumMotivationalExample.Run();
+
+            GoToNextStep();
+            ScrumStatePatternExample.Run();
         }
 
         private static void GoToNextStep()
