@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace StatePattern
 {
+    /// <summary>
+    /// State interface
+    /// </summary>
     public interface ITVState
     {
         void OnPowerButtonPresed();

@@ -71,7 +71,6 @@ Concrete Observer -> Implementation of the observer
 ";
         }
 
-
         private static string GetLapsedLinstenerProblem()
         {
             return @"
@@ -80,6 +79,7 @@ Consequently, the publisher still holds a reference to the observer which preven
 — including all other objects it is referring to — for as long as the publisher is alive, which could be until the end of the application.
 This causes not only a memory leak, but also a performance degradation with an 'uninterested' observer receiving and acting on unwanted events";
         }
+
         private static void GoToNextStep()
         {
             Console.ReadKey();

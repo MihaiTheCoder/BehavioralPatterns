@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace StatePattern.TVExample
 {
+    /// <summary>
+    /// Concrete state
+    /// </summary>
     public class TVOffState : ITVState
     {
         TVContext context;

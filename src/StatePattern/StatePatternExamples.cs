@@ -10,7 +10,17 @@ namespace StatePattern
     {
         public static void Run()
         {
+            TVMotivationalExample.Run();
+
+            GoToNextStep();
+
             TVExampleRunner.Run();
+        }
+
+        private static void GoToNextStep()
+        {
+            Console.ReadKey();
+            Console.Clear();
         }
     }
 }
