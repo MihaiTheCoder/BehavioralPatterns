@@ -5,6 +5,8 @@ using IteratorPattern;
 using MediatorPattern;
 using MememntoPattern;
 using ObserverPattern;
+using StatePattern;
+using StrategyPattern;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
