@@ -1,4 +1,5 @@
-﻿using StrategyPattern.ShippingCalculator;
+﻿using StrategyPattern.ArrangeInterview;
+using StrategyPattern.ShippingCalculator;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,13 +14,16 @@ namespace StrategyPattern
     {
         public static void Run()
         {
+
+            ArrangeInterviewMotivationalExample.Run(InterviewPersons.Get());
+            
             Console.WriteLine(GetDescription());
             Console.WriteLine(WhenToUse());
             GoToNextStep();
             ShippingMotivatingExample.Run();
 
-            ShippingWithStrategyExample.Run();
-
+            Console.WriteLine("Now the same example, but implemented with strategy pattern");
+            ShippingWithStrategyExample.Run();            
             //TODO:add more examples
             //Show the switch moving problem
         }
