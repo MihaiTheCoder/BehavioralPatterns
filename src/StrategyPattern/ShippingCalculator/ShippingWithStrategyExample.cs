@@ -26,6 +26,9 @@ if you talk to train conductor:{3}, if you go to Ion {4}", indiaPrice, postaPric
         }
     }
 
+    /// <summary>
+    /// Context
+    /// </summary>
     public class ShippingCalculator
     {
         public double GetPrice(Order order, ShippingService shippingService)
@@ -34,11 +37,17 @@ if you talk to train conductor:{3}, if you go to Ion {4}", indiaPrice, postaPric
         }
     }
 
+    /// <summary>
+    /// Strategy
+    /// </summary>
     public abstract class ShippingService
     {
         public abstract double GetPrice(Order o);
     }
 
+    /// <summary>
+    /// Concrete strategy
+    /// </summary>
     public class IndiaPost : ShippingService
     {
         public override double GetPrice(Order o)
@@ -47,6 +56,9 @@ if you talk to train conductor:{3}, if you go to Ion {4}", indiaPrice, postaPric
         }
     }
 
+    /// <summary>
+    /// Concrete strategy
+    /// </summary>
     public class Posta : ShippingService
     {
         public override double GetPrice(Order o)
@@ -55,6 +67,9 @@ if you talk to train conductor:{3}, if you go to Ion {4}", indiaPrice, postaPric
         }
     }
 
+    /// <summary>
+    /// Concrete strategy
+    /// </summary>
     public class TCE : ShippingService
     {
         public override double GetPrice(Order o)
@@ -63,6 +78,9 @@ if you talk to train conductor:{3}, if you go to Ion {4}", indiaPrice, postaPric
         }
     }
 
+    /// <summary>
+    /// Concrete strategy using strategy pattern
+    /// </summary>
     public class SimpleService : ShippingService
     {
         Func<Order, double> simpleCalculator;
