@@ -37,17 +37,17 @@ namespace StrategyPattern.ShippingCalculator
 
         private double ComputeForIndiaPost(MOrder order, MShippingService shippingService)
         {
-            return 0.25;
+            return 50;
         }
 
         private double ComputeForTCE(MOrder order, MShippingService shippingService)
         {
-            return 1;
+            return 150;
         }
 
         private double ComputeForPosta(MOrder order, MShippingService shippingService)
         {
-            return 2;
+            return 200;
         }
     }
 

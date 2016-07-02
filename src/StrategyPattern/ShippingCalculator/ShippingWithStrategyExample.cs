@@ -10,11 +10,19 @@ namespace StrategyPattern.ShippingCalculator
         public static void Run()
         {
             ShippingCalculator shippingCostCaluclator = new ShippingCalculator();
-            var indiaPrice = shippingCostCaluclator.GetPrice(new Order(), new IndiaPost());
-            var postaPrice = shippingCostCaluclator.GetPrice(new Order(), new Posta());
-            var tcePrice = shippingCostCaluclator.GetPrice(new Order(), new TCE());
+            var order = new Order();
+            var indiaPrice = shippingCostCaluclator.GetPrice(order, new IndiaPost());
+            var postaPrice = shippingCostCaluclator.GetPrice(order, new Posta());
+            var tcePrice = shippingCostCaluclator.GetPrice(order, new TCE());
 
-            Console.WriteLine("The shipping cost for india is:{0}, for posta is {1} for tce is {2}", indiaPrice, postaPrice, tcePrice);
+            var priceOfTrainConductor = shippingCostCaluclator.GetPrice(order, new SimpleService(o => 10));
+
+            const int priceOfBeer = 5;
+            var prifeOfIon = shippingCostCaluclator.GetPrice(order, new SimpleService(o => priceOfBeer));
+
+            Console.WriteLine(@"The shipping cost for india is:{0}, for posta is {1} for tce is {2}, 
+if you talk to train conductor:{3}, if you go to Ion {4}", indiaPrice, postaPrice,
+                tcePrice, priceOfTrainConductor, prifeOfIon);
         }
     }
 
@@ -35,7 +43,7 @@ namespace StrategyPattern.ShippingCalculator
     {
         public override double GetPrice(Order o)
         {
-            return 0.25;
+            return 50;
         }
     }
 
@@ -43,7 +51,7 @@ namespace StrategyPattern.ShippingCalculator
     {
         public override double GetPrice(Order o)
         {
-            return 2;
+            return 200;
         }
     }
 
@@ -51,7 +59,20 @@ namespace StrategyPattern.ShippingCalculator
     {
         public override double GetPrice(Order o)
         {
-            return 1;
+            return 150;
+        }
+    }
+
+    public class SimpleService : ShippingService
+    {
+        Func<Order, double> simpleCalculator;
+        public SimpleService(Func<Order, double> simpleCalculator)
+        {
+            this.simpleCalculator = simpleCalculator;
+        }
+        public override double GetPrice(Order o)
+        {
+            return simpleCalculator(o);
         }
     }
 

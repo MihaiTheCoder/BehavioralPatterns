@@ -13,6 +13,9 @@ namespace StrategyPattern
             ShippingMotivatingExample.Run();
 
             ShippingWithStrategyExample.Run();
+
+            //TODO: use actions/funcs, add more examples
+            //Show the switch moving problem
         }
     }
 }
