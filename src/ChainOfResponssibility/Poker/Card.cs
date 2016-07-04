@@ -4,7 +4,7 @@ using ChainOfResponssibility.Poker.Validators;
 
 namespace ChainOfResponssibility.Poker
 {
-    public class Card : IEquatable<Card>
+    public class Card
     {
         public const string ValidValues = "2,3,4,5,6,7,8,9,10,J,Q,K,A";
         public const string ValidSuites = "C,H,S,D";
@@ -62,24 +62,6 @@ namespace ChainOfResponssibility.Poker
                         return 14;
                 }
             return 0;
-        }
-
-        public bool Equals(Card other)
-        {
-            if (this.Value == other.Value && this.Suite == other.Suite)
-                return true;
-
-            return false;
-        }
-
-        public static bool operator ==(Card c1, Card c2)
-        {
-            return c1.Equals(c2);
-        }
-
-        public static bool operator !=(Card c1, Card c2)
-        {
-            return !c1.Equals(c2);
         }
 
         public override string ToString()
