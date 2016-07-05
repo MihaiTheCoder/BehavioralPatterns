@@ -42,7 +42,7 @@ namespace StrategyPattern.LoopWithoutLoop
 
         public LoopStep GetNextStep(int i, int n)
         {
-            return Loops[i/n];
+            return Loops[i / (n + 1)];
         }
     }
 
