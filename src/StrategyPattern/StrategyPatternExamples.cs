@@ -1,4 +1,5 @@
 ﻿using StrategyPattern.ArrangeInterview;
+using StrategyPattern.ArrangeInterview.Strategy;
 using StrategyPattern.LoopWithException;
 using StrategyPattern.ShippingCalculator;
 using System;
@@ -25,8 +26,15 @@ namespace StrategyPattern
             ShippingMotivatingExample.Run();
 
             Console.WriteLine("Now the same example, but implemented with strategy pattern");
-            ShippingWithStrategyExample.Run();            
+            ShippingWithStrategyExample.Run();
             //TODO:add more examples
+
+            MagnificLoopExample.Run();
+            LoopWithExceptionExample.Run();
+
+            ArrangeInterviewMotivationalExample.Run(InterviewPersons.Get());
+
+            ArrangeInterviewExample.Run(InterviewPersons.Get());
             //Show the switch moving problem
         }
 
