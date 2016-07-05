@@ -158,7 +158,7 @@ namespace StrategyPattern.ArrangeInterview
                     Console.WriteLine("Reserve a meeting with any medium/senior developer");
                     break;
                 case Experience.Medium:
-                    Console.WriteLine("Prepare medium tester interview questions");
+                    Console.WriteLine("Prepare medium developer interview questions");
                     Console.WriteLine("Give him a small program to develop before he comes here");
                     Console.WriteLine("Reserve a meeting with any senior developer");
                     break;
