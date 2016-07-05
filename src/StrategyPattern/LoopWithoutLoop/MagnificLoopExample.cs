@@ -26,19 +26,17 @@ namespace StrategyPattern.LoopWithoutLoop
 
     public class LoopStep
     {
-        Action<int> printNumber;
-        public LoopStep(Action<int> printNumber)
+        Action<int> printNumberStrategy;
+        public LoopStep(Action<int> printNumberStrategy)
         {
-            this.printNumber = printNumber;
+            this.printNumberStrategy = printNumberStrategy;
         }
-        public LoopStep[] Loops { get; set; }
-
-        
+        public LoopStep[] Loops { get; set; }        
 
         public virtual void Loop(int currentIndex, int n)
         {
             var loopStep = GetNextStep(currentIndex, n);
-            loopStep.printNumber(currentIndex);
+            loopStep.printNumberStrategy(currentIndex);
             loopStep.Loop(++currentIndex, n);
         }
 
