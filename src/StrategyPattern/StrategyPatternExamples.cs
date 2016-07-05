@@ -27,15 +27,17 @@ namespace StrategyPattern
 
             Console.WriteLine("Now the same example, but implemented with strategy pattern");
             ShippingWithStrategyExample.Run();
-            //TODO:add more examples
 
-            MagnificLoopExample.Run();
+            //This is just for fun (Challenged to loop without using conditions/loops)
             LoopWithExceptionExample.Run();
+            //This is just for fun (Challenged to loop without using conditions/loops)
+            MagnificLoopExample.Run();
+
 
             ArrangeInterviewMotivationalExample.Run(InterviewPersons.Get());
 
-            ArrangeInterviewExample.Run(InterviewPersons.Get());
             //Show the switch moving problem
+            ArrangeInterviewExample.Run(InterviewPersons.Get());
         }
 
         private static string GetDescription()
