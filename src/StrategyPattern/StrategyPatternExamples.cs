@@ -1,4 +1,5 @@
 ﻿using StrategyPattern.ArrangeInterview;
+using StrategyPattern.LoopWithException;
 using StrategyPattern.ShippingCalculator;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,7 @@ namespace StrategyPattern
     {
         public static void Run()
         {
+            LoopWithExceptionExample.Run();
 
             ArrangeInterviewMotivationalExample.Run(InterviewPersons.Get());
             

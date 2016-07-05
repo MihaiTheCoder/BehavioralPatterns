@@ -27,6 +27,8 @@ namespace BehavioralPatterns
                 Console.Write("4: Command Pattern\r\n");
                 Console.Write("5: Mediator Pattern\r\n");
                 Console.Write("6: Memento Pattern\r\n");
+                Console.Write("7: State Pattern\r\n");
+                Console.Write("8: Strategy Pattern\r\n");
                 Console.Write("0: exit\r\n>");
                 var key = Console.ReadKey();
 
@@ -53,6 +55,12 @@ namespace BehavioralPatterns
                         break;
                     case '6':
                         MementoPatternExamples.Run();
+                        break;
+                    case '7':
+                        StatePatternExamples.Run();
+                        break;
+                    case '8':
+                        StrategyPatternExamples.Run();
                         break;
                 }
                 if (key.KeyChar == '0')

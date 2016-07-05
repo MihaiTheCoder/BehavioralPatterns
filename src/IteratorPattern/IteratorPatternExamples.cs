@@ -28,7 +28,8 @@ namespace IteratorPattern
         public static string GetPatternDescription()
         {
             return @"Pattern description:
-In object-oriented programming, the iterator pattern is a design pattern in which an iterator is used to traverse a container and access the container's elements.
+In object-oriented programming, the iterator pattern is a design pattern in which an iterator 
+is used to traverse a container and access the container's elements.
 C# interfaces helpers for Iterator pattern: IEnumerator<T>, IEnumerable<T>, yield for creating IEnumerable<T>
 Java: Iterator<E>, Iterable<E>";
         }
