@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using VisitorPattern.CalculateMoney;
+using VisitorPattern.CalculateMoney.DynamicVisitor;
 using VisitorPattern.CalculateMoney.WithoutVisitor;
 using VisitorPattern.CalculateMoney.WithVisitor;
 
@@ -19,6 +20,8 @@ namespace VisitorPattern
             CalculateMoneyMotivationalExample.Run();
 
             CalculateMoneyWithVisitorExample.Run();
+
+            CalculateMoneyWithDynamicVisitorExample.Run();
         }
 
         public static string GetDescription()
