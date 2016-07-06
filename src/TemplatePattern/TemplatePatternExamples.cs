@@ -12,6 +12,8 @@ namespace TemplatePattern
             Console.WriteLine(GetDescription());
             GoToNextStep();
             WorkersExample.WorkersExample.Run();
+            GoToNextStep();
+            GameExample.GameExample.Run();
         }        
 
         private static string GetDescription()
