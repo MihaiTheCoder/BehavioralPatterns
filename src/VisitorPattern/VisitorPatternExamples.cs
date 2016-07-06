@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using VisitorPattern.CalculateMoney;
+using VisitorPattern.CalculateMoney.WithoutVisitor;
+using VisitorPattern.CalculateMoney.WithVisitor;
 
 namespace VisitorPattern
 {
@@ -13,7 +16,9 @@ namespace VisitorPattern
 
         public static void Run()
         {
+            CalculateMoneyMotivationalExample.Run();
 
+            CalculateMoneyWithVisitorExample.Run();
         }
 
         public static string GetDescription()

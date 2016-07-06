@@ -13,6 +13,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using TemplatePattern;
+using VisitorPattern;
 
 namespace BehavioralPatterns
 {
@@ -31,6 +32,7 @@ namespace BehavioralPatterns
                 Console.Write("7: State Pattern\r\n");
                 Console.Write("8: Strategy Pattern\r\n");
                 Console.Write("9: Template method Pattern\r\n");
+                Console.Write("v: Visitor Pattern\r\n");
                 Console.Write("0: exit\r\n>");
                 var key = Console.ReadKey();
 
@@ -66,6 +68,9 @@ namespace BehavioralPatterns
                         break;
                     case '9':
                         TemplatePatternExamples.Run();
+                        break;
+                    case 'v':
+                        VisitorPatternExamples.Run();
                         break;
                 }
                 if (key.KeyChar == '0')
