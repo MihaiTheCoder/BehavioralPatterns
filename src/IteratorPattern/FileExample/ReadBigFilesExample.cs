@@ -10,7 +10,9 @@ namespace IteratorPattern.FileExample
     {
         public void Run()
         {
-            string[] files = Directory.GetFiles("bin/Debug/IteratorPattern/FileExample/SampleFiles");
+        
+            string[] files = Directory.GetFiles(@"bin\Debug\netcoreapp1.0\IteratorPattern\FileExample\SampleFiles");
+
             var filesWithContent = from file in files
                                    where HasAnyLines(file)
                                    select file;
@@ -18,6 +20,7 @@ namespace IteratorPattern.FileExample
             foreach (var fileWithContent in filesWithContent)
             {
                 Console.WriteLine("File with content: {0}", fileWithContent);
+                break;
             }
                         
         }
