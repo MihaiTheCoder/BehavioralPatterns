@@ -27,7 +27,13 @@ namespace MediatorPattern
             FlightAirTrafficControlExample flightAirControl = new FlightAirTrafficControlExample();
             flightAirControl.Run();
 
-            
+            //Taxi/Taxi center example
+            //Chat application
+            //GUI libraries
+            //https://www.javacodegeeks.com/2015/09/mediator-design-pattern.html
+            //Dispatcher from facebook -> flux -> https://youtu.be/nYkdrAPrdcw?list=PLb0IAmt7-GS188xDYE-u1ShQmFFGbrk0v&t=735
+            // It's almost pub/sub, pub sub is implemented using design pattern, but a mediator assumes more
+
         }
 
         static string GetPatternDescription()
