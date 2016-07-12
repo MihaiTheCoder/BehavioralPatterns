@@ -57,9 +57,10 @@ For Create user: verify if the authenticated user is authorised to create a new 
 	* For authentication: we validate that the user exists in the database
 	* Both the menu options and the validations for the operations are done using chain of responssibility
 
-2. Command pattern
 
+2. Command pattern
 ------------------
+
 3. Iterator pattern
 ------------------
 4. Mediator pattern
