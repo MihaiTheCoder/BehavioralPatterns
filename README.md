@@ -19,7 +19,7 @@ Examples in real life:
  -javax.servlet.Filter#doFilter()
  -Spring Security Filter Chain
 ### c. Actors
-* Client - creates the chain, and uses it
+* Client - creates the chain, and invokes the first handler
 * Handler - defines an interface for handling the requests, optional to set the succesor
 * Concrete Handler - handles requests it is responsible for, may request the successor to process the request if needed
 
