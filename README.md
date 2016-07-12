@@ -12,23 +12,28 @@ Hierarchical in nature
 More than one object can handle a command
 The handler is not known in advance
 The handler should be determined automatically
-It’s wished that the request is addressed to a group of objects without explicitly specifying its receiver
+Itï¿½s wished that the request is addressed to a group of objects without explicitly specifying its receiver
 The group of objects that may handle the command must be specified in a dynamic way.
 Examples in real life:
  -java.util.logging.Logger.#log()
  -javax.servlet.Filter#doFilter()
  -Spring Security Filter Chain
-### c. Pitfalls:
+### c. Actors
+* Client - creates the chain, and uses it
+* Handler - defines an interface for handling the requests, optional to set the succesor
+* Concrete Handler - handles requests it is responsible for, may request the successor to process the request if needed
+
+### d. Pitfalls:
 Handling/Handler guarantee - you won't be sure that someone can process the request
 Runtime configuration risk - the order matters/and it might be that the chain is not configured correctly
 Chain length/performance issues - in theory you could see a chain that is too big, and it would be a bottleneck in performance
-### d. Flavors:
+### e. Flavors:
 * Flavor 1: Execute first that matches the condition and exit -> Get one to process the request, or get the type of object
 * Flavor 2: Execute all elements of chain until the condition does not match -> Execute all validators until one invalidates the request
 * Flavor 3: Always execute all handlers
 * Flavor 4: Instead of each handler, having a successor, you could have each handler have a list of successors, and have it's policy what handlers to execute
 
-### e. Examples described:
+### f. Examples described:
 * Purchase example: 
 Starting class: PurchaseExample.CheckAuthority
 Problem that we are trying to solve:
@@ -53,6 +58,7 @@ For Create user: verify if the authenticated user is authorised to create a new 
 	* Both the menu options and the validations for the operations are done using chain of responssibility
 
 2. Command pattern
+
 ------------------
 3. Iterator pattern
 ------------------
