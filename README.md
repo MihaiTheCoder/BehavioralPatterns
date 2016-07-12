@@ -44,12 +44,12 @@ TransferFilesManager will try to transfer the file to the destination by trying 
 Starting class: PokerGame
 Having 5 poker cards, decide what is the highest hand that you have
 
-*Business logic validators
+* Business logic validators
 Starting class: Validators.UserEntities.UserProcessor
 Allow the client through a console menu to introduce what operation wants to execute: Authenticate/CreateUser and foreach option have some validations.
 For Create user: verify if the authenticated user is authorised to create a new user, and that the email is not already in the database
-For authentication: we validate that the user exists in the database
-Both the menu options and the validations for the operations are done using chain of responssibility
+	* For authentication: we validate that the user exists in the database
+	* Both the menu options and the validations for the operations are done using chain of responssibility
 
 2. Command pattern
 ------------------
