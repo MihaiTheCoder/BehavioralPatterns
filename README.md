@@ -155,15 +155,93 @@ Some use the term container, some use the term aggregate, is one and the same th
 
 4. Mediator pattern
 ------------------
+
+### a. Pattern description
+With the mediator pattern, communication between objects is encapsulated with a mediator object. 
+Objects no longer communicate directly with each other, but instead communicate through the mediator. 
+This reduces the dependencies between communicating objects, thereby lowering the coupling.
+### b. When to use Mediator pattern
+* A collection of interacting objects whose interaction needs simplification
+* When you need to monitor/audit the communication between objects
+* When building UI components -> High level components mediate the communication between subcomponents
+* When you want to do publish/subscribe -> publish subscribe is a pattern implemented using mediator
+### c. Actors
+* Mediator: interface of the mediator, that defines what messages does it mediate between colleagues.
+* Concrete Mediator: implementation of the interface
+* Colleague: objects that communicate through the mediator
+### d. Pitfalls
+* Mediator can become ver complicated as more colleagues are handled.
+### e. Flavors
+Don't know
+### f. Examples
+* StockExchange example: Starting class: StockExchange.StockExchangeExample
+	* Have multiple traders Buy/Sell actions from stock exchange (simplified)
+* Ground-Air traffic control example: Starting class: GroupAirTrafficControl.GroundAirTrafficControlExample
+	* Have 4 planes that want to land on an airport, the airport has 4 lines (one not working). 
+	They all talk to air traffic control(mediator) to ask permission to land, instead of talking to each other
+* Air traffic control example: Starting class: FlightAirTrafficControl.FlightAirTrafficControlExample
+	* Have multiple planes flying in the same zone, at different attitudes, instead of having them communicating to each other, 
+	they all comunicate to the tower, and the tower tells them if they need to change the altitude
+* Many to many relationship in code: No running class, only the models: User-UserToGroup-Group
+* Other possible examples that are not yet implemented -> Chat application, GUI Library, Taxi/Taxi Center
+
 5. Memento pattern
 ------------------
+
+### a. Pattern description
+### b. When to use Memento pattern
+### c. Actors
+### d. Pitfalls
+### e. Flavors
+### f. Examples
+
 6. Observer pattern
 ------------------
+
+### a. Pattern description
+### b. When to use Observer pattern
+### c. Actors
+### d. Pitfalls
+### e. Flavors
+### f. Examples
+
 7. State pattern
 ------------------
+
+### a. Pattern description
+### b. When to use State pattern
+### c. Actors
+### d. Pitfalls
+### e. Flavors
+### f. Examples
+
 8. Strategy pattern
 ------------------
+
+### a. Pattern description
+### b. When to use Strategy pattern
+### c. Actors
+### d. Pitfalls
+### e. Flavors
+### f. Examples
+
 9. Template pattern
 ------------------
+
+### a. Pattern description
+### b. When to use Template pattern
+### c. Actors
+### d. Pitfalls
+### e. Flavors
+### f. Examples
+
 10. Visitor pattern
 ------------------
+
+### a. Pattern description
+### b. When to use Visitor pattern
+### c. Actors
+### d. Pitfalls
+### e. Flavors
+### f. Examples
+

@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace MediatorPattern.StockExchange
 {
+    /// <summary>
+    /// Mediator implementation
+    /// </summary>
     public class StockExchange : IStockExchange
     {
         Dictionary<string, List<Trader>> sellers;
