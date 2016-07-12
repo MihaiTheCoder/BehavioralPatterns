@@ -78,7 +78,7 @@ sequence of actions simply by keeping a list of the command objects as they are 
 4. Parallel processing - you want to allow commands to be processed in parallel
 5. Transactional behavior - In case something fail, you want to be able to rollback the command
 
-### Actors
+### c. Actors
 
 * Client: class that is making use of the command pattern, the one that uses the invoker, makes instance of commands, and passes the commands to the invoker
 * Invoker: Invokes the command (calls execute on the command)
@@ -111,6 +111,48 @@ Also, we decided to keep the last ten placed bets, but we don't use them in the 
 
 3. Iterator pattern
 ------------------
+### a. Pattern description
+
+In object-oriented programming, the iterator pattern is a design pattern in which an iterator 
+is used to traverse a container(Aggregate) and access the container's(Aggregate's) elements.
+C# interfaces helpers for Iterator pattern: IEnumerator<T>, IEnumerable<T>, yield for creating IEnumerable<T>
+Java: Iterator<E>, Iterable<E>
+Some use the term container, some use the term aggregate, is one and the same thing. From now, we will use only the aggregate term.
+
+### b. When to use Iterator pattern
+
+ When you want to just parse over some data without bothering how to parse it
+* Read a csv record by record
+* Process elements from a rest API using pagination, hide the pagination using the iterator pattern
+* When you have a complex structure like a tree, and you want to process some of the nodes, you can hide the parsing using the iterator pattern
+
+### c. Actors
+
+* Iterator: interface with hasNext/next/current methods or variantions from this
+* Concrete interator: concrete class that implements Iterator
+* Aggregate: interface for returning the iterator
+* Concrete aggregate: imlpementation of aggregate interface
+
+### d. Pitfalls
+
+ * Parsing the same collection multiple times -> because most programming languages hide the usage of iterators
+
+### e. Flavors
+ * External iterators -> Iteration is controlled by the client, not by the aggregate. (Only this flavor is exemplified)
+ * Internal iterators -> Iteration is controlled by the aggregate, if requested I will add later an example.
+
+### f. Examples
+
+* TV example 1: Starting class: TVExample.TVIterator.TvIteratorExample
+	* Functionality: Having a TV, go trhough it's channels
+	* Implemented using the standard iterator pattern, without the use of IEnumerable
+* TV example 2: Starting class: TVExample.TVEnumerable.TVEnumerableExample
+	* Functionality: Having a TV, go trhough it's channels
+	* implemented using the IEnumerator<T> and IEnumerable<T> interfaces that are provided by C#
+* File example: Starting class FileExample.ReadBigFilesExample
+	* Having a list of files, some bigger than other, get the files that have content
+	* Created IEnmuerator using yield return
+
 4. Mediator pattern
 ------------------
 5. Memento pattern
