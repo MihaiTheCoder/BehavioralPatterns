@@ -40,11 +40,15 @@ Starting class: PurchaseExample.CheckAuthority
 Problem that we are trying to solve:
 
 CheckAuthority allows an employee to request money for approval:
- 	* if(manager can approve it) manager will process the request
- 	* if (director can approve it) director will process the request
- 	* if (vice president can approve it) vice president will process the request
- 	* if (president can approve it) president will process the request
-	 
+
+if(manager can approve it) manager will process the request
+
+if (director can approve it) director will process the request
+
+if (vice president can approve it) vice president will process the request
+
+if (president can approve it) president will process the request
+
 * Transfer File example 
 Starting class: TransferFileExample.TransferFilesManager
 TransferFilesManager will try to transfer the file to the destination by trying FTP, SFTP, Http, and simple file copy and it will decide which to use depending on the prefix of the path
