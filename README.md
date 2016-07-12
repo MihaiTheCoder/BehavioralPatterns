@@ -28,10 +28,10 @@ Handling/Handler guarantee - you won't be sure that someone can process the requ
 Runtime configuration risk - the order matters/and it might be that the chain is not configured correctly
 Chain length/performance issues - in theory you could see a chain that is too big, and it would be a bottleneck in performance
 ### e. Flavors:
-* Flavor 1: Execute first that matches the condition and exit -> Get one to process the request, or get the type of object
-* Flavor 2: Execute all elements of chain until the condition does not match -> Execute all validators until one invalidates the request
-* Flavor 3: Always execute all handlers
-* Flavor 4: Instead of each handler, having a successor, you could have each handler have a list of successors, and have it's policy what handlers to execute
+1. Execute first that matches the condition and exit -> Get one to process the request, or get the type of object
+2. Execute all elements of chain until the condition does not match -> Execute all validators until one invalidates the request
+3. Always execute all handlers
+4. Instead of each handler, having a successor, you could have each handler have a list of successors, and have it's policy what handlers to execute
 
 ### f. Examples described:
 * Purchase example: 
