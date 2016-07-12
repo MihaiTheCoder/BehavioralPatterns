@@ -41,6 +41,7 @@ Starting class: PurchaseExample.CheckAuthority
 Problem that we are trying to solve:
 
 CheckAuthority allows an employee to request money for approval:
+
 1. if(manager can approve it) manager will process the request
 2. if (director can approve it) director will process the request
 3. if (vice president can approve it) vice president will process the request
