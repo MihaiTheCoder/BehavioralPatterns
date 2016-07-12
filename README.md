@@ -8,16 +8,16 @@ Implemented in project: ChainOfResponsibility
 ### a. Pattern description:
 Decouples sender and receiver (as a sender you don't know who will handle the request/ as a receiver you don't know who the sender is necessary)
 ### b.When using the Chain of Responsibility is more effective:
-More than one object can handle a command
-The handler is not known in advance
-The handler should be determined automatically
-It�s wished that the request is addressed to a group of objects without explicitly specifying its receiver
-The group of objects that may handle the command must be specified in a dynamic way.
-Examples in real life:
- * -java.util.logging.Logger.#log()
- * -javax.servlet.Filter#doFilter()
- * -Spring Security Filter Chain
- 
+* More than one object can handle a command
+* The handler is not known in advance
+* The handler should be determined automatically
+* It�s wished that the request is addressed to a group of objects without explicitly specifying its receiver
+* The group of objects that may handle the command must be specified in a dynamic way.
+* Examples in real life:
+	* -java.util.logging.Logger.#log()
+	* -javax.servlet.Filter#doFilter()
+	* -Spring Security Filter Chain
+
 ### c. Actors
 * Client - creates the chain, and invokes the first handler
 * Handler - defines an interface for handling the requests, optional to set the succesor
