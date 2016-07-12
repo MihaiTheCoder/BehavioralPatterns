@@ -17,6 +17,7 @@ Examples in real life:
  * -java.util.logging.Logger.#log()
  * -javax.servlet.Filter#doFilter()
  * -Spring Security Filter Chain
+ 
 ### c. Actors
 * Client - creates the chain, and invokes the first handler
 * Handler - defines an interface for handling the requests, optional to set the succesor
