@@ -28,6 +28,7 @@ Handling/Handler guarantee - you won't be sure that someone can process the requ
 Runtime configuration risk - the order matters/and it might be that the chain is not configured correctly
 Chain length/performance issues - in theory you could see a chain that is too big, and it would be a bottleneck in performance
 ### e. Flavors:
+
 1. Execute first that matches the condition and exit -> Get one to process the request, or get the type of object
 2. Execute all elements of chain until the condition does not match -> Execute all validators until one invalidates the request
 3. Always execute all handlers
