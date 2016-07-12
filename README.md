@@ -27,6 +27,7 @@ Chain length/performance issues - in theory you could see a chain that is too bi
 * Flavor 2: Execute all elements of chain until the condition does not match -> Execute all validators until one invalidates the request
 * Flavor 3: Always execute all handlers
 * Flavor 4: Instead of each handler, having a successor, you could have each handler have a list of successors, and have it's policy what handlers to execute
+
 ### e. Examples described:
 * Purchase example: 
 Starting class: PurchaseExample.CheckAuthority
