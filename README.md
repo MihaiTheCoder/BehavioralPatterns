@@ -41,14 +41,10 @@ Starting class: PurchaseExample.CheckAuthority
 Problem that we are trying to solve:
 
 CheckAuthority allows an employee to request money for approval:
-
-if(manager can approve it) manager will process the request
-
-if (director can approve it) director will process the request
-
-if (vice president can approve it) vice president will process the request
-
-if (president can approve it) president will process the request
+1. if(manager can approve it) manager will process the request
+2. if (director can approve it) director will process the request
+3. if (vice president can approve it) vice president will process the request
+4. if (president can approve it) president will process the request
 
 * Transfer File example 
 Starting class: TransferFileExample.TransferFilesManager
