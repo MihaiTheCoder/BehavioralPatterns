@@ -40,10 +40,10 @@ namespace CommandPattern
         public static string GetPatternDescription()
         {
             return @"Patttern description:
-command pattern is a behavioral design pattern in which an object is used to encapsulate 
+Command pattern is a behavioral design pattern in which an object is used to encapsulate 
 all information needed to perform an action or trigger an event at a later time
 Uses:
-1. Macro recording: f all user actions are represented by command objects, a program can record a 
+1. Macro recording: all user actions are represented by command objects, a program can record a 
 sequence of actions simply by keeping a list of the command objects as they are executed.
 2. Undo
 3. GUI buttons and menu items

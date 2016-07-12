@@ -41,21 +41,22 @@ Starting class: PurchaseExample.CheckAuthority
 Problem that we are trying to solve:
 
 CheckAuthority allows an employee to request money for approval:
- if(manager can approve it) manager will process the request
- if (director can approve it) director will process the request
- if (vice president can approve it) vice president will process the request
- if (president can approve it) president will process the request
+ if(manager can approve it) manager will process the request. If (director can approve it) director will process the request. 
+ If (vice president can approve it) vice president will process the request.  If (president can approve it) president will process the request.
 
 * Transfer File example 
 Starting class: TransferFileExample.TransferFilesManager
+
 TransferFilesManager will try to transfer the file to the destination by trying FTP, SFTP, Http, and simple file copy and it will decide which to use depending on the prefix of the path
 
 * Poker example: 
 Starting class: PokerGame
+
 Having 5 poker cards, decide what is the highest hand that you have
 
 * Business logic validators
 Starting class: Validators.UserEntities.UserProcessor
+
 Allow the client through a console menu to introduce what operation wants to execute: Authenticate/CreateUser and foreach option have some validations.
 For Create user: verify if the authenticated user is authorised to create a new user, and that the email is not already in the database
 	* For authentication: we validate that the user exists in the database
@@ -64,6 +65,49 @@ For Create user: verify if the authenticated user is authorised to create a new 
 
 2. Command pattern
 ------------------
+### Pattern description
+Command pattern is a behavioral design pattern in which an object is used to encapsulate 
+all information needed to perform an action or trigger an event at a later time
+
+### b. When using Command pattern is more effective
+
+1. Macro recording: all user actions are represented by command objects, a program can record a 
+sequence of actions simply by keeping a list of the command objects as they are executed.
+2. Undo - you want simple undo functionality
+3. GUI buttons and menu items - You might set on each button/menu item an action that should be executed in case the button/menu item is pressed
+4. Parallel processing - you want to allow commands to be processed in parallel
+5. Transactional behavior - In case something fail, you want to be able to rollback the command
+
+### Actors
+
+* Client: class that is making use of the command pattern, the one that uses the invoker, makes instance of commands, and passes the commands to the invoker
+* Invoker: Invokes the command (calls execute on the command)
+* Receiver: the class that the command is using as an implementation
+* Command interface: the interface for the commmands
+* Concrete Command: Concrete implementations of the command interface
+
+### d. Pitfalls:
+
+* Dependence on other patterns
+* Multiple commands having the same implementation
+* You need a class for each operation that you are doing, it will increase a lot the number of classes
+
+### e. Flavors:
+
+* Where the command records the commands
+* With undo functionality, command offers undo option, and the invoker by remembering the option might undo: 
+While it is true that it would be easy using Command pattern to implement at the invoker 
+level undo/redo functionality, in practice this only works for simple examples, 
+where all entities are at the same level. More details about undo can be seen at: 
+http://gernotklingler.com/blog/implementing-undoredo-with-the-command-pattern/
+
+### f. Examples
+Stock application example: Starting class: StocksExample.StockExampleRunner
+
+Buy or sell a stock on the market.
+If the market is closed save the orders for when the market opens again.
+When the market opens place all the orders.
+Also, we decided to keep the last ten placed bets, but we don't use them in the example
 
 3. Iterator pattern
 ------------------

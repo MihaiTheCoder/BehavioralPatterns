@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace CommandPattern.StocksExample
 {
+    /// <summary>
+    /// Client
+    /// </summary>
     public class StockExampleRunner
     {
         public void RunWithRealStockSchedule()
