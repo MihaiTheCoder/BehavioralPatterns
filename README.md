@@ -28,7 +28,7 @@ Flavor 2: Execute all elements of chain until the condition does not match -> Ex
 Flavor 3: Always execute all handlers
 Flavor 4: Instead of each handler, having a successor, you could have each handler have a list of successors, and have it's policy what handlers to execute
 ### e. Examples described:
-Purchase example: 
+* Purchase example: 
 Starting class: PurchaseExample.CheckAuthority
 Problem that we are trying to solve:
 CheckAuthority allows an employee to request money for approval
@@ -36,6 +36,20 @@ CheckAuthority allows an employee to request money for approval
  if (director can approve it) director will process the request
  if (vice president can approve it) vice president will process the request
  if (president can approve it) president will process the request
+* Transfer File example 
+Starting class: TransferFileExample.TransferFilesManager
+TransferFilesManager will try to transfer the file to the destination by trying FTP, SFTP, Http, and simple file copy and it will decide which to use depending on the prefix of the path
+
+* Poker example: 
+Starting class: PokerGame
+Having 5 poker cards, decide what is the highest hand that you have
+
+*Business logic validators
+Starting class: Validators.UserEntities.UserProcessor
+Allow the client through a console menu to introduce what operation wants to execute: Authenticate/CreateUser and foreach option have some validations.
+For Create user: verify if the authenticated user is authorised to create a new user, and that the email is not already in the database
+For authentication: we validate that the user exists in the database
+Both the menu options and the validations for the operations are done using chain of responssibility
 
 2. Command pattern
 ------------------
