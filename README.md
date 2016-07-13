@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/MihaiTheCoder/BehavioralPatterns.svg?branch=master)](https://travis-ci.org/MihaiTheCoder/BehavioralPatterns)
+
 BehavioralPatterns
 ==================
 Behavioral Patterns is a .NET core solution that shows some ways to implement the behavioral patterns described by the Gang of Four.
