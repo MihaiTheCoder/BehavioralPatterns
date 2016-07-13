@@ -1,6 +1,19 @@
 BehavioralPatterns
 ==================
-Behavioral Patterns is a .NET core solution that shows some ways to implement the behavioral patterns described by the Gang of Four.
+In software engineering, behavioral design patterns are design patterns that identify common communication patterns between objects and realize these patterns. By doing so, these patterns increase flexibility in carrying out this communication.
+
+There are 2 types of behavioral patterns. 
+* Behavioral class patterns - Use inheritance to distribute behavior between classes - Template Method Pattern and Interpreter pattern
+* Behavioral object patterns - Use composition rather than inheritance. All other patterns and behavioral object patterns
+
+How this project is structured:
+
+1. Behavioral Patterns is a .NET core solution that shows some ways to implement the behavioral patterns described by the Gang of Four.
+2. The entry point for all patterns is the project BehavioralPatterns, which is a console application that lets you choose what pattern you want to execute
+3. For each pattern there is a class library project with the name of the pattern. And each project has a class Run[PatternName]Examples or something similary that has a public static method called Run, that will run all the examples implemented for that pattern.
+
+I left out interpreter pattern intentionally, as it seems that the application of it is not so common, if you think otherwise, just contribute with it.
+
 Patterns described:
 
 [1. Chain of responssibility pattern](https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/README.md#1-chain-of-responssibility)
