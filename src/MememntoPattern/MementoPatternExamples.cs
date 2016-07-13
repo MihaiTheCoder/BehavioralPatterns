@@ -61,7 +61,7 @@ Memento: (Magic cookie) internal state of the object";
         {
             return @"
 Can be expensive
-Deltes/history
+Needs to consider deleting history, or how much history it should keep
 Exposing information only to memento so that we don't brake encapsulation";
         }
 

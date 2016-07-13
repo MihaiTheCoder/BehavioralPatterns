@@ -32,7 +32,7 @@ Chain length/performance issues - in theory you could see a chain that is too bi
 1. Execute first that matches the condition and exit -> Get one to process the request, or get the type of object
 2. Execute all elements of chain until the condition does not match -> Execute all validators until one invalidates the request
 3. Always execute all handlers
-4. Instead of each handler, having a successor, you could have each handler have a list of successors, and have it's policy what handlers to execute
+4. Tree of responssibility -> Instead of each handler, having a successor, you could have each handler have a list of successors, and have it's policy what handlers to execute
 
 ### f. Examples described:
 * Purchase example: 
@@ -153,6 +153,7 @@ Some use the term container, some use the term aggregate, is one and the same th
 	* Having a list of files, some bigger than other, get the files that have content
 	* Created IEnmuerator using yield return
 
+
 4. Mediator pattern
 ------------------
 
@@ -160,19 +161,24 @@ Some use the term container, some use the term aggregate, is one and the same th
 With the mediator pattern, communication between objects is encapsulated with a mediator object. 
 Objects no longer communicate directly with each other, but instead communicate through the mediator. 
 This reduces the dependencies between communicating objects, thereby lowering the coupling.
+
 ### b. When to use Mediator pattern
 * A collection of interacting objects whose interaction needs simplification
 * When you need to monitor/audit the communication between objects
 * When building UI components -> High level components mediate the communication between subcomponents
 * When you want to do publish/subscribe -> publish subscribe is a pattern implemented using mediator
+
 ### c. Actors
 * Mediator: interface of the mediator, that defines what messages does it mediate between colleagues.
 * Concrete Mediator: implementation of the interface
 * Colleague: objects that communicate through the mediator
+
 ### d. Pitfalls
 * Mediator can become ver complicated as more colleagues are handled.
+
 ### e. Flavors
-Don't know
+* Don't know
+
 ### f. Examples
 * StockExchange example: Starting class: StockExchange.StockExchangeExample
 	* Have multiple traders Buy/Sell actions from stock exchange (simplified)
@@ -185,15 +191,39 @@ Don't know
 * Many to many relationship in code: No running class, only the models: User-UserToGroup-Group
 * Other possible examples that are not yet implemented -> Chat application, GUI Library, Taxi/Taxi Center
 
+
 5. Memento pattern
 ------------------
 
 ### a. Pattern description
+The memento pattern is a software design pattern that provides the ability to restore an object to its previous state (undo via rollback).
+
 ### b. When to use Memento pattern
+* When you need to be able to track the state of an object,or/and restore previous states as needed
+* When you cannot use simple operation undo/redo, by saving the commands (when there are side effects to the operations) - example translation
+* Database transactions.
+
 ### c. Actors
+* Originator: object that we want to save. It will create the actual memento.
+* Caretaker: keeps the mementos
+* Memento: (Magic cookie) internal state of the object
+
 ### d. Pitfalls
+* if keeping the state/restoring the state is expensive, the memento pattern might not be fit
+* Exposing information only to memento so that we don't brake encapsulation
+* It may be difficult to ensure the Originator can access a Memento's state
+* Caretaker has to manage Mementos, but doesn't know their size.
+* Needs to consider deleting history, or how much history it should keep
+
 ### e. Flavors
+* Classical memento: Save each time the entire state
+* Iterative memento: Save the changes that occured from the previous state(delta), instead of saving the entire state again, (e.g. Git)
+
 ### f. Examples
+* Employee example1: Starting class: Employee.EmployeeExample 
+	* Save the state of an employee using a class EmployeeMememento. Keep all the the updates that were made to the Employee. 
+* Employee example2: Starting class: EmployeeSerialized.EmployeeSerializedExample
+	* Save the state of an employee by serializing Employee. Keep only 10 updates of the employee, the rest will be lost
 
 6. Observer pattern
 ------------------
