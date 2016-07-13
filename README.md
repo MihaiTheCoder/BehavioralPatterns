@@ -127,14 +127,12 @@ Some use the term container, some use the term aggregate, is one and the same th
 * When you have a complex structure like a tree, and you want to process some of the nodes, you can hide the parsing using the iterator pattern
 
 ### c. Actors
-
 * Iterator: interface with hasNext/next/current methods or variantions from this
 * Concrete interator: concrete class that implements Iterator
 * Aggregate: interface for returning the iterator
 * Concrete aggregate: imlpementation of aggregate interface
 
 ### d. Pitfalls
-
  * Parsing the same collection multiple times -> because most programming languages hide the usage of iterators
 
 ### e. Flavors
@@ -142,7 +140,6 @@ Some use the term container, some use the term aggregate, is one and the same th
  * Internal iterators -> Iteration is controlled by the aggregate, if requested I will add later an example.
 
 ### f. Examples
-
 * TV example 1: Starting class: TVExample.TVIterator.TvIteratorExample
 	* Functionality: Having a TV, go trhough it's channels
 	* Implemented using the standard iterator pattern, without the use of IEnumerable
@@ -323,12 +320,15 @@ The strategy pattern defines a family of algorithms, encapsulates each algorithm
 ### c. Actors
 * Context -> Class that is using the strategy
 * Strategy -> Strategy to be used by the context
+
 ### d. Pitfalls
 * Client needs to be aware of the strategy, and be able to choose the strategy
 * You might move the complicated decision of what to execute to the client out of the context.
+
 ### e. Flavors
 * Classic -> Using separate class for each strategy
 * Using Lambda -> Instead of having a class for each strategy, we could use lambda expression
+
 ### f. Examples
 * Shipping calculator: Starting class: ShippingCalculator.ShippingWithStrategyExample
 	* Decide what cost do I have if I want to ship a product via multiple shipping services
@@ -351,9 +351,11 @@ Template pattern works using 'the Hollywood principle' from the base class point
 * Avoid duplication in the code: the general workflow structure is implemented once in the abstract class's algorithm, and necessary variations are implemented in each of the subclasses.
 * Control at what point(s) subclassing is allowed. As opposed to a simple polymorphic override, where the base method would be entirely rewritten allowing radical change to the workflow, only the specific details of the workflow are allowed to change.
 * You want to be able to add customization hooks to your class
+
 ### c. Actors
 * Workflow/Abstract/Framework class -> Where we define the workflow that is calling the methods that may be ovveriden by the concrete class
 * Concrete class -> Class that implements the abstract methods of the Framework class
+
 ### d. Pitfalls
 * Uses inheritance for defining the implementation instead of composition 
 
