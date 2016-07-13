@@ -2,6 +2,9 @@
 
 namespace VisitorPattern.CalculateMoney.WithVisitor
 {
+    /// <summary>
+    /// Visitor
+    /// </summary>
     public interface IVisitor
     {
         void Visit(MoneyBankAccount moneyBankAccount);
@@ -11,6 +14,10 @@ namespace VisitorPattern.CalculateMoney.WithVisitor
         void Visit(Valuable valuable);        
     }
 
+
+    /// <summary>
+    /// Concrete Visitor
+    /// </summary>
     public class NetWorthVisitor : IVisitor
     {
         public double NetWorth { get; private set; }
@@ -36,6 +43,9 @@ namespace VisitorPattern.CalculateMoney.WithVisitor
         }
     }
 
+    /// <summary>
+    /// Concrete Visitor
+    /// </summary>
     public class NetWorth2Visitor : IVisitor
     {
         public double NetWorth { get; private set; }
@@ -61,6 +71,9 @@ namespace VisitorPattern.CalculateMoney.WithVisitor
         }
     }
 
+    /// <summary>
+    /// Concrete Visitor
+    /// </summary>
     public class MonthlyIncomeVisitor : IVisitor
     {
         public double MonthlyIncome { get; private set; }

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace VisitorPattern.CalculateMoney.WithVisitor
 {
+    /// <summary>
+    /// ObjectStructure
+    /// </summary>
     public class CorruptionSuspect : IAsset
     {
         public CorruptionSuspect()
@@ -43,11 +46,18 @@ namespace VisitorPattern.CalculateMoney.WithVisitor
         }
     }
 
+
+    /// <summary>
+    /// Visitable
+    /// </summary>
     public interface IAsset
     {
         void Accept(IVisitor visitor);
     }
 
+    /// <summary>
+    /// Concrete Visitable
+    /// </summary>
     public class Job : IAsset
     {
         public double Salary { get; set; }
@@ -62,6 +72,9 @@ namespace VisitorPattern.CalculateMoney.WithVisitor
         }
     }
 
+    /// <summary>
+    /// Concrete Visitable
+    /// </summary>
     public class MoneyBankAccount : IAsset
     {
         public double Ammount { get; set; }
@@ -80,6 +93,9 @@ namespace VisitorPattern.CalculateMoney.WithVisitor
         }
     }
 
+    /// <summary>
+    /// Concrete Visitable
+    /// </summary>
     public class Valuable : IAsset
     {
         public double EstimatedValue { get; set; }
@@ -92,12 +108,24 @@ namespace VisitorPattern.CalculateMoney.WithVisitor
         }
     }
 
+    /// <summary>
+    /// Concrete Visitable
+    /// </summary>
     public class Clock : Valuable { }
 
+    /// <summary>
+    /// Concrete Visitable
+    /// </summary>
     public class RealEstate : Valuable { }
 
+    /// <summary>
+    /// Concrete Visitable
+    /// </summary>
     public class Art : Valuable { }
 
+    /// <summary>
+    /// Concrete Visitable
+    /// </summary>
     public class Loan : IAsset
     {
         public double Owed { get; set; }

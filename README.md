@@ -343,19 +343,48 @@ The strategy pattern defines a family of algorithms, encapsulates each algorithm
 ------------------
 
 ### a. Pattern description
+In software engineering, the template method pattern is a behavioral design pattern that defines the program skeleton of an algorithm in an operation,
+defering some steps to subclasses. It lets one redefine certain steps of an algorithm without changing the algorithm's structure.
+Template pattern works using 'the Hollywood principle' from the base class point of view: 'Don't call us, we'll call you'
 ### b. When to use Template pattern
+* Let subclasses implement (through method overriding) behavior that can vary.
+* Avoid duplication in the code: the general workflow structure is implemented once in the abstract class's algorithm, and necessary variations are implemented in each of the subclasses.
+* Control at what point(s) subclassing is allowed. As opposed to a simple polymorphic override, where the base method would be entirely rewritten allowing radical change to the workflow, only the specific details of the workflow are allowed to change.
+* You want to be able to add customization hooks to your class
 ### c. Actors
+* Workflow/Abstract/Framework class -> Where we define the workflow that is calling the methods that may be ovveriden by the concrete class
+* Concrete class -> Class that implements the abstract methods of the Framework class
 ### d. Pitfalls
+* Uses inheritance for defining the implementation instead of composition 
+
 ### e. Flavors
+* Don't know any
+
 ### f. Examples
+* Workers example: Starting class: WokersExample.WorkersExample
+	* have the morning routine of a manager/construction worker/student until they start working
+* Game example: Starting class: GameExample.GameExample
+	* Implement basketball/Football where instead of playing we just print some strings
+
 
 10. Visitor pattern
 ------------------
 
 ### a. Pattern description
+* Visitor pattern allows for one or more operation to be applied to a set of objects at runtime, decoupling the operations from the object structure.
+* Visitor is similar to Iterator, the difference is that visitor pattern allows to process more complex structure with different types
+
 ### b. When to use Visitor pattern
+* When you have a complex structure that doesn't change that much, but you need to add more types of processing
 ### c. Actors
+* Visitor - The interface that defines methods to visit each of the visitable types
+* Concrete Visitor - Implemementation of the Visitor pattern
+* Visitable - interface that accepts the visitor, usually one method->Accept(Visitor v)
+* Concrete Visitable - Objects that are part of the complex structure that needs to be visited
+* Object Structure - Object that contains all the visitable objects, and defines a way to visit them
 ### d. Pitfalls
+* Every time you add a new visitable object, you need to modify all the visitors.
 ### e. Flavors
+
 ### f. Examples
 
