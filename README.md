@@ -2,6 +2,27 @@ BehavioralPatterns
 ==================
 Behavioral Patterns is a .NET core solution that shows some ways to implement the behavioral patterns described by the Gang of Four.
 Patterns described:
+
+[1. Chain of responssibility pattern](https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/README.md#1-chain-of-responssibility)
+
+[2. Command](https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/README.md#2-command-pattern)
+
+[3. Iterator](https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/README.md#3-iterator-pattern)
+
+[4. Mediator](https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/README.md#4-mediator-pattern)
+
+[5. Memento](https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/README.md#5-memento-pattern)
+
+[6. Observer](https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/README.md#6-observer-pattern)
+
+[7. State](https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/README.md#7-state-pattern)
+
+[8. Strategy](https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/README.md#8-strategy-pattern)
+
+[9. Template](https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/README.md#9-template-pattern)
+
+[10 Visitor](https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/README.md#10-visitor-pattern)
+
 1. Chain of responssibility
 ---------------------------
 Implemented in project: ChainOfResponsibility
