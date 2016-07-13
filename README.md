@@ -254,10 +254,10 @@ usually by calling one of their methods.
 ### b. When to use Observer pattern
 
 ### c. Actors
-* Subject -> Interface/Abstract Notifies interested observers when an event occurs
-* Concrete Subject -> Implementation of Subject
-* Observer -> Interface/Abstract class -> Registers to a subject, to be notified when a specific event happens
-* Concrete Observer -> Implementation of the observer
+* Subject -> Interface/Abstract Notifies interested observers when an event occurs. Allows Observer to subscribe/unsubscribe.
+* Concrete Subject -> Implementation of Subject.
+* Observer -> Interface/Abstract class -> Defines a method to be called when the Subject wants to notify observers
+* Concrete Observer -> Implementation of the observer. Registers to a subject, to be notified when a specific event happens
 
 ### d. Pitfalls
 * Lapsed Listener problem
