@@ -28,16 +28,15 @@ namespace StrategyPattern
             Console.WriteLine("Now the same example, but implemented with strategy pattern");
             ShippingWithStrategyExample.Run();
 
-            //This is just for fun (Challenged to loop without using conditions/loops)
-            LoopWithExceptionExample.Run();
-            //This is just for fun (Challenged to loop without using conditions/loops)
-            MagnificLoopExample.Run();
-
-
             ArrangeInterviewMotivationalExample.Run(InterviewPersons.Get());
 
             //Show the switch moving problem
             ArrangeInterviewExample.Run(InterviewPersons.Get());
+
+            //This is just for fun (Challenged to loop without using conditions/loops)
+            LoopWithExceptionExample.Run();
+            //This is just for fun (Challenged to loop without using conditions/loops)
+            MagnificLoopExample.Run();
         }
 
         private static string GetDescription()
