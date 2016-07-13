@@ -1,6 +1,7 @@
 BehavioralPatterns
 ==================
-In software engineering, behavioral design patterns are design patterns that identify common communication patterns between objects and realize these patterns. By doing so, these patterns increase flexibility in carrying out this communication.
+* In software engineering, behavioral design patterns are design patterns that identify common communication patterns between objects and realize these patterns. By doing so, these patterns increase flexibility in carrying out this communication.
+* Behavioral patterns are concerned with algorithms and the assignment of responsibilities between objects.
 
 There are 2 types of behavioral patterns. 
 * Behavioral class patterns - Use inheritance to distribute behavior between classes - Template Method Pattern and Interpreter pattern
