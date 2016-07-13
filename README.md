@@ -309,12 +309,19 @@ If we want to implement this using state pattern, we would need to make a new cl
 		* AcceptanceTestsPassed - moves user story from state Resolved to state Closed
 	* Motivational example class: ScrumExample.ScrumMotivationalExample
 
+
 8. Strategy pattern
 ------------------
 
 ### a. Pattern description
+Strategy pattern (also known as the policy pattern) is a software design pattern that enables an algorithm's behavior to be selected at runtime. 
+The strategy pattern defines a family of algorithms, encapsulates each algorithm, and makes the algorithms interchangeable within that family.
 ### b. When to use Strategy pattern
+* Classical thing to say: Whenever you start to use a switch statement you should ask yourself whether you can use Strategy Pattern instead.
+* When you want to externalize part of the algorithm
+
 ### c. Actors
+
 ### d. Pitfalls
 ### e. Flavors
 ### f. Examples
