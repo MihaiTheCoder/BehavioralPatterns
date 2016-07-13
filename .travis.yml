@@ -1,7 +1,9 @@
-language: csharp
-sudo: required
-dist: trusty
-addons:
+language: csharp  
+sudo: required  
+dist: trusty  
+env:  
+  - CLI_VERSION=latest
+addons:  
   apt:
     packages:
     - gettext
@@ -10,25 +12,20 @@ addons:
     - libssl-dev
     - libunwind8
     - zlib1g
-mono:
-  - 4.0.5
-os:
+mono:  
+  - 4.2.3
+os:  
   - linux
   - osx
-osx_image: xcode7.1
-branches:
+osx_image: xcode7.1  
+branches:  
   only:
     - master
-    - release
-    - dev
-    - /^(.*\/)?ci-.*$/
-before_install:
+before_install:  
   - if test "$TRAVIS_OS_NAME" == "osx"; then brew update; brew install openssl; brew link --force openssl; fi
-script:
-  - ./build.sh --quiet verify
-notifications:
-  webhooks:
-    secure: "imfp26oc8QAWwRdbLoeyNWhkJnE/fD/80B7GD3jac0MEfjJiNjox1bKzgXfUlxZE8MITQk5F+TX00fm4/YYHQSQQqzQSUM1P/02OM+PAbSyVX8MqII2+ECJC1x5UcoCI/hbQW5wAVzhCv9qDirJSbRFAAv0c3+alBrZs4RuYf4w="
-  on_success: always
-  on_failure: always
-  on_start: always
+install:  
+  - export DOTNET_INSTALL_DIR="$PWD/.dotnetcli"
+  - curl -sSL https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0/scripts/obtain/dotnet-install.sh | bash /dev/stdin --version "$CLI_VERSION" --install-dir "$DOTNET_INSTALL_DIR"
+  - export PATH="$DOTNET_INSTALL_DIR:$PATH"  
+script:  
+  - ./build.sh
