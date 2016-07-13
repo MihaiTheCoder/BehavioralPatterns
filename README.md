@@ -321,10 +321,23 @@ The strategy pattern defines a family of algorithms, encapsulates each algorithm
 * When you want to externalize part of the algorithm
 
 ### c. Actors
-
+* Context -> Class that is using the strategy
+* Strategy -> Strategy to be used by the context
 ### d. Pitfalls
+* Client needs to be aware of the strategy, and be able to choose the strategy
+* You might move the complicated decision of what to execute to the client out of the context.
 ### e. Flavors
+* Classic -> Using separate class for each strategy
+* Using Lambda -> Instead of having a class for each strategy, we could use lambda expression
 ### f. Examples
+* Shipping calculator: Starting class: ShippingCalculator.ShippingWithStrategyExample
+	* Decide what cost do I have if I want to ship a product via multiple shipping services
+	* Motivational Example starting class: ShippingCalculator.ShippingWithStrategyExample
+* Arrange interview: Starting class: ArrangeInterview.Strategy.ArrangeInterviewExample
+	* Decide what should we do if we want to hire an employee, taking into consideration that it might be (dev, designer, tester, manager, devop),
+	 depending on his experience he might be (junior, medium, senior, rockstar) and we might decide to hire him as (contractor, part time, full time)
+	* Motivational example: ArrangeInterview.ArrangeInterviewMotivationalExample
+ 
 
 9. Template pattern
 ------------------
