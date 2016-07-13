@@ -375,16 +375,23 @@ Template pattern works using 'the Hollywood principle' from the base class point
 * Visitor is similar to Iterator, the difference is that visitor pattern allows to process more complex structure with different types
 
 ### b. When to use Visitor pattern
-* When you have a complex structure that doesn't change that much, but you need to add more types of processing
+* Dynamic flavor: When you have a complex structure that doesn't change that much, but you need to add more types of processing
+
 ### c. Actors
 * Visitor - The interface that defines methods to visit each of the visitable types
 * Concrete Visitor - Implemementation of the Visitor pattern
 * Visitable - interface that accepts the visitor, usually one method->Accept(Visitor v)
 * Concrete Visitable - Objects that are part of the complex structure that needs to be visited
 * Object Structure - Object that contains all the visitable objects, and defines a way to visit them
+
 ### d. Pitfalls
 * Every time you add a new visitable object, you need to modify all the visitors.
+
 ### e. Flavors
+* In languages like C#, instead of having all the Concrete Visitable implemement the Visitable, we could use
 
 ### f. Examples
-
+* Calculate money of corruption subject: Starting class: CalculateMoney.WithVisitor.CalaculateMoneyWithVisitorExample
+	* For a corruption suspect calculate Monthly income, and the net worth using 2 different varations
+	* Motivational example: Starting class: CalculateMoney.WithoutVisitor.CalculateMoneyMotivationalExample
+	* Same functionality, but using dynamic flavor: The Visitable interface is used only for marker. And the Object Structure uses dynamic to invoke the visitors.
