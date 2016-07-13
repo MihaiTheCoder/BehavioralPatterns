@@ -225,25 +225,89 @@ The memento pattern is a software design pattern that provides the ability to re
 * Employee example2: Starting class: EmployeeSerialized.EmployeeSerializedExample
 	* Save the state of an employee by serializing Employee. Keep only 10 updates of the employee, the rest will be lost
 
+
 6. Observer pattern
 ------------------
 
 ### a. Pattern description
+The observer pattern is a software design pattern in which an object, called the subject,
+maintains a list of its dependents, called observers, and notifies them automatically of any state changes, 
+usually by calling one of their methods.
 ### b. When to use Observer pattern
+
 ### c. Actors
+* Subject -> Interface/Abstract Notifies interested observers when an event occurs
+* Concrete Subject -> Implementation of Subject
+* Observer -> Interface/Abstract class -> Registers to a subject, to be notified when a specific event happens
+* Concrete Observer -> Implementation of the observer
+
 ### d. Pitfalls
+* Lapsed Listener problem
+	* The leak happens when a listener fails to unsubscribe from the publisher when it no longer needs to listen. 
+Consequently, the publisher still holds a reference to the observer which prevents it from being garbage collected 
+— including all other objects it is referring to — for as long as the publisher is alive, which could be until the end of the application.
+This causes not only a memory leak, but also a performance degradation with an 'uninterested' observer receiving and acting on unwanted events
+
 ### e. Flavors
+* Push model -> Subject sends all the necessary data for processing the event
+* Pull model -> Subject sends an event without the necessary information to process the event, in this case the Observer needs to pull the required data from the subject.
+
 ### f. Examples
+* Stock update events: Starting class: StockUpdateEvents.StockUpdateEventsExample
+	* Have multiple stocks that are updating the price, and some observers, printing the new prices, when the update occurs
+	* RunSimple method -> Implementation of the Observer pattern using events/EventHandler, by having separate classes for both Subject/Observer
+	* RunReactiveWithEvents method -> Have the Subject defined in the same way, but Observers are created using System.Reactive from events. So We still have a subject class, but for observers we use IObservable	
+	* RunReactive method -> Use System.Reactive.Subject for subject, use IObservable to do observers. Neither Subject nor Observers classes are defined by us.
+* Twiting example: Starting class Twits.ObservableTwitsExample
+	* Have R2-D2 and t100 talk on twiter
+	* Have Concrete Subject as an implementation of the Systen,IObseravable, and Concrete Observer as an implementation of System.IObserver
+
 
 7. State pattern
 ------------------
 
 ### a. Pattern description
+With the state pattern, a state machine is implemented by implementing each individual state as a derived class of the state pattern interface, and implementing state transitions by invoking methods defined by the pattern's superclass.
 ### b. When to use State pattern
+* Every time you have a single property that represents the state of the object
+
 ### c. Actors
+* Context - The class where you define all the states. The client will interact with the context to do operations.
+* State - The interface that each concrete state must implement
+* Concrete states - implementations of the state interface/base class
+
 ### d. Pitfalls
+* More difficult to see all the relations between states, and how you can go from one state to the other
+* Could end up with a lot of state classes.
+* If you have more than one state property, for example, a character in a game may be standing or jumping or ducking, and in the same time firing or not, maybe in the same time getting shot. 
+If we want to implement this using state pattern, we would need to make a new class for all the combinations of the all the states.
+
 ### e. Flavors
+* hierarchical state pattern
+* Classical state pattern
+
 ### f. Examples
+* TVExample: Starting class TVExample.TVExample
+	* Have the implementation of what should happen when you are pressing the power button
+	* Motivational example class: TVExample.TVMotivationalExample - how you would implement it without state pattern
+*  Fan example: Starting class: FanExample.FanWithStatePatternExample
+	* Have a fan with a chain, that when pulled it would move from
+		* Off to speed 1
+		* speed 1 to speed 2
+		* speed 2 to speed 3
+		* speed 3 to speed 4
+		* speed 4 to Off
+	* Motivational example class: FanExample.FanMotivationalExample
+* SCRUM example: Starting class: ScrumExample.ScrumStatePatternExample
+	* Implement the transitions between user story states
+		* Create - creates a new user story in state New
+		* RemoveFromBacklog - moves a user story from state New to State removed
+		* StartImplementation - moves user story from state New to state Active
+		* MoveToBacklog - moves user story from state Active/Removed to state New
+		* CodeFinishedAnUnitTestsPassed - move user story from state Active to state Resolved 
+		* AcceptanceTestsFail - move user story from state Resolved to state Active
+		* AcceptanceTestsPassed - moves user story from state Resolved to state Closed
+	* Motivational example class: ScrumExample.ScrumMotivationalExample
 
 8. Strategy pattern
 ------------------

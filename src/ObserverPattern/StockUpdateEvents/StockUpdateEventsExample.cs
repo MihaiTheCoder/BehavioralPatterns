@@ -25,16 +25,16 @@ namespace ObserverPattern.StockUpdateEvents
         {
             StockSubject stockSubject = new StockSubject();
 
-            var londonObserver = Observable.FromEventPattern<StockUpdateEventArgs>(
+            IObservable<EventPattern<StockUpdateEventArgs>> londonObservable = Observable.FromEventPattern<StockUpdateEventArgs>(
                 ev => stockSubject.StockUpdated += ev,
                 ev => stockSubject.StockUpdated -= ev).Where(s => s.EventArgs.Stock.Name == "FTSE");
 
-            var aaplObserver = Observable.FromEventPattern<StockUpdateEventArgs>(
+            IObservable<EventPattern<StockUpdateEventArgs>> aaplObservable = Observable.FromEventPattern<StockUpdateEventArgs>(
                 ev => stockSubject.StockUpdated += ev,
                 ev => stockSubject.StockUpdated -= ev).Where(s => s.EventArgs.Stock.Name == "AAPL");
 
-            using (londonObserver.Subscribe(PrintLondonStockPriceUpdate))
-            using (aaplObserver.Subscribe(PrintAaplStockPriceUpdate))
+            using (londonObservable.Subscribe(PrintLondonStockPriceUpdate))
+            using (aaplObservable.Subscribe(PrintAaplStockPriceUpdate))
             {
                 PublishUpdateStocks(stockSubject);
             }
@@ -44,11 +44,11 @@ namespace ObserverPattern.StockUpdateEvents
         {
             Subject<Stock> stockSubject = new Subject<Stock>();
 
-            var londonObserver = stockSubject.Where(s => s.Name == "FTSE");
-            var aaplObserver = stockSubject.Where(s => s.Name == "AAPL");
+            IObservable<Stock> londonObservable = stockSubject.Where(s => s.Name == "FTSE");
+            IObservable<Stock> aaplObservable = stockSubject.Where(s => s.Name == "AAPL");
 
-            using (londonObserver.Subscribe(PrintLondonStockPriceUpdate))
-            using (aaplObserver.Subscribe(PrintAaplStockPriceUpdate))
+            using (londonObservable.Subscribe(PrintLondonStockPriceUpdate))
+            using (aaplObservable.Subscribe(PrintAaplStockPriceUpdate))
             {
                 PublishUpdateStocks(stockSubject);
             }
