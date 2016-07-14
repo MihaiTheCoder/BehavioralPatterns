@@ -33,7 +33,7 @@ Patterns described:
 
 [8. Strategy pattern](https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/README.md#8-strategy-pattern)
 
-[9. Template method pattern](https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/README.md#9-template-pattern)
+[9. Template method pattern](https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/README.md#9-template-method-pattern)
 
 [10 Visitor pattern](https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/README.md#10-visitor-pattern)
 
