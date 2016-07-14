@@ -41,7 +41,18 @@ Patterns described:
 ---------------------------
 Implemented in project: ChainOfResponsibility
 ### a. Pattern description:
+[ChainOfResponsibilityClassDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/ChainOfResponsibility/ChainOfResponsibilityClassDiagram.PNG "Chain of responsibility class diagram"
+[ChainOfResponsibilitySequenceDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/ChainOfResponsibility/ChainOfResponsibilitySequenceDiagram.PNG "Chain of responsibility sequence diagram"
+
 Decouples sender and receiver (as a sender you don't know who will handle the request/ as a receiver you don't know who the sender is necessary)
+
+Class diagram: 
+
+![alt text][ChainOfResponsibilityClassDiagram]
+
+Sequence diagram: 
+
+![alt text][ChainOfResponsibilitySequenceDiagram]
 ### b.When using the Chain of Responsibility is more effective:
 * More than one object can handle a command
 * The handler is not known in advance
