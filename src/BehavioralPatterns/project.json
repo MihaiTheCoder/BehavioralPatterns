@@ -6,7 +6,6 @@
       "include": "../IteratorPattern/FileExample/SampleFiles/**"
     }
   },
-
   "dependencies": {
     "ChainOfResponssibility": "1.0.0-*",
     "CommandPattern": "1.0.0-*",
@@ -15,7 +14,7 @@
     "MememntoPattern": "1.0.0-*",
     "Microsoft.NETCore.App": {
       "type": "platform",
-      "version": "1.0.0-rc2-3002702"
+      "version": "1.0.0"
     },
     "ObserverPattern": "1.0.0-*",
     "StatePattern": "1.0.0-*",
@@ -23,7 +22,6 @@
     "TemplatePattern": "1.0.0-*",
     "VisitorPattern": "1.0.0-*"
   },
-
   "frameworks": {
     "netcoreapp1.0": {
       "imports": "dnxcore50"
