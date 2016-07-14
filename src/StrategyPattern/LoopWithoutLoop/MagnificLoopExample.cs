@@ -56,7 +56,5 @@ namespace StrategyPattern.LoopWithoutLoop
         {
             return;
         }
-    }
-
-    
+    }    
 }
