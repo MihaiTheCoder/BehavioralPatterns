@@ -22,6 +22,16 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="Mediator\MediatorClassDiagram.PNG">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Mediator\MediatorPattern.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Mediator\MediatorPattern.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Mediator\MediatorPattern.classdiagram</DependentUpon>
+    </Content>
     <Content Include="Observer\ObserverClassDiagram.PNG">
       <SubType>Content</SubType>
     </Content>
@@ -46,6 +56,7 @@
     <Content Include="ModelDefinition\BehavioralPatternsDiagrams.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="Mediator" />
     <Folder Include="Observer" />
   </ItemGroup>
   <ItemGroup>

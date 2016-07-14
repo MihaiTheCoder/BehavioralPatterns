@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="70d27ba9-323b-4c78-8d08-7980c821651e" name="MediatorPattern" linkedPackageId="8a849af8-5acd-479a-ad04-e27b46a9725a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="07c105c9-307e-415b-a9a4-4b8a24135a63">
+      <profileInstance Id="f491c045-b27d-499a-9824-36b63d10be43" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4b6e96b2-fb6c-4228-9b52-bd729bf6276a">
+      <profileInstance Id="d2f48765-3c60-4344-8e29-58432d536712" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="575c1035-7a1d-4198-9478-553bbacd5a1a" name="Mediator" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2feaaf92-6fc9-43f7-8a5d-a72654c48fbd" />
+        <ownedOperations>
+          <operation Id="8f0bc2a7-e9d5-4739-84d2-a1b4e7aa4573" name="AddColleague" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4fb30bf6-8923-4309-836b-8ab6e6e51bf7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a38b51bb-bd74-48d1-915c-21c8f6540a12" name="colleague" direction="In">
+                  <elementDefinition Id="5d76beeb-2c07-4cf1-8d43-5d22f9d20d84" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6024a9a9-d877-4508-8f1f-e523f7d5ee68" LastKnownName="Colleague" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="7ccfb53d-9fff-499f-b261-6b6a5708a192" name="InformOtherColleagues" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="eab63b0f-56a0-4e1e-aab0-cb5c2cfbbf57" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="701e700a-ca61-48df-8b95-35d58008ee1d" name="Colleague" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="834e23c7-3bc4-4a7f-b7e6-71231b950a3f" />
+        <suppliersInternal>
+          <dependency Id="e5134747-0127-46c9-9295-9e0ba251658a">
+            <interfaceMoniker Id="575c1035-7a1d-4198-9478-553bbacd5a1a" LastKnownName="Mediator" />
+            <elementDefinition Id="d8cf4fa7-fda2-4e43-b01e-1a97f5766636" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperations>
+          <operation Id="5ee98469-c251-421e-b686-c815695005d7" name="Inform" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f9141efb-7d51-4e02-ac7a-84ddd7681f7d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a84f61b0-b64b-4572-af7e-05212398ede3" name="mediator" direction="In">
+                  <elementDefinition Id="06688151-1d95-4f54-8580-2ca0dddadc8f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="630c7b5a-9a4c-45b7-84ec-7f4585086c91" LastKnownName="Mediator" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="049c2834-5da7-49c4-9514-f9c495918a9e" name="Colleague1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="94a81001-fbfe-4119-a081-ee923611c554" />
+        <suppliersInternal>
+          <interfaceRealization Id="706c9f22-9b34-4d83-9ab5-8e74ece76d03">
+            <interfaceMoniker Id="701e700a-ca61-48df-8b95-35d58008ee1d" LastKnownName="Colleague" />
+            <elementDefinition Id="33058b4b-6d7c-4803-8a87-abda0285ce8b" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="2d6fd691-8e8d-404f-969f-0830ba2ec887" name="Inform" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="899f5a48-90aa-4b56-af52-1eb99c865e0c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="884340db-04f6-4a2e-b91b-d3db7987001b" name="mediator" direction="In">
+                  <elementDefinition Id="61c9e514-79a6-4d2b-9be9-f40735afb5d2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="630c7b5a-9a4c-45b7-84ec-7f4585086c91" LastKnownName="Mediator" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d520e6aa-1763-4a41-91a0-de659543d2f9" name="Colleague2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="119f7668-0e13-4d04-992d-b5c1dc0cb7e5" />
+        <suppliersInternal>
+          <interfaceRealization Id="7e8bb63b-3e05-4f64-8c55-4b92da64fa46">
+            <interfaceMoniker Id="701e700a-ca61-48df-8b95-35d58008ee1d" LastKnownName="Colleague" />
+            <elementDefinition Id="5fd791f9-9505-47f4-825c-b4b2d6aabc4f" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="2572d3e3-0dab-4030-b782-afb5c01b64cf" name="Inform" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1e4f3585-2b9b-4145-9380-0b47cfb0427b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4b1f653f-288a-498d-909c-afbfd99c51bc" name="mediator" direction="In">
+                  <elementDefinition Id="c26261ef-70e4-4be1-9dd2-eb6c2bab5f80" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="630c7b5a-9a4c-45b7-84ec-7f4585086c91" LastKnownName="Mediator" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="45778615-3fac-4574-9429-fcd5a1b945c0" name="ConcreteMediator" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6179238a-829d-4b94-b33a-f61bf8c83e45" />
+        <suppliersInternal>
+          <interfaceRealization Id="83bf48b9-f99e-4c12-939c-5dfe5873afa1">
+            <interfaceMoniker Id="575c1035-7a1d-4198-9478-553bbacd5a1a" LastKnownName="Mediator" />
+            <elementDefinition Id="d4aa3279-a638-4ec5-8c3c-0ea10a9c8594" />
+          </interfaceRealization>
+          <dependency Id="5885115a-709b-4ce0-947d-7c7b68338346">
+            <classMoniker Id="d520e6aa-1763-4a41-91a0-de659543d2f9" LastKnownName="Colleague2" />
+            <elementDefinition Id="c01f09c7-6067-426b-a456-560a323e3e7b" />
+          </dependency>
+          <dependency Id="781b768c-b46e-4287-8aa4-6f1d32775b6c">
+            <classMoniker Id="049c2834-5da7-49c4-9514-f9c495918a9e" LastKnownName="Colleague1" />
+            <elementDefinition Id="ea1003c3-de1c-4908-840c-812a42e482f4" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="b4ce5790-8d8d-491a-9498-6f1a1b62324a" name="AddColleague" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c25182c6-dce4-4f01-9683-19740c542d36" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f206c90f-004a-4942-9e89-a480ac695cbd" name="colleague" direction="In">
+                  <elementDefinition Id="81133635-4313-4f92-8546-7a7cb752d459" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6024a9a9-d877-4508-8f1f-e523f7d5ee68" LastKnownName="Colleague" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="1196984d-ba8e-4e75-87af-298984131435" name="InformOtherColleagues" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ef524765-2024-458d-8409-15baa4229117" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="630c7b5a-9a4c-45b7-84ec-7f4585086c91" name="Mediator" isAbstract="false" isLeaf="false" cachedFullName="BehavioralPatternsDiagrams::Mediator">
+        <elementDefinition Id="2feaaf92-6fc9-43f7-8a5d-a72654c48fbd" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6024a9a9-d877-4508-8f1f-e523f7d5ee68" name="Colleague" isAbstract="false" isLeaf="false" cachedFullName="BehavioralPatternsDiagrams::Colleague">
+        <elementDefinition Id="834e23c7-3bc4-4a7f-b7e6-71231b950a3f" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="8a849af8-5acd-479a-ad04-e27b46a9725a" name="BehavioralPatternsDiagrams">
+    <elementDefinition Id="ab0df1a1-6716-4f07-98a6-a60d1545f3de" />
+  </package>
+</logicalClassDesignerModel>
