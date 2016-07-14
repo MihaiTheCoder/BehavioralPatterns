@@ -415,6 +415,14 @@ The strategy pattern defines a family of algorithms, encapsulates each algorithm
 In software engineering, the template method pattern is a behavioral design pattern that defines the program skeleton of an algorithm in an operation,
 defering some steps to subclasses. It lets one redefine certain steps of an algorithm without changing the algorithm's structure.
 Template pattern works using 'the Hollywood principle' from the base class point of view: 'Don't call us, we'll call you'
+
+Class diagram: 
+
+![alt text](https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/TemplateMethodPattern/TemplateMethodPatternClassDiagram.PNG "Template method pattern class diagram")
+
+Sequence diagram:
+
+![alt text](https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/TemplateMethodPattern/TemplateMethodPatternSequenceDiagram.PNG "Template method pattern sequence diagram")
 ### b. When to use Template method pattern
 * Let subclasses implement (through method overriding) behavior that can vary.
 * Avoid duplication in the code: the general workflow structure is implemented once in the abstract class's algorithm, and necessary variations are implemented in each of the subclasses.
