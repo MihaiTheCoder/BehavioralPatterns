@@ -41,7 +41,18 @@ Patterns described:
 ---------------------------
 Implemented in project: ChainOfResponsibility
 ### a. Pattern description:
+[ChainOfResponsibilityClassDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/ChainOfResponsibility/ChainOfResponsibilityClassDiagram.PNG "Chain of responsibility class diagram"
+[ChainOfResponsibilitySequenceDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/ChainOfResponsibility/ChainOfResponsibilitySequenceDiagram.PNG "Chain of responsibility sequence diagram"
+
 Decouples sender and receiver (as a sender you don't know who will handle the request/ as a receiver you don't know who the sender is necessary)
+
+Class diagram: 
+
+![alt text][ChainOfResponsibilityClassDiagram]
+
+Sequence diagram: 
+
+![alt text][ChainOfResponsibilitySequenceDiagram]
 ### b.When using the Chain of Responsibility is more effective:
 * More than one object can handle a command
 * The handler is not known in advance
@@ -101,9 +112,19 @@ For Create user: verify if the authenticated user is authorised to create a new 
 2. Command pattern
 ------------------
 ### Pattern description
+[CommandPatternClassDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/CommandPattern/CommandPatternClassDiagram.PNG "Command pattern class diagram"
+[CommandPatternSequenceDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/CommandPattern/CommandPatternSequenceDiagram.PNG "Command pattern sequence diagram"
+
 Command pattern is a behavioral design pattern in which an object is used to encapsulate 
 all information needed to perform an action or trigger an event at a later time
 
+Class diagram:
+
+![alt text][CommandPatternClassDiagram]
+
+Sequence diagram:
+
+![alt text][CommandPatternSequenceDiagram]
 ### b. When using Command pattern is more effective
 
 1. Macro recording: all user actions are represented by command objects, a program can record a 
