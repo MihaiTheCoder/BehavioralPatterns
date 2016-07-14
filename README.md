@@ -260,11 +260,20 @@ The memento pattern is a software design pattern that provides the ability to re
 
 6. Observer pattern
 ------------------
+[ObserverClassDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/Observer/ObserverClassDiagram.PNG "Observer class diagram"
+[ObserverSequenceDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/Observer/ObserverSequenceDiagram.PNG "Observer sequence diagram"
 
 ### a. Pattern description
 The observer pattern is a software design pattern in which an object, called the subject,
 maintains a list of its dependents, called observers, and notifies them automatically of any state changes, 
 usually by calling one of their methods.
+
+Class diagram for the observer pattern:
+![alt text][ObserverClassDiagram]
+
+Sequence diagram for the observer pattern:
+![alt text][ObserverSequenceDiagram]
+
 ### b. When to use Observer pattern
 
 ### c. Actors
