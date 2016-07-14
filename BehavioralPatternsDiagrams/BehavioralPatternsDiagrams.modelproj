@@ -42,6 +42,26 @@
     <Content Include="ChainOfResponsibility\ChainOfResponsibilitySequenceDiagram.PNG">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="CommandPattern\CommandPattern.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CommandPattern\CommandPattern.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CommandPattern\CommandPattern.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="CommandPattern\CommandPattern.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CommandPattern\CommandPattern.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CommandPattern\CommandPattern.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="CommandPattern\CommandPatternClassDiagram.PNG">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CommandPattern\CommandPatternSequenceDiagram.PNG">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Mediator\AirTrafficControl.classdiagram">
       <SubType>Content</SubType>
     </Content>
@@ -88,6 +108,7 @@
     </Content>
     <Folder Include="Mediator" />
     <Folder Include="ChainOfResponsibility" />
+    <Folder Include="CommandPattern" />
     <Folder Include="Observer" />
   </ItemGroup>
   <ItemGroup>

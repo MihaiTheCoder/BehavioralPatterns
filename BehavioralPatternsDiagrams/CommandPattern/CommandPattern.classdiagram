@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="46b45578-9f66-42e9-910c-e1935bb70b78" name="CommandPattern" linkedPackageId="5b3d2867-091b-4c44-8402-e5ff8d1158f4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="67b0d7ad-8683-4ab2-a70d-b56286ec5c30">
+      <profileInstance Id="26d81b20-16fc-4275-b821-a3af41fc4398" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="cd37ab01-7846-42b2-bf56-102910bff158">
+      <profileInstance Id="1d035d17-a913-4468-9ae9-de52f4ab1c69" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6fcfdbdf-188e-4ef1-8cc5-4066cde64096" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="267a01c9-a32e-4e54-bcd3-567ae37161fa" />
+        <suppliersInternal>
+          <dependency Id="f09364a0-c08b-4962-98d5-47a25b6487d7">
+            <classMoniker Id="61888848-0c02-46a4-aeb6-a1ece566d77a" LastKnownName="ConcreteCommand" />
+            <elementDefinition Id="068b21d3-bda6-4cfa-b400-aaf584930f41" />
+          </dependency>
+          <dependency Id="7a9e4b30-d635-4dee-b44e-d5eda0ce3ba7">
+            <classMoniker Id="17583d05-832f-44bb-81fd-1f42a88e42c6" LastKnownName="Receiver" />
+            <elementDefinition Id="6389bed3-d1b1-49ed-b3be-03aece9a5c3c" />
+          </dependency>
+          <dependency Id="7ba8fbaf-bc2a-4321-8ed0-d800d143824c">
+            <classMoniker Id="1ff59969-0e41-418b-b2ca-2f7fa64991c6" LastKnownName="Invoker" />
+            <elementDefinition Id="f1b17f37-2ffd-4083-8647-ce43bb028b17" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="60301345-9cc0-4467-a096-e3a257634d83" name="CreateCommands" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="28a7cb6e-8f1a-41d1-b348-7282670f12b1" />
+          </operation>
+          <operation Id="34295bd5-2ce2-4ed9-acfe-cb7ba07015c7" name="ExecuteOperation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d3446931-a972-4c23-b70b-0182ca346983" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="17583d05-832f-44bb-81fd-1f42a88e42c6" name="Receiver" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0d90286a-ceb7-408a-89a2-f5ffb4271d34" />
+        <ownedOperationsInternal>
+          <operation Id="363030c7-18b1-4c36-bf7e-198fee90b974" name="Action" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8c63bdd9-37ee-4220-9fc9-0d89ba0f4d34" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="3f48a3a8-6bf2-4562-b20d-4bcf471f26fc" name="Command" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b82fdb36-e0f3-4ac1-8a6e-11d3834f8ad8" />
+        <ownedOperations>
+          <operation Id="98c1128b-0512-477f-8020-b2b6167f5d99" name="Execute" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7d4367ba-d8b4-4bcb-9012-abc65ad0d33b" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="61888848-0c02-46a4-aeb6-a1ece566d77a" name="ConcreteCommand" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="03b176bc-19eb-42d0-ac47-fe91fba7b0a5" />
+        <suppliersInternal>
+          <interfaceRealization Id="a174055d-b04a-4889-85b5-80952c333d7e">
+            <interfaceMoniker Id="3f48a3a8-6bf2-4562-b20d-4bcf471f26fc" LastKnownName="Command" />
+            <elementDefinition Id="11a8278b-e7d4-41ed-b3b0-17564dce0bf6" />
+          </interfaceRealization>
+          <dependency Id="cb2d18d8-6c4e-411a-be1b-a36deace81b7">
+            <classMoniker Id="17583d05-832f-44bb-81fd-1f42a88e42c6" LastKnownName="Receiver" />
+            <elementDefinition Id="318ea739-f503-4640-8641-99b01eba819f" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="95f4dc90-d019-40fb-8f78-6e99ad3207fc" name="Execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6215bf3c-b96a-4ab7-ae6b-30afdb1aa66e" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1ff59969-0e41-418b-b2ca-2f7fa64991c6" name="Invoker" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7237cbf8-5693-4e1f-9c47-ded61e8978aa" />
+        <suppliersInternal>
+          <dependency Id="2414fedb-ab0c-4ffe-a391-b1d26dc99c31">
+            <classMoniker Id="61888848-0c02-46a4-aeb6-a1ece566d77a" LastKnownName="ConcreteCommand" />
+            <elementDefinition Id="2b5584aa-62ca-41b4-bef8-fbc197da914e" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="649c05ec-8cb6-4f47-8fdd-6b5cf25df073" name="ExecuteCommand" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cdd6ab9b-8a22-44f8-a57d-3d7b4653a1fd" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="5b3d2867-091b-4c44-8402-e5ff8d1158f4" name="BehavioralPatternsDiagrams">
+    <elementDefinition Id="ab0df1a1-6716-4f07-98a6-a60d1545f3de" />
+  </package>
+</logicalClassDesignerModel>
