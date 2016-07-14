@@ -69,7 +69,7 @@ namespace MediatorPattern.StockExchange
             if (!couldSellStocks)
             {
                 AddSeller(trader);
-                Console.WriteLine("No seller buys it at this price, try a lower price");
+                Console.WriteLine("No buyer buys it at this price, try a lower price");
             }
                 
 

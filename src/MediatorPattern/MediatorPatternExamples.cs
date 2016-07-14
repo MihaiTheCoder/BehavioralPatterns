@@ -27,6 +27,8 @@ namespace MediatorPattern
             FlightAirTrafficControlExample flightAirControl = new FlightAirTrafficControlExample();
             flightAirControl.Run();
 
+            GoToNextStep();
+
             //Taxi/Taxi center example
             //Chat application
             //GUI libraries
