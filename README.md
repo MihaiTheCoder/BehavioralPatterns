@@ -33,7 +33,7 @@ Patterns described:
 
 [8. Strategy pattern](https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/README.md#8-strategy-pattern)
 
-[9. Template pattern](https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/README.md#9-template-pattern)
+[9. Template method pattern](https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/README.md#9-template-method-pattern)
 
 [10 Visitor pattern](https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/README.md#10-visitor-pattern)
 
@@ -235,16 +235,16 @@ Mediator class diagram, while it is hard to make a generic one, as it can vary, 
 * Don't know
 
 ### f. Examples
-[StockExchangeMediator]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/Mediator/AirTraficControllerClassDiagram.PNG "stock exchange mediator class diagram"
+[AirTraficMediator]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/Mediator/AirTraficControllerClassDiagram.PNG "stock exchange mediator class diagram"
 * StockExchange example: Starting class: StockExchange.StockExchangeExample
 	* Have multiple traders Buy/Sell actions from stock exchange (simplified)
-	* Classs diagram: ![alt text][StockExchangeMediator]
 * Ground-Air traffic control example: Starting class: GroupAirTrafficControl.GroundAirTrafficControlExample
 	* Have 4 planes that want to land on an airport, the airport has 4 lines (one not working). 
 	They all talk to air traffic control(mediator) to ask permission to land, instead of talking to each other
 * Air traffic control example: Starting class: FlightAirTrafficControl.FlightAirTrafficControlExample
 	* Have multiple planes flying in the same zone, at different attitudes, instead of having them communicating to each other, 
 	they all comunicate to the tower, and the tower tells them if they need to change the altitude
+	* Classs diagram: ![alt text][AirTraficMediator]
 * Many to many relationship in code: No running class, only the models: User-UserToGroup-Group
 * Other possible examples that are not yet implemented -> Chat application, GUI Library, Taxi/Taxi Center
 
@@ -408,14 +408,14 @@ The strategy pattern defines a family of algorithms, encapsulates each algorithm
 	* Motivational example: ArrangeInterview.ArrangeInterviewMotivationalExample
  
 
-9. Template pattern
+9. Template method pattern
 ------------------
 
 ### a. Pattern description
 In software engineering, the template method pattern is a behavioral design pattern that defines the program skeleton of an algorithm in an operation,
 defering some steps to subclasses. It lets one redefine certain steps of an algorithm without changing the algorithm's structure.
 Template pattern works using 'the Hollywood principle' from the base class point of view: 'Don't call us, we'll call you'
-### b. When to use Template pattern
+### b. When to use Template method pattern
 * Let subclasses implement (through method overriding) behavior that can vary.
 * Avoid duplication in the code: the general workflow structure is implemented once in the abstract class's algorithm, and necessary variations are implemented in each of the subclasses.
 * Control at what point(s) subclassing is allowed. As opposed to a simple polymorphic override, where the base method would be entirely rewritten allowing radical change to the workflow, only the specific details of the workflow are allowed to change.
