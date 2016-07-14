@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="dd1a9095-5715-4113-9e2b-0bacf66d8825" name="TemplateMethodPattern" linkedPackageId="c3aa6ff4-b3b2-4d14-81c1-01a732b04367" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="0554c169-769e-4f29-96ae-aa392f5a8f6e">
+      <profileInstance Id="b563784a-ef34-497e-b238-319c180de6f8" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="7f106ec7-a466-44a3-9efc-749ecb259c66">
+      <profileInstance Id="6d1ce489-f41c-44df-a6a0-25757304a873" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a1f5e320-8e76-4e44-897e-9c74c926c76c" name="AbstractClass" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e81cd107-91f0-4e82-92a7-be61d0cb12a6" />
+        <ownedOperationsInternal>
+          <operation Id="cb6ad480-1ae8-4849-a5a5-fe69aa07215f" name="TemplateMethod" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="59ef1498-7150-4b04-90a1-c760b2d12d0e" />
+          </operation>
+          <operation Id="1c5edab7-4b23-4216-9b75-a0300cf63cd7" name="PrimitiveOperation1" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e0729ffb-6bb9-4667-babf-19f2dd88cbc3" />
+          </operation>
+          <operation Id="d5236c15-a680-4554-92cf-9b55fc216762" name="PrimitiveOperation2" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7b50f24e-8538-47a1-8ae2-63fe55d3b090" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="66ff5d8e-5d1a-4b96-a1d6-12adcaad9033" name="ConcreteClass" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="53767b1e-946a-42f4-8147-f2b4500c8c44" />
+        <generalsInternal>
+          <generalization Id="1eda8831-aede-408b-bf93-e44e5163bafb" isSubstitutable="false">
+            <classMoniker Id="a1f5e320-8e76-4e44-897e-9c74c926c76c" LastKnownName="AbstractClass" />
+            <elementDefinition Id="29b0751f-9e26-4676-8cf7-8dde5067f8fb" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="63f26915-399f-4e2d-9f69-7972171356d9" name="PrimitiveOperation1" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8ab9b907-cc45-4fc8-86f6-7b033a4cc1fb" />
+          </operation>
+          <operation Id="9a11f2cd-3eec-478a-8bf0-f642fcaf4ca1" name="PrimitiveOperation2" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d0e58477-c434-48bf-bb53-e285f59df56b" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="c3aa6ff4-b3b2-4d14-81c1-01a732b04367" name="BehavioralPatternsDiagrams">
+    <elementDefinition Id="ab0df1a1-6716-4f07-98a6-a60d1545f3de" />
+  </package>
+</logicalClassDesignerModel>

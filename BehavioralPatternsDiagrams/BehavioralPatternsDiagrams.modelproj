@@ -102,6 +102,26 @@
     <Content Include="Observer\ObserverSequenceDiagram.PNG">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="TemplateMethodPattern\TemplateMethodPattern.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TemplateMethodPattern\TemplateMethodPattern.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TemplateMethodPattern\TemplateMethodPattern.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="TemplateMethodPattern\TemplateMethodPattern.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TemplateMethodPattern\TemplateMethodPattern.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TemplateMethodPattern\TemplateMethodPattern.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TemplateMethodPattern\TemplateMethodPatternClassDiagram.PNG">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TemplateMethodPattern\TemplateMethodPatternSequenceDiagram.PNG">
+      <SubType>Content</SubType>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\BehavioralPatternsDiagrams.uml">
       <SubType>Content</SubType>
@@ -109,6 +129,7 @@
     <Folder Include="Mediator" />
     <Folder Include="ChainOfResponsibility" />
     <Folder Include="CommandPattern" />
+    <Folder Include="TemplateMethodPattern" />
     <Folder Include="Observer" />
   </ItemGroup>
   <ItemGroup>
