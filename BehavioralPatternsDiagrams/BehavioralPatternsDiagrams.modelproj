@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6a9badc0-54b1-4a23-a0c1-1c8b70f3f06c}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>BehavioralPatternsDiagrams</Name>
+    <RootNamespace>BehavioralPatternsDiagrams</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="Observer\ObserverClassDiagram.PNG">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Observer\ObserverPattern.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Observer\ObserverPattern.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Observer\ObserverPattern.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Observer\ObserverPattern.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Observer\ObserverPattern.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Observer\ObserverPattern.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Observer\ObserverSequenceDiagram.PNG">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\BehavioralPatternsDiagrams.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="Observer" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\src\MediatorPattern\MediatorPattern.xproj">
+      <Name>MediatorPattern</Name>
+      <Project>{2a63bd0a-9d07-4755-9b16-5ddbeb075b80}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\src\ObserverPattern\ObserverPattern.xproj">
+      <Name>ObserverPattern</Name>
+      <Project>{d48db558-0228-4ace-88a8-a202e5c57849}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
