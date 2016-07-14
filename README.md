@@ -112,9 +112,19 @@ For Create user: verify if the authenticated user is authorised to create a new 
 2. Command pattern
 ------------------
 ### Pattern description
+[CommandPatternClassDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/CommandPattern/CommandPatternClassDiagram.PNG "Command pattern class diagram"
+[CommandPatternSequenceDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/CommandPattern/CommandPatternSequenceDiagram.PNG "Command pattern sequence diagram"
+
 Command pattern is a behavioral design pattern in which an object is used to encapsulate 
 all information needed to perform an action or trigger an event at a later time
 
+Class diagram:
+
+![alt text][CommandPatternClassDiagram]
+
+Sequence diagram:
+
+![alt text][CommandPatternSequenceDiagram]
 ### b. When using Command pattern is more effective
 
 1. Macro recording: all user actions are represented by command objects, a program can record a 
