@@ -190,10 +190,12 @@ Some use the term container, some use the term aggregate, is one and the same th
 ------------------
 
 ### a. Pattern description
+[MediatorClassDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/Mediator/MediatorClassDiagram.PNG "Mediator class diagram"
 With the mediator pattern, communication between objects is encapsulated with a mediator object. 
 Objects no longer communicate directly with each other, but instead communicate through the mediator. 
 This reduces the dependencies between communicating objects, thereby lowering the coupling.
 
+Mediator class diagram, while it is hard to make a generic one, as it can vary, the following diagram ca be taken into consideration with a grain of salt: ![alt text][MediatorClassDiagram]
 ### b. When to use Mediator pattern
 * A collection of interacting objects whose interaction needs simplification
 * When you need to monitor/audit the communication between objects
