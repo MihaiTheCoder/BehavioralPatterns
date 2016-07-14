@@ -418,7 +418,7 @@ Template pattern works using 'the Hollywood principle' from the base class point
 
 Class diagram: 
 legend: 
-# is for protected method
+\# is for protected method
 Italic is for abstract method
 
 ![alt text](https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/TemplateMethodPattern/TemplateMethodPatternClassDiagram.PNG "Template method pattern class diagram")
