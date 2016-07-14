@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="AirTrafficControl">
+  <logicalClassDesignerModelMoniker Id="8a92ed4a-c35b-45dd-9280-0730341731f9" />
+  <nestedChildShapes>
+    <classShape Id="5eb3b453-73c9-476a-a03c-122fecd81cad" absoluteBounds="3.375, 1.875, 1.5, 1.2226562251647315" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="71109a7d-8264-40f8-adb4-96e82e102928" LastKnownName="Plane" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="ad652e36-511f-4e10-8733-bc13c0d4f7b1" absoluteBounds="3.39, 2.265, 1.4700000000000002, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="c566a0a2-0088-4169-8cfe-c09d2c820d59" absoluteBounds="3.39, 2.6363281125823654, 1.4700000000000002, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <interfaceShape Id="c3b8e74e-53d5-4f19-a1ae-f020b32a1bb0" absoluteBounds="5.875, 1.875, 2.75, 1.2226562251647315" hideQualifiedName="false" increaseHeight="0" customColor="207, 223, 191">
+      <interfaceMoniker Id="16952a25-5728-466c-af5a-af367839e3ba" LastKnownName="IAirTraffiControlTower" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="29ab7c2a-a282-4e83-a84d-58216f71e0d1" absoluteBounds="5.89, 2.265, 2.7199999999999998, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="b853d2cc-16bc-47b6-ae33-0d1cd78969ed" absoluteBounds="5.89, 2.4761718675494193, 2.7199999999999998, 0.52148435761531187" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </interfaceShape>
+    <dependencyConnector edgePoints="[(4.875 : 2.48632811258237); (5.875 : 2.48632811258237)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="2314f81c-a078-465e-81d6-af2a7272065e" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="5eb3b453-73c9-476a-a03c-122fecd81cad" />
+        <interfaceShapeMoniker Id="c3b8e74e-53d5-4f19-a1ae-f020b32a1bb0" />
+      </nodes>
+    </dependencyConnector>
+    <classShape Id="ddc8aaf1-ee7c-44ed-9e3d-5df082cc6924" absoluteBounds="6, 3.625, 2.5, 1.3828124701976767" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="6b77506a-ecc6-41af-ae6c-4de48de92ea8" LastKnownName="AirTrafficControlTower" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="8810c1ae-0352-4617-8de2-fa6d84b55913" absoluteBounds="6.015, 4.015, 2.4699999999999998, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="3a7ab112-cb0e-4856-9a4a-b1cd542fb2f9" absoluteBounds="6.015, 4.3863281125823654, 2.4699999999999998, 0.52148435761531187" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <realizationConnector edgePoints="[(7.25 : 3.625); (7.25 : 3.09765622516473)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="false">
+      <interfaceRealizationMoniker Id="1c449cc0-9f2e-4cc5-bc3f-67b497f0b152" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="ddc8aaf1-ee7c-44ed-9e3d-5df082cc6924" />
+        <interfaceShapeMoniker Id="c3b8e74e-53d5-4f19-a1ae-f020b32a1bb0" />
+      </nodes>
+    </realizationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

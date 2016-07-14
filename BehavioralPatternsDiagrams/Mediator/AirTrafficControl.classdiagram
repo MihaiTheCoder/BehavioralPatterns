@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="8a92ed4a-c35b-45dd-9280-0730341731f9" name="AirTrafficControl" linkedPackageId="d2601d49-efd4-4dd7-8c21-3930ecd6b0a2" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="3cee9d6f-69dd-4182-88ad-8d946b5ca3e6">
+      <profileInstance Id="65c8f383-e7f8-48d1-8c6d-2aa86b220566" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="89dd81a7-ffbc-4030-8458-e46b2d711c59">
+      <profileInstance Id="bb155daf-90aa-4d36-b89c-dac822dd880a" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="71109a7d-8264-40f8-adb4-96e82e102928" name="Plane" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2658e8f7-5e89-4ae2-9556-141e1290c8b0" />
+        <suppliersInternal>
+          <dependency Id="2314f81c-a078-465e-81d6-af2a7272065e">
+            <interfaceMoniker Id="16952a25-5728-466c-af5a-af367839e3ba" LastKnownName="IAirTraffiControlTower" />
+            <elementDefinition Id="9e7276df-aa09-44d1-a993-5b782d0a31ad" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="c143b66d-9360-435a-8d96-eb1b6abb99f5" name="Altitude" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b95ab415-743a-4cec-ad6c-17f43613434a" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="bb41b25d-ebbe-4af8-9350-06dc5d7607e4" name="ChangeAltitude" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c5b4c1cb-37bf-4352-9b36-ddd4e53cd53b" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="16952a25-5728-466c-af5a-af367839e3ba" name="IAirTraffiControlTower" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3e510577-ed14-4c89-a52f-b15f64569621" />
+        <ownedOperations>
+          <operation Id="b56d651c-9e7f-414a-812f-a12c2113f049" name="StartMonitor" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3565d1e7-3599-4230-8615-daea9ad44ed2" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4aea46f2-3829-4311-93ca-4866cdcba37b" name="plane" direction="In">
+                  <elementDefinition Id="032d6ef2-3c3d-44d6-9237-66a8c9d80cc3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a00cd492-39b1-4721-a802-b47246620aa1" LastKnownName="Plane" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="5fedd0bf-a1cb-478a-a5f9-59e1a752671d" name="UpdateLocation" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5dc36dfe-8b08-46f6-b212-0acde1f7734e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5d61cda7-39ab-4e14-8b81-4cf75b3a0d12" name="plane" direction="In">
+                  <elementDefinition Id="683ddaaf-71fc-49e7-9b1f-57ff0bdabeac" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a00cd492-39b1-4721-a802-b47246620aa1" LastKnownName="Plane" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="a00cd492-39b1-4721-a802-b47246620aa1" name="Plane" isAbstract="false" isLeaf="false" cachedFullName="BehavioralPatternsDiagrams::Plane">
+        <elementDefinition Id="2658e8f7-5e89-4ae2-9556-141e1290c8b0" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6b77506a-ecc6-41af-ae6c-4de48de92ea8" name="AirTrafficControlTower" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="93fe83ab-461b-4d4f-903a-fade132277b6" />
+        <suppliersInternal>
+          <interfaceRealization Id="1c449cc0-9f2e-4cc5-bc3f-67b497f0b152">
+            <interfaceMoniker Id="16952a25-5728-466c-af5a-af367839e3ba" LastKnownName="IAirTraffiControlTower" />
+            <elementDefinition Id="7206faa5-9b29-40e1-8d22-e1f628c44c54" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="c8266c70-1ddd-4f2a-8e3f-54c42571517a" name="PlanesMonitored" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b9172721-9f62-4e87-8281-429801791275" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="548eccc7-6398-4fa9-8c4a-0381af079f55" name="StartMonitor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9192610a-f1e4-495d-b6d2-29ffd7edcb33" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fa6784e3-8bea-44e0-970c-2cd9ff2cf8b5" name="plane" direction="In">
+                  <elementDefinition Id="b4e72bd7-6f7c-4944-b3ac-12c3258ee8cc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a00cd492-39b1-4721-a802-b47246620aa1" LastKnownName="Plane" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="6eb8eab1-e615-4f2e-863b-5b8eb4ed64d5" name="UpdateLocation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="097d71ff-aae4-4116-8bae-3a7d453fab1a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e48704f1-5a67-495d-bb70-0081574c0b24" name="plane" direction="In">
+                  <elementDefinition Id="8eb9708e-ac98-4492-88e6-8132697eee2b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a00cd492-39b1-4721-a802-b47246620aa1" LastKnownName="Plane" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="d2601d49-efd4-4dd7-8c21-3930ecd6b0a2" name="BehavioralPatternsDiagrams">
+    <elementDefinition Id="ab0df1a1-6716-4f07-98a6-a60d1545f3de" />
+  </package>
+</logicalClassDesignerModel>
