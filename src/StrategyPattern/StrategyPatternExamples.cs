@@ -1,11 +1,9 @@
 ﻿using StrategyPattern.ArrangeInterview;
 using StrategyPattern.ArrangeInterview.Strategy;
 using StrategyPattern.LoopWithException;
+using StrategyPattern.LoopWithoutLoop;
 using StrategyPattern.ShippingCalculator;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace StrategyPattern
 {
