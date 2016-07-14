@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="4d1d3a8f-9526-48d0-949a-a499fcc4d292" name="ChainOfResponsibility" linkedPackageId="9ae658a6-c4e6-474d-b2ef-5219e05a281e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="4e386c96-9685-429d-9744-03cd1e5140a6">
+      <profileInstance Id="c57659d8-f6eb-4841-9b5d-29cedaa3361a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ff21743b-c683-492c-a921-a0bae568fa6f">
+      <profileInstance Id="0ee547fa-832c-4247-bda3-1d2ebf05ad4a" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b7af6ad7-0b34-4fbb-96fb-278ad53b331e" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c2aac2be-3419-4131-8e1d-7786e97a7c9b" />
+        <suppliersInternal>
+          <dependency Id="f164c40d-5b88-4a3d-84ef-0ebedf975abc">
+            <classMoniker Id="f48b9244-6b3a-486a-9c4c-b43afaec4979" LastKnownName="ConcreteHandler" />
+            <elementDefinition Id="3735e6b4-e69f-46ce-bada-c6db43dda19e" />
+          </dependency>
+          <dependency Id="471f410b-3a3e-450c-9c5d-21fbb8ee0b0e">
+            <classMoniker Id="1595bda3-b1c9-4d55-a764-f3328c763904" LastKnownName="ConcreteHandler2" />
+            <elementDefinition Id="746893ce-2a88-44aa-b641-3a7289fb67d3" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="6b170bda-e81b-4353-9e27-01c9c80d3199" name="CreateChain" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6a71523e-5e35-45c4-a887-e64219f2cf94" />
+          </operation>
+          <operation Id="8b40e4ae-79d5-40ed-b297-b6da0ee47408" name="HandleOperation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a4b01292-65da-4107-9e32-51ad4bcce182" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="feda94ff-8774-4425-8ffc-435998949294" name="Handler" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2b0056d3-bd67-414d-983f-e48563547676" />
+        <ownedOperationsInternal>
+          <operation Id="f1c2c980-6d16-4f57-8e0f-85e31a3b8332" name="Handle" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2e4dff4e-fb64-4fa7-a5f4-5347ab8b0e7f" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1595bda3-b1c9-4d55-a764-f3328c763904" name="ConcreteHandler2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4abf6329-c753-4b4a-b24a-f99491fbed73" />
+        <generalsInternal>
+          <generalization Id="675e1c9b-85ec-42e9-8c2c-434ceccb7209" isSubstitutable="false">
+            <classMoniker Id="feda94ff-8774-4425-8ffc-435998949294" LastKnownName="Handler" />
+            <elementDefinition Id="61df277a-35bc-400f-97f4-ea4bde18ca35" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="92e5fc7f-bb49-49bf-89df-8dd083c4ad55" name="Handle" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="45f69723-3f2f-4edc-964f-431a50f7c27e" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f48b9244-6b3a-486a-9c4c-b43afaec4979" name="ConcreteHandler" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c4c9bd0f-4117-4fe4-bffe-37ffbce317b3" />
+        <generalsInternal>
+          <generalization Id="23fbb6f7-b8e5-4ae8-8b9b-b262656d32b6" isSubstitutable="false">
+            <classMoniker Id="feda94ff-8774-4425-8ffc-435998949294" LastKnownName="Handler" />
+            <elementDefinition Id="9fd2072c-f668-4c0f-8778-e61df27e24c6" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="478d87ef-f48c-40ec-ad25-a200a4387f1a" name="Handle" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d23024d3-f247-4250-b605-d317b8a8b9b8" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="9ae658a6-c4e6-474d-b2ef-5219e05a281e" name="BehavioralPatternsDiagrams">
+    <elementDefinition Id="ab0df1a1-6716-4f07-98a6-a60d1545f3de" />
+  </package>
+</logicalClassDesignerModel>

@@ -22,6 +22,26 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="ChainOfResponsibility\ChainOfResponsibility.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ChainOfResponsibility\ChainOfResponsibility.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ChainOfResponsibility\ChainOfResponsibility.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ChainOfResponsibility\ChainOfResponsibility.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ChainOfResponsibility\ChainOfResponsibility.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ChainOfResponsibility\ChainOfResponsibility.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ChainOfResponsibility\ChainOfResponsibilityClassDiagram.PNG">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ChainOfResponsibility\ChainOfResponsibilitySequenceDiagram.PNG">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Mediator\AirTrafficControl.classdiagram">
       <SubType>Content</SubType>
     </Content>
@@ -67,6 +87,7 @@
       <SubType>Content</SubType>
     </Content>
     <Folder Include="Mediator" />
+    <Folder Include="ChainOfResponsibility" />
     <Folder Include="Observer" />
   </ItemGroup>
   <ItemGroup>
