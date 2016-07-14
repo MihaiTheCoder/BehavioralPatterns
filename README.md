@@ -235,16 +235,16 @@ Mediator class diagram, while it is hard to make a generic one, as it can vary, 
 * Don't know
 
 ### f. Examples
-[StockExchangeMediator]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/Mediator/AirTraficControllerClassDiagram.PNG "stock exchange mediator class diagram"
+[AirTraficMediator]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/Mediator/AirTraficControllerClassDiagram.PNG "stock exchange mediator class diagram"
 * StockExchange example: Starting class: StockExchange.StockExchangeExample
 	* Have multiple traders Buy/Sell actions from stock exchange (simplified)
-	* Classs diagram: ![alt text][StockExchangeMediator]
 * Ground-Air traffic control example: Starting class: GroupAirTrafficControl.GroundAirTrafficControlExample
 	* Have 4 planes that want to land on an airport, the airport has 4 lines (one not working). 
 	They all talk to air traffic control(mediator) to ask permission to land, instead of talking to each other
 * Air traffic control example: Starting class: FlightAirTrafficControl.FlightAirTrafficControlExample
 	* Have multiple planes flying in the same zone, at different attitudes, instead of having them communicating to each other, 
 	they all comunicate to the tower, and the tower tells them if they need to change the altitude
+	* Classs diagram: ![alt text][AirTraficMediator]
 * Many to many relationship in code: No running class, only the models: User-UserToGroup-Group
 * Other possible examples that are not yet implemented -> Chat application, GUI Library, Taxi/Taxi Center
 
