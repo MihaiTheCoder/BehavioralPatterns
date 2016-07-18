@@ -255,6 +255,17 @@ Mediator class diagram, while it is hard to make a generic one, as it can vary, 
 ### a. Pattern description
 The memento pattern is a software design pattern that provides the ability to restore an object to its previous state (undo via rollback).
 
+[MementoClassDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/Memento/MementoClassDiagram.PNG "Memento class diagram"
+[MementoSequenceDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/Memento/MementoSequenceDiagram.PNG "Memento sequence diagram"
+
+Class diagram:
+
+![alt text][MementoClassDiagram]
+
+Sequence diagram:
+
+![alt text][MementoSequenceDiagram]
+
 ### b. When to use Memento pattern
 * When you need to be able to track the state of an object,or/and restore previous states as needed
 * When you cannot use simple operation undo/redo, by saving the commands (when there are side effects to the operations) - example translation
