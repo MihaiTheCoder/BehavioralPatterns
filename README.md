@@ -285,7 +285,8 @@ Sequence diagram:
 
 ### e. Flavors
 * Classical memento: Save each time the entire state
-* Iterative memento: Save the changes that occured from the previous state(delta), instead of saving the entire state again, (e.g. Git)
+* Iterative memento: Save the changes that occured from the previous state(delta), instead of saving the entire state again
+* Compressed memento: You could store the objects compressed, generally you would use delta encoding (like git) to store the files. see more about this in comments in code
 
 ### f. Examples
 * Employee example1: Starting class: Employee.EmployeeExample 
