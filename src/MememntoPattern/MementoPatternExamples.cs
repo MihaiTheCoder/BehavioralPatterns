@@ -1,5 +1,6 @@
 ﻿using MememntoPattern.Employee;
 using MememntoPattern.EmployeeSerialized;
+using MememntoPattern.IterativeEmployee;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +27,10 @@ namespace MememntoPattern
             EmployeeSerializedExample empSerExample = new EmployeeSerializedExample();
             empSerExample.Run();
 
+            GoToNextStep();
+
+            EmployeeIterativeExample empIterEx = new EmployeeIterativeExample();
+            empIterEx.Run();
             GoToNextStep();
 
             Console.WriteLine(GetPitfalls());
