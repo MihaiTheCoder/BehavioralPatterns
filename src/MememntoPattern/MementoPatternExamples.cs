@@ -40,6 +40,11 @@ namespace MememntoPattern
             //Basic memento with compression
             EmployeeCompressedExample empComp = new EmployeeCompressedExample();
             empComp.Run();
+            //We used gzip encoding in here, but usually, one would use:
+            //https://en.wikipedia.org/wiki/Delta_encoding
+            //Git goes the middle way, it first stores the objects as they are.
+            //and from time to time, it compresses them, by creating pack files
+            //http://alblue.bandlem.com/2011/09/git-tip-of-week-objects-and-packfiles.html
 
             Console.WriteLine(GetPitfalls());
         }
