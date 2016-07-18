@@ -62,6 +62,26 @@
     <Content Include="CommandPattern\CommandPatternSequenceDiagram.PNG">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="IteratorPattern\Iterator.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IteratorPattern\Iterator.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>IteratorPattern\Iterator.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="IteratorPattern\Iterator.classdiagram.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IteratorPattern\Iterator.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IteratorPattern\Iterator.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>IteratorPattern\Iterator.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="IteratorPattern\IteratorSequenceDiagram.PNG">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Mediator\AirTrafficControl.classdiagram">
       <SubType>Content</SubType>
     </Content>
@@ -150,6 +170,7 @@
     <Folder Include="ChainOfResponsibility" />
     <Folder Include="CommandPattern" />
     <Folder Include="Memento" />
+    <Folder Include="IteratorPattern" />
     <Folder Include="TemplateMethodPattern" />
     <Folder Include="Observer" />
   </ItemGroup>
