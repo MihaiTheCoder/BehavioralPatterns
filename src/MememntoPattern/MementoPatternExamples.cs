@@ -1,4 +1,5 @@
-﻿using MememntoPattern.Employee;
+﻿using MememntoPattern.CompressedEmployee;
+using MememntoPattern.Employee;
 using MememntoPattern.EmployeeSerialized;
 using MememntoPattern.IterativeEmployee;
 using System;
@@ -19,19 +20,26 @@ namespace MememntoPattern
 
             GoToNextStep();
 
+            //Basic example
             EmployeeExample empExample = new EmployeeExample();
             empExample.Run();
 
             GoToNextStep();
 
+            //Limited stack with serialization
             EmployeeSerializedExample empSerExample = new EmployeeSerializedExample();
             empSerExample.Run();
 
             GoToNextStep();
-
+            
+            //Iterative memento
             EmployeeIterativeExample empIterEx = new EmployeeIterativeExample();
             empIterEx.Run();
             GoToNextStep();
+
+            //Basic memento with compression
+            EmployeeCompressedExample empComp = new EmployeeCompressedExample();
+            empComp.Run();
 
             Console.WriteLine(GetPitfalls());
         }
