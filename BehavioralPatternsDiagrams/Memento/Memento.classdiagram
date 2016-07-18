@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="bacf00e4-fe85-4824-a58d-c92bffb01dd2" name="Memento" linkedPackageId="976257b6-d708-4c0a-ad7a-01fcdfb5ea1b" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="acef940d-af78-439b-bcf0-bfcc819d6ac4">
+      <profileInstance Id="d156cd01-edf7-430e-835e-0deb3af82572" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="873dec59-f9c7-4022-b8f9-38bb04d95994">
+      <profileInstance Id="f5f98cb1-cb93-43be-bb2d-086493094faa" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1f43adf8-8ecf-4c11-a0a9-92d6bb180138" name="Caretaker" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="38b9dca0-06d3-4c0c-aeab-f5a6c2201b6a" />
+        <suppliersInternal>
+          <dependency Id="47d2f490-d01b-4ef0-b5e9-fd7dd9ee882d">
+            <classMoniker Id="4114b186-71ff-476c-9284-cd55fbf1350a" LastKnownName="Memento" />
+            <elementDefinition Id="a202200f-231e-4930-92e2-e89b3555ed0c" />
+          </dependency>
+          <dependency Id="97350498-af5e-46c9-833f-1dc7f56704ca">
+            <classMoniker Id="ac0e9f1e-e00e-42ea-87c9-84a891aa32c1" LastKnownName="Originator" />
+            <elementDefinition Id="4c44506c-8330-4e42-bfba-3448b7353e30" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="7ce97671-d68b-46da-a7cb-a26381c9c590" name="Mementos" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <lowerValueInternal>
+              <literalString Id="851c1f9d-904f-4e4c-a892-d6779950460b" name="Lower" value="1">
+                <elementDefinition Id="28d001c1-d695-423f-9374-68891d591c8c" />
+              </literalString>
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString Id="9fbfdcbc-e667-4299-8cf3-445fbe134ff8" name="Upper" value="1">
+                <elementDefinition Id="2c90d110-677e-4e51-b799-60d6b5ca473a" />
+              </literalString>
+            </upperValueInternal>
+            <elementDefinition Id="2d0f057e-2606-47da-804a-f7a0107a789f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="92f03908-2c64-4119-b1ee-53f72ce01d02" LastKnownName="List&lt;Memento&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="3229af90-3aba-4d92-a636-e2669b94b5e2" name="Save" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="12812525-6255-451e-b07f-aef2a370803d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f3fed1d0-e924-4c66-9251-8bbbb0d0f62d" name="originator" direction="In">
+                  <elementDefinition Id="7a03d1cd-7a80-4d8d-bee6-709958f76435" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="44cc94f4-05af-4f1d-ad8c-6570ba017ee6" LastKnownName="Originator" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="afae6c60-5283-4d68-aac0-4dd9a88d3c82" name="Revert" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c661c4aa-cd84-4f4a-bdda-d3662d789613" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6c6696f5-89c8-4b79-b3a7-c33d0fc47142" name="originator" direction="In">
+                  <elementDefinition Id="478119b4-b5d6-42b0-a161-85e18084bc3d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="44cc94f4-05af-4f1d-ad8c-6570ba017ee6" LastKnownName="Originator" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ac0e9f1e-e00e-42ea-87c9-84a891aa32c1" name="Originator" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="12e48233-205a-4bac-9410-9876faef295d" />
+        <suppliersInternal>
+          <dependency Id="65f185af-110a-4123-8ed3-d064ccfdf2ad">
+            <classMoniker Id="4114b186-71ff-476c-9284-cd55fbf1350a" LastKnownName="Memento" />
+            <elementDefinition Id="e03b64b4-0fe0-4bff-8a21-7b9cf8c56068" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="cd8e1a76-ac1c-4b45-989e-4853655ba6a4" name="Revert" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="86c8d906-69a4-4d2c-8fa7-47dbcc519eea" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a4bc65a2-a502-455a-be9e-3189d06cea54" name="originator" direction="In">
+                  <elementDefinition Id="57d18c80-7145-4ac4-959f-a2596cfa4be7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="cc2771ef-bef6-4aaf-833b-e57c0f4e461f" LastKnownName="Originator" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="a0253fc7-ec48-44e9-84db-363a7fd1eba5" name="Save" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="477148b6-91ce-47e0-af91-a91c687fef2d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="78c72609-f790-4d4a-82d2-5fbe4f3b420c" direction="Return">
+                  <elementDefinition Id="0cf17ea1-9661-4557-918b-db64f76cf51d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="45738b52-3dcb-42b9-bebd-3b1fbdb74394" LastKnownName="Memento" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4114b186-71ff-476c-9284-cd55fbf1350a" name="Memento" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d399eae3-b1b0-4d9d-983c-1be516f64715" />
+        <ownedAttributesInternal>
+          <property Id="3ec853aa-844d-4ab3-bffd-f7f5421da75a" name="State" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="138a61ac-f606-49cd-a6af-24a4ef6354cb" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="44cc94f4-05af-4f1d-ad8c-6570ba017ee6" name="Originator" isAbstract="false" isLeaf="false" cachedFullName="BehavioralPatternsDiagrams::Originator">
+        <elementDefinition Id="12e48233-205a-4bac-9410-9876faef295d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="cc2771ef-bef6-4aaf-833b-e57c0f4e461f" name="Originator" isAbstract="false" isLeaf="false" cachedFullName="BehavioralPatternsDiagrams::Originator">
+        <elementDefinition Id="12e48233-205a-4bac-9410-9876faef295d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="45738b52-3dcb-42b9-bebd-3b1fbdb74394" name="Memento" isAbstract="false" isLeaf="false" cachedFullName="BehavioralPatternsDiagrams::Memento">
+        <elementDefinition Id="d399eae3-b1b0-4d9d-983c-1be516f64715" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a326adf4-5e9e-4a18-bc86-8678fe27ad52" name="Memento" isAbstract="false" isLeaf="false" cachedFullName="BehavioralPatternsDiagrams::Memento">
+        <elementDefinition Id="d399eae3-b1b0-4d9d-983c-1be516f64715" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="92f03908-2c64-4119-b1ee-53f72ce01d02" name="List&lt;Memento&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Memento&gt;">
+        <elementDefinition Id="b0614f10-95f9-43f2-b456-ec88f0af5da7" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="976257b6-d708-4c0a-ad7a-01fcdfb5ea1b" name="BehavioralPatternsDiagrams">
+    <elementDefinition Id="ab0df1a1-6716-4f07-98a6-a60d1545f3de" />
+  </package>
+</logicalClassDesignerModel>

@@ -82,6 +82,26 @@
       <SubType>Content</SubType>
       <DependentUpon>Mediator\MediatorPattern.classdiagram</DependentUpon>
     </Content>
+    <Content Include="Memento\Memento.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Memento\Memento.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Memento\Memento.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Memento\Memento.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Memento\Memento.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Memento\Memento.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Memento\MementoClassDiagram.PNG">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Memento\MementoSequenceDiagram.PNG">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Observer\ObserverClassDiagram.PNG">
       <SubType>Content</SubType>
     </Content>
@@ -129,6 +149,7 @@
     <Folder Include="Mediator" />
     <Folder Include="ChainOfResponsibility" />
     <Folder Include="CommandPattern" />
+    <Folder Include="Memento" />
     <Folder Include="TemplateMethodPattern" />
     <Folder Include="Observer" />
   </ItemGroup>
