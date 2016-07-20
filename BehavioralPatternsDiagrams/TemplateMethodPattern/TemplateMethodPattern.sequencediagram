@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="e918cf97-8039-4484-86a6-76146eaf05f3" name="TemplateMethodPattern" linkedPackageId="e526e938-514e-45cf-b413-47f890ebc819" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="8885a26d-201c-461d-94b4-52461837f4ab">
-      <profileInstance Id="bad6e688-efa0-4585-8ff8-db317018232f" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="e51e2048-0471-4d88-9032-b916ff9c0fb4">
-      <profileInstance Id="b284c718-0c63-4bed-9645-fe988b0f8de9" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <interaction Id="509217a3-c639-47d9-819c-8d117f451d25" name="TemplateMethodPattern" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
@@ -329,7 +315,7 @@
               <messageOccurrenceSpecificationMoniker Id="cd404c67-bec9-45c0-9f58-01adf31c03fa" LastKnownName="MessageOccurrenceSpecification8" />
             </receiveEvent>
           </message>
-          <message Id="43a9bd40-e8ce-444c-b2b0-ee0d5ddc4846" name="TemplateMethod" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="43a9bd40-e8ce-444c-b2b0-ee0d5ddc4846" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ TemplateMethod()">
             <elementDefinition Id="f0ffdcc0-d10e-4466-badc-2bfbd778177d" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="298a0123-7199-4b4d-9b4e-1eab1d650c22" LastKnownName="MessageOccurrenceSpecification17" />
@@ -338,7 +324,7 @@
               <messageOccurrenceSpecificationMoniker Id="bec0f86a-1413-4916-8d09-ecb5fdfd74a9" LastKnownName="MessageOccurrenceSpecification18" />
             </receiveEvent>
           </message>
-          <message Id="8f2ae570-d607-4a48-b0ea-90e30e1f9e13" name="PrimitiveOperation1" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="8f2ae570-d607-4a48-b0ea-90e30e1f9e13" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="# PrimitiveOperation1()">
             <elementDefinition Id="1661414b-70a4-4061-8283-f1a1d033ccf1" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="9d0e1ec9-bc23-4858-b2ba-4846db119a33" LastKnownName="MessageOccurrenceSpecification21" />
@@ -356,7 +342,7 @@
               <messageOccurrenceSpecificationMoniker Id="298f675c-5b32-4f80-8df6-ce50b2cd53af" LastKnownName="MessageOccurrenceSpecification24" />
             </receiveEvent>
           </message>
-          <message Id="c30aeaad-9a2e-4d41-abb9-5514041f988a" name="PrimitiveOperation2" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="c30aeaad-9a2e-4d41-abb9-5514041f988a" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="# PrimitiveOperation2()">
             <elementDefinition Id="72877720-842f-4016-8a93-91ef619106ae" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="a8024af2-a37c-43c6-b39b-1bf151572c84" LastKnownName="MessageOccurrenceSpecification25" />
@@ -464,5 +450,19 @@
   </packagedElements>
   <package Id="e526e938-514e-45cf-b413-47f890ebc819" name="BehavioralPatternsDiagrams">
     <elementDefinition Id="ab0df1a1-6716-4f07-98a6-a60d1545f3de" />
+    <profileInstances>
+      <packageHasProfileInstances Id="8885a26d-201c-461d-94b4-52461837f4ab">
+        <profileInstance Id="bad6e688-efa0-4585-8ff8-db317018232f" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="e51e2048-0471-4d88-9032-b916ff9c0fb4">
+        <profileInstance Id="b284c718-0c63-4bed-9645-fe988b0f8de9" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </SequenceDesignerModel>

@@ -384,6 +384,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="41a7751b-c182-4d5c-90c7-c07ffb6c476c"
             name="MessageOccurrenceSpecification1">
+            <event>
+              <sendOperationEventMoniker
+                Id="d88b9f33-2bb1-47e3-8175-ed495abec11f"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="c0779f22-1046-4274-82c8-6bb57c80ff75"
@@ -394,6 +399,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="476ec1a6-61d7-4c98-be3e-609179f18a73"
             name="MessageOccurrenceSpecification2">
+            <event>
+              <receiveOperationEventMoniker
+                Id="fd50d540-95b8-47fc-a6d3-4233648bff8a"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="6afe3838-9e61-4b60-8ef0-c93308641dfc"
@@ -492,6 +502,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="c4d592c5-6805-4726-8954-79d90ef408b8"
             name="MessageOccurrenceSpecification6">
+            <event>
+              <receiveOperationEventMoniker
+                Id="bc4ce991-015f-42b2-a5aa-98707e4607d3"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="6afe3838-9e61-4b60-8ef0-c93308641dfc"
@@ -502,6 +517,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="8adabafa-efaa-4d57-b017-e89f5f4abbb2"
             name="MessageOccurrenceSpecification5">
+            <event>
+              <sendOperationEventMoniker
+                Id="1fd00adf-5214-404e-9dbd-ee77f62ccf96"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="35ab0eff-2a61-4f51-bdba-e3dba6b8ac02"
@@ -682,6 +702,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="df4e1655-caa7-46d3-b100-723391e4eeaa"
             name="MessageOccurrenceSpecification11">
+            <event>
+              <sendOperationEventMoniker
+                Id="2e7f81f8-ec1f-43a8-a444-0457b4c26e8f"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="6afe3838-9e61-4b60-8ef0-c93308641dfc"
@@ -692,6 +717,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="8a84bfe9-dc63-4645-b074-b74a47905fc0"
             name="MessageOccurrenceSpecification12">
+            <event>
+              <receiveOperationEventMoniker
+                Id="df58f16d-0abc-47eb-9d3f-6e9a6526f48d"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="c0779f22-1046-4274-82c8-6bb57c80ff75"
@@ -790,6 +820,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="9ffdb988-5c61-4bf1-b61f-389a304b6292"
             name="MessageOccurrenceSpecification15">
+            <event>
+              <sendOperationEventMoniker
+                Id="091e71c0-5990-455e-9efb-45331e750bbe"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="6afe3838-9e61-4b60-8ef0-c93308641dfc"
@@ -800,6 +835,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="10714ae5-9bb9-4892-af93-7c9551dca7f0"
             name="MessageOccurrenceSpecification16">
+            <event>
+              <receiveOperationEventMoniker
+                Id="e11f23d1-cb52-41ce-9185-7d25f96d4092"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="35ab0eff-2a61-4f51-bdba-e3dba6b8ac02"
@@ -968,10 +1008,11 @@ Visitable2.Accept(visitor);</body>
         <messages>
           <message
             Id="cb5643d5-d8c0-4732-929f-f3f81f4a37da"
-            name="Attach"
+            name="Attach(this)"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ Attach(observer : Observer)">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="41a7751b-c182-4d5c-90c7-c07ffb6c476c"
@@ -1005,10 +1046,11 @@ Visitable2.Accept(visitor);</body>
           </message>
           <message
             Id="526f9a52-8870-4dfc-9dd2-007bfe043344"
-            name="Attach"
+            name="Attach(this)"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ Attach(observer : Observer)">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="8adabafa-efaa-4d57-b017-e89f5f4abbb2"
@@ -1064,7 +1106,8 @@ Visitable2.Accept(visitor);</body>
             name="Update"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ Update()">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="df4e1655-caa7-46d3-b100-723391e4eeaa"
@@ -1101,7 +1144,8 @@ Visitable2.Accept(visitor);</body>
             name="Update"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ Update()">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="9ffdb988-5c61-4bf1-b61f-389a304b6292"
@@ -1424,21 +1468,113 @@ Visitable2.Accept(visitor);</body>
               LastKnownName="Mediator"
               LastKnownLocation="BehavioralPatternsDiagrams.uml" />
           </interfaceRealization>
-          <dependency
-            Id="c01f09c7-6067-426b-a456-560a323e3e7b">
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="13e880cb-643c-434c-9c7c-9b6bd90b7993"
+            isDerived="false"
+            sourceEndRoleName="ConcreteMediator"
+            targetEndRoleName="Colleague2"
+            isLeaf="false"
+            isAbstract="false">
             <classMoniker
               Id="119f7668-0e13-4d04-992d-b5c1dc0cb7e5"
               LastKnownName="Colleague2"
               LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-          </dependency>
-          <dependency
-            Id="ea1003c3-de1c-4908-840c-812a42e482f4">
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="531c31cd-dda4-4f77-833b-9df8f250f56e"
+                  name="ConcreteMediator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a8b5960b-f229-491d-962b-f3a6f4bc669e"
+                  name="Colleague2"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="16d181a9-34e3-4270-9831-a6a576829810"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="62889241-def8-4ac1-9834-0b246925cdd2"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d8199c89-fa8b-40f8-845e-e2098e2fbab5"
+            isDerived="false"
+            sourceEndRoleName="ConcreteMediator"
+            targetEndRoleName="Colleague1"
+            isLeaf="false"
+            isAbstract="false">
             <classMoniker
               Id="94a81001-fbfe-4119-a081-ee923611c554"
               LastKnownName="Colleague1"
               LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-          </dependency>
-        </suppliersInternal>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b0d00fea-3154-414f-92d5-35effff5e409"
+                  name="ConcreteMediator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e4b15047-f52e-440b-b314-1baf1d4d835b"
+                  name="Colleague1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7207de2f-85b1-4b8f-841b-03987c5f9fd6"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="457350a2-2296-48c2-8cc1-7df9a5c58229"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedOperationsInternal>
           <operation
             Id="c25182c6-dce4-4f01-9683-19740c542d36"
@@ -1899,6 +2035,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="27d4deb6-91a0-4e19-b88b-bcf6feb829e7"
             name="MessageOccurrenceSpecification1">
+            <event>
+              <sendOperationEventMoniker
+                Id="e6b06c6e-cb2b-4578-9c6e-0dce2b7cbec7"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="a57c41cf-ef4f-4343-8783-a0fb9c5c30eb"
@@ -1909,6 +2050,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="bec3ae68-55c2-4450-af70-0fdc8dc05a31"
             name="MessageOccurrenceSpecification2">
+            <event>
+              <receiveOperationEventMoniker
+                Id="60da42a3-6e01-45fc-b101-b9ffe2e92143"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="1570e01e-759f-43e2-afc8-e9cea324ee2a"
@@ -1969,6 +2115,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="1ba43414-8fc5-420e-9953-c334c7fa74de"
             name="MessageOccurrenceSpecification5">
+            <event>
+              <sendOperationEventMoniker
+                Id="0cba4a60-2616-4ab0-94ea-aeee995dc7f9"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="1570e01e-759f-43e2-afc8-e9cea324ee2a"
@@ -1979,6 +2130,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="1a4a5834-d648-48b0-8b78-adca5188fc42"
             name="MessageOccurrenceSpecification6">
+            <event>
+              <receiveOperationEventMoniker
+                Id="a4bcbc36-0995-4b69-a978-a048feed75f5"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="a0b67d26-287a-47a3-bea9-fa8d7ccc05d1"
@@ -2134,7 +2290,8 @@ Visitable2.Accept(visitor);</body>
             name="Handle"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ Handle()">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="27d4deb6-91a0-4e19-b88b-bcf6feb829e7"
@@ -2153,7 +2310,8 @@ Visitable2.Accept(visitor);</body>
             name="Handle"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ Handle()">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="1ba43414-8fc5-420e-9953-c334c7fa74de"
@@ -2169,7 +2327,7 @@ Visitable2.Accept(visitor);</body>
           </message>
           <message
             Id="a97ed2d2-64d6-4aec-866a-431135b3903e"
-            name="&lt;&lt;return&gt;&gt;"
+            name="Response"
             messageKind="Complete"
             messageSort="Reply"
             createSelfMessage="false">
@@ -2188,7 +2346,7 @@ Visitable2.Accept(visitor);</body>
           </message>
           <message
             Id="27fe64c3-b3d9-4eaa-9959-785bed0af345"
-            name="&lt;&lt;return&gt;&gt;"
+            name="Response"
             messageKind="Complete"
             messageSort="Reply"
             createSelfMessage="false">
@@ -2380,14 +2538,68 @@ Visitable2.Accept(visitor);</body>
               LastKnownName="Command"
               LastKnownLocation="BehavioralPatternsDiagrams.uml" />
           </interfaceRealization>
-          <dependency
-            Id="318ea739-f503-4640-8641-99b01eba819f">
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="12c59dff-efa2-420e-bcc2-a98feadff811"
+            isDerived="false"
+            sourceEndRoleName="ConcreteCommand"
+            targetEndRoleName="Receiver"
+            isLeaf="false"
+            isAbstract="false">
             <classMoniker
               Id="0d90286a-ceb7-408a-89a2-f5ffb4271d34"
               LastKnownName="Receiver"
               LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-          </dependency>
-        </suppliersInternal>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="864ec327-a8d9-46cf-b4ba-faa965dc2f25"
+                  name="ConcreteCommand"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="99084c97-7cb0-4d4b-89a9-f96cac4ff03f"
+                  name="Receiver"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="dc06b460-f81a-4a1d-87bf-5790001f7bbe"
+            name="Receiver"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="0d90286a-ceb7-408a-89a2-f5ffb4271d34"
+                LastKnownName="Receiver"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
             Id="6215bf3c-b96a-4ab7-ae6b-30afdb1aa66e"
@@ -2424,7 +2636,23 @@ Visitable2.Accept(visitor);</body>
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
-            isQuery="false" />
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8c51926c-1942-4ad0-8260-64df49b10df9"
+                  name="Command"
+                  direction="In">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="b82fdb36-e0f3-4ac1-8a6e-11d3834f8ad8"
+                      LastKnownName="Command"
+                      LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -2713,22 +2941,32 @@ Visitable2.Accept(visitor);</body>
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="f7df3a32-2ac8-4d5c-94c3-d7b7683b5cda"
-            name="MessageOccurrenceSpecification9">
-            <covered>
-              <lifelineMoniker
-                Id="a335d0ca-6a19-412f-9771-666c83fde322"
-                LastKnownName="client : Client"
-                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="635c66ea-ae9d-43b2-9d92-dba7ab978c38"
             name="MessageOccurrenceSpecification10">
+            <event>
+              <receiveOperationEventMoniker
+                Id="5c38c82b-5eb1-4960-bd9b-e1a0841a7a0d"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="8767d2ac-57f9-4c7e-9edc-b6eecb126702"
                 LastKnownName="invoker : Invoker"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f7df3a32-2ac8-4d5c-94c3-d7b7683b5cda"
+            name="MessageOccurrenceSpecification9">
+            <event>
+              <sendOperationEventMoniker
+                Id="3986d82b-cc22-409f-a07d-a15c7b1ef539"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="a335d0ca-6a19-412f-9771-666c83fde322"
+                LastKnownName="client : Client"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -2793,6 +3031,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="e007fe31-af91-49da-804a-c714fcd852eb"
             name="MessageOccurrenceSpecification13">
+            <event>
+              <sendOperationEventMoniker
+                Id="3f1ea530-1bac-48b4-bcfc-812ed3e5b290"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="8767d2ac-57f9-4c7e-9edc-b6eecb126702"
@@ -2803,6 +3046,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="cbcead25-d93d-490e-8f37-d31d208fce19"
             name="MessageOccurrenceSpecification14">
+            <event>
+              <receiveOperationEventMoniker
+                Id="d3265f9c-40a6-4e31-8b8b-e3cc8cc45ca6"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="de81d66d-8c96-4941-b78a-0df8e2e2e9f8"
@@ -2861,22 +3109,32 @@ Visitable2.Accept(visitor);</body>
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="904f7d75-3980-477c-91aa-c24967817759"
-            name="MessageOccurrenceSpecification17">
-            <covered>
-              <lifelineMoniker
-                Id="de81d66d-8c96-4941-b78a-0df8e2e2e9f8"
-                LastKnownName="concreteCommand : ConcreteCommand"
-                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="6d747d85-1f0f-4907-b55c-e14153e7dbf4"
             name="MessageOccurrenceSpecification18">
+            <event>
+              <receiveOperationEventMoniker
+                Id="be37944b-ec01-439d-8d2e-ab6d1c6c5cae"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="39aa661c-0272-4439-b458-1b8c208b9639"
                 LastKnownName="receiver : Receiver"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="904f7d75-3980-477c-91aa-c24967817759"
+            name="MessageOccurrenceSpecification17">
+            <event>
+              <sendOperationEventMoniker
+                Id="cbdfceb9-598d-4db7-8dbd-7754a22fec78"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="de81d66d-8c96-4941-b78a-0df8e2e2e9f8"
+                LastKnownName="concreteCommand : ConcreteCommand"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -2957,22 +3215,22 @@ Visitable2.Accept(visitor);</body>
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="7b56ecc1-5830-44dc-a2e4-48890ff13ffd"
-            name="MessageOccurrenceSpecification11">
-            <covered>
-              <lifelineMoniker
-                Id="8767d2ac-57f9-4c7e-9edc-b6eecb126702"
-                LastKnownName="invoker : Invoker"
-                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="1abc1c75-633f-4c8e-924f-904e8eba75b6"
             name="MessageOccurrenceSpecification12">
             <covered>
               <lifelineMoniker
                 Id="a335d0ca-6a19-412f-9771-666c83fde322"
                 LastKnownName="client : Client"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7b56ecc1-5830-44dc-a2e4-48890ff13ffd"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="8767d2ac-57f9-4c7e-9edc-b6eecb126702"
+                LastKnownName="invoker : Invoker"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -3192,10 +3450,11 @@ Visitable2.Accept(visitor);</body>
           </message>
           <message
             Id="7d96dfca-5d47-4ee0-849a-ad965937ba10"
-            name="ExecuteCommand(command)"
+            name="Execute command"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ ExecuteCommand(Command : Command)">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="f7df3a32-2ac8-4d5c-94c3-d7b7683b5cda"
@@ -3211,10 +3470,11 @@ Visitable2.Accept(visitor);</body>
           </message>
           <message
             Id="c3520386-abb2-4650-9f6c-096624f31bc4"
-            name="Execute"
+            name="command.Execute()"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ Execute()">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="e007fe31-af91-49da-804a-c714fcd852eb"
@@ -3230,10 +3490,11 @@ Visitable2.Accept(visitor);</body>
           </message>
           <message
             Id="8b877442-da6a-4677-ae0a-8263962f57ae"
-            name="Action"
+            name="receiver.Action()"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ Action()">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="904f7d75-3980-477c-91aa-c24967817759"
@@ -3686,6 +3947,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="e8ad9c1e-a5bb-4d32-a175-5217569814a6"
             name="MessageOccurrenceSpecification18">
+            <event>
+              <receiveOperationEventMoniker
+                Id="68b99f53-5d60-4beb-b0fd-962326233d93"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="3e7fd3c6-eab9-4b56-83ba-a881a21eb7b1"
@@ -3696,6 +3962,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="6085e89b-f990-4b61-a252-b065a2987b03"
             name="MessageOccurrenceSpecification17">
+            <event>
+              <sendOperationEventMoniker
+                Id="da3474b0-125d-4f6d-adc6-12b408933683"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="8ca87aa6-d278-4fe6-bf68-649d978957ae"
@@ -3756,6 +4027,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="230b0ec0-7edf-4b21-8ee5-6d329ea798fa"
             name="MessageOccurrenceSpecification22">
+            <event>
+              <receiveOperationEventMoniker
+                Id="04668582-a2ca-42c7-b1bf-a717d61a93bd"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="217e28d6-a900-4be4-b098-0bd1d9b776e2"
@@ -3766,6 +4042,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="f8d684e2-2b92-4abc-b884-ee8e1f5882fd"
             name="MessageOccurrenceSpecification21">
+            <event>
+              <sendOperationEventMoniker
+                Id="fe4cbb07-e5a7-44c7-9534-104794944944"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="3e7fd3c6-eab9-4b56-83ba-a881a21eb7b1"
@@ -3864,6 +4145,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="22fcba40-ebe2-41c3-a5ab-f0d6322a41a8"
             name="MessageOccurrenceSpecification25">
+            <event>
+              <sendOperationEventMoniker
+                Id="e0191764-1880-4c23-9ead-86349da45230"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="3e7fd3c6-eab9-4b56-83ba-a881a21eb7b1"
@@ -3874,6 +4160,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="3c9066d3-ff71-44c6-a0fe-d16d5fb60eae"
             name="MessageOccurrenceSpecification26">
+            <event>
+              <receiveOperationEventMoniker
+                Id="9dd5d979-a5de-4dc1-b019-00bdd7798ec9"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="217e28d6-a900-4be4-b098-0bd1d9b776e2"
@@ -4088,10 +4379,10 @@ Visitable2.Accept(visitor);</body>
           </message>
           <message
             Id="f0ffdcc0-d10e-4466-badc-2bfbd778177d"
-            name="TemplateMethod"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ TemplateMethod()">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="6085e89b-f990-4b61-a252-b065a2987b03"
@@ -4107,10 +4398,10 @@ Visitable2.Accept(visitor);</body>
           </message>
           <message
             Id="1661414b-70a4-4061-8283-f1a1d033ccf1"
-            name="PrimitiveOperation1"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="# PrimitiveOperation1()">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="f8d684e2-2b92-4abc-b884-ee8e1f5882fd"
@@ -4145,10 +4436,10 @@ Visitable2.Accept(visitor);</body>
           </message>
           <message
             Id="72877720-842f-4016-8a93-91ef619106ae"
-            name="PrimitiveOperation2"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="# PrimitiveOperation2()">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="22fcba40-ebe2-41c3-a5ab-f0d6322a41a8"
@@ -4321,13 +4612,6 @@ Visitable2.Accept(visitor);</body>
         isActiveClass="false">
         <suppliersInternal>
           <dependency
-            Id="a202200f-231e-4930-92e2-e89b3555ed0c">
-            <classMoniker
-              Id="d399eae3-b1b0-4d9d-983c-1be516f64715"
-              LastKnownName="Memento"
-              LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-          </dependency>
-          <dependency
             Id="4c44506c-8330-4e42-bfba-3448b7353e30">
             <classMoniker
               Id="12e48233-205a-4bac-9410-9876faef295d"
@@ -4335,6 +4619,60 @@ Visitable2.Accept(visitor);</body>
               LastKnownLocation="BehavioralPatternsDiagrams.uml" />
           </dependency>
         </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="73d8b6b9-bf35-4745-8425-2da8ab2684bb"
+            isDerived="false"
+            sourceEndRoleName="Caretaker"
+            targetEndRoleName="Memento"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d399eae3-b1b0-4d9d-983c-1be516f64715"
+              LastKnownName="Memento"
+              LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4dcc13ec-28dc-40bb-baf9-ac8df9def3fd"
+                  name="Caretaker"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="237c5bd1-dc82-490f-a6d8-cd1fc695a77d"
+                  name="Memento"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6dfacc80-f81e-45d2-9624-b615e84aaba5"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8aa811d7-f35c-4141-9f1b-69a0a20c7dae"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="2d0f057e-2606-47da-804a-f7a0107a789f"
@@ -4448,15 +4786,9 @@ Visitable2.Accept(visitor);</body>
               <operationHasOwnedParameters>
                 <parameter
                   Id="57d18c80-7145-4ac4-959f-a2596cfa4be7"
-                  name="originator"
-                  direction="In">
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="12e48233-205a-4bac-9410-9876faef295d"
-                      LastKnownName="Originator"
-                      LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-                  </type_NamedElement>
-                </parameter>
+                  name="Memento"
+                  direction="In"
+                  isUnique="false" />
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -4790,22 +5122,22 @@ Visitable2.Accept(visitor);</body>
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="ea5c640c-d705-4ba8-8d69-6d1664b4e522"
-            name="MessageOccurrenceSpecification14">
-            <covered>
-              <lifelineMoniker
-                Id="55864734-fc2f-4fe0-a9e3-b6e598755e5e"
-                LastKnownName="originator : Originator"
-                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="7f61d8e1-df60-47f8-94d6-a99ee2a9780e"
             name="MessageOccurrenceSpecification13">
             <covered>
               <lifelineMoniker
                 Id="1d6f7769-1737-4034-a4c4-80583d1f363a"
                 LastKnownName="client : Client"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ea5c640c-d705-4ba8-8d69-6d1664b4e522"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="55864734-fc2f-4fe0-a9e3-b6e598755e5e"
+                LastKnownName="originator : Originator"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -4920,6 +5252,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="7791b28a-9d5c-40a1-bad1-32747a1660f2"
             name="MessageOccurrenceSpecification18">
+            <event>
+              <receiveOperationEventMoniker
+                Id="ddd098e7-43b3-417d-a99b-eefef5e3d4f7"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="24e7e8ba-04a0-453d-9070-feff53cbb955"
@@ -4930,6 +5267,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="bb0be053-1c34-418d-8d29-0fae700636f4"
             name="MessageOccurrenceSpecification17">
+            <event>
+              <sendOperationEventMoniker
+                Id="e26be726-3d95-475c-9faa-b137889c0f69"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="1d6f7769-1737-4034-a4c4-80583d1f363a"
@@ -5006,6 +5348,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="84a41d35-985d-41ff-aa00-68e022e023fd"
             name="MessageOccurrenceSpecification22">
+            <event>
+              <receiveOperationEventMoniker
+                Id="a6e527d1-8b69-489b-b6b5-2aa68f992162"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="55864734-fc2f-4fe0-a9e3-b6e598755e5e"
@@ -5016,6 +5363,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="ec354fd5-1cf5-4272-a0d9-0e325e474699"
             name="MessageOccurrenceSpecification21">
+            <event>
+              <sendOperationEventMoniker
+                Id="499936c1-48aa-4650-915f-decabe45d441"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="24e7e8ba-04a0-453d-9070-feff53cbb955"
@@ -5094,22 +5446,22 @@ Visitable2.Accept(visitor);</body>
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="df71b878-0ef1-41bd-b893-75a92fae48cc"
-            name="MessageOccurrenceSpecification28">
-            <covered>
-              <lifelineMoniker
-                Id="55864734-fc2f-4fe0-a9e3-b6e598755e5e"
-                LastKnownName="originator : Originator"
-                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="877f2b17-97aa-4a95-a45a-bbb0f7e9ffa2"
             name="MessageOccurrenceSpecification27">
             <covered>
               <lifelineMoniker
                 Id="f5479fa7-47f5-44ee-9cef-92c9b7c15a69"
                 LastKnownName="memento : Memento"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="df71b878-0ef1-41bd-b893-75a92fae48cc"
+            name="MessageOccurrenceSpecification28">
+            <covered>
+              <lifelineMoniker
+                Id="55864734-fc2f-4fe0-a9e3-b6e598755e5e"
+                LastKnownName="originator : Originator"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -5240,22 +5592,22 @@ Visitable2.Accept(visitor);</body>
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="6f9f642f-3127-4034-83c3-e96f2a7d9feb"
-            name="MessageOccurrenceSpecification23">
-            <covered>
-              <lifelineMoniker
-                Id="55864734-fc2f-4fe0-a9e3-b6e598755e5e"
-                LastKnownName="originator : Originator"
-                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="d16c012d-98c8-47ca-9a38-f96fa62b94fe"
             name="MessageOccurrenceSpecification24">
             <covered>
               <lifelineMoniker
                 Id="24e7e8ba-04a0-453d-9070-feff53cbb955"
                 LastKnownName="caretaker : Caretaker"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6f9f642f-3127-4034-83c3-e96f2a7d9feb"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="55864734-fc2f-4fe0-a9e3-b6e598755e5e"
+                LastKnownName="originator : Originator"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -5362,22 +5714,22 @@ Visitable2.Accept(visitor);</body>
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="8efdf90a-7feb-4850-8c93-8d5f9340deb0"
-            name="MessageOccurrenceSpecification19">
-            <covered>
-              <lifelineMoniker
-                Id="24e7e8ba-04a0-453d-9070-feff53cbb955"
-                LastKnownName="caretaker : Caretaker"
-                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="2a28fb53-19d0-4bc2-bdc6-659696fc8b95"
             name="MessageOccurrenceSpecification20">
             <covered>
               <lifelineMoniker
                 Id="1d6f7769-1737-4034-a4c4-80583d1f363a"
                 LastKnownName="client : Client"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8efdf90a-7feb-4850-8c93-8d5f9340deb0"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="24e7e8ba-04a0-453d-9070-feff53cbb955"
+                LastKnownName="caretaker : Caretaker"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -5460,6 +5812,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="70954590-fbd8-4344-8ce0-a411bf9f0369"
             name="MessageOccurrenceSpecification33">
+            <event>
+              <sendOperationEventMoniker
+                Id="7f3c90cd-23ff-4655-a255-cd68015213a4"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="1d6f7769-1737-4034-a4c4-80583d1f363a"
@@ -5470,6 +5827,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="bd86ace9-2bc7-41e4-8ee9-ed6b3494b650"
             name="MessageOccurrenceSpecification34">
+            <event>
+              <receiveOperationEventMoniker
+                Id="504deb68-d8d8-44b1-b93d-f3c9ac717692"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="24e7e8ba-04a0-453d-9070-feff53cbb955"
@@ -5530,6 +5892,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="e4a088b7-bd6c-4378-99c0-1406217e48af"
             name="MessageOccurrenceSpecification39">
+            <event>
+              <sendOperationEventMoniker
+                Id="edae4e99-ac2f-4bf2-9585-a9a47cd5a3b2"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="24e7e8ba-04a0-453d-9070-feff53cbb955"
@@ -5540,6 +5907,11 @@ Visitable2.Accept(visitor);</body>
           <messageOccurrenceSpecification
             Id="3e9f8a48-467c-474a-b7b6-c6efa767c28a"
             name="MessageOccurrenceSpecification40">
+            <event>
+              <receiveOperationEventMoniker
+                Id="4dc87273-a908-48ef-90c6-35c215ab2e62"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="55864734-fc2f-4fe0-a9e3-b6e598755e5e"
@@ -5906,10 +6278,11 @@ Visitable2.Accept(visitor);</body>
           </message>
           <message
             Id="4e752bd3-5b92-46f7-91cf-be3f34509ced"
-            name="Save(originator)"
+            name="Save"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ Save(originator : Originator)">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="bb0be053-1c34-418d-8d29-0fae700636f4"
@@ -5928,7 +6301,8 @@ Visitable2.Accept(visitor);</body>
             name="Save"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ Save() : Memento">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="ec354fd5-1cf5-4272-a0d9-0e325e474699"
@@ -6075,10 +6449,11 @@ Visitable2.Accept(visitor);</body>
           </message>
           <message
             Id="78d5a6bb-0a5a-46d6-9941-e9056321f5c3"
-            name="Revert(originator)"
+            name="Revert originator"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ Revert(originator : Originator)">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="70954590-fbd8-4344-8ce0-a411bf9f0369"
@@ -6094,10 +6469,11 @@ Visitable2.Accept(visitor);</body>
           </message>
           <message
             Id="ba12b11f-ffea-4910-ab1f-d775ef949607"
-            name="Revert(lastMemento)"
+            name="Revert originator using last memento"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ Revert(Memento)">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="e4a088b7-bd6c-4378-99c0-1406217e48af"
@@ -6834,16 +7210,6 @@ Visitable2.Accept(visitor);</body>
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="bd39422e-3a5c-40dd-82a4-ffa001509b95"
-            name="MessageOccurrenceSpecification14">
-            <covered>
-              <lifelineMoniker
-                Id="486b1d59-216b-4897-9e0a-02b0fe8cace3"
-                LastKnownName="concreteIterator : ConcreteIterator"
-                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="ccf933c6-60b9-4524-b735-f307c4f762ca"
             name="MessageOccurrenceSpecification13">
             <covered>
@@ -6854,8 +7220,8 @@ Visitable2.Accept(visitor);</body>
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="1825fad6-60c5-4158-a0a4-9ad1603000f7"
-            name="MessageOccurrenceSpecification15">
+            Id="bd39422e-3a5c-40dd-82a4-ffa001509b95"
+            name="MessageOccurrenceSpecification14">
             <covered>
               <lifelineMoniker
                 Id="486b1d59-216b-4897-9e0a-02b0fe8cace3"
@@ -6870,6 +7236,16 @@ Visitable2.Accept(visitor);</body>
               <lifelineMoniker
                 Id="4b979b74-4cda-4d1c-84f3-c0450ff21113"
                 LastKnownName="concreteAggregate : ConcreteAggregate"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1825fad6-60c5-4158-a0a4-9ad1603000f7"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="486b1d59-216b-4897-9e0a-02b0fe8cace3"
+                LastKnownName="concreteIterator : ConcreteIterator"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -6940,10 +7316,6 @@ Visitable2.Accept(visitor);</body>
                 LastKnownName="client : Client"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
               <lifelineMoniker
-                Id="4b979b74-4cda-4d1c-84f3-c0450ff21113"
-                LastKnownName="concreteAggregate : ConcreteAggregate"
-                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-              <lifelineMoniker
                 Id="486b1d59-216b-4897-9e0a-02b0fe8cace3"
                 LastKnownName="concreteIterator : ConcreteIterator"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
@@ -6956,10 +7328,6 @@ Visitable2.Accept(visitor);</body>
                   <lifelineMoniker
                     Id="e1349c05-05d2-40d4-8060-d72ce9a90fc8"
                     LastKnownName="client : Client"
-                    LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-                  <lifelineMoniker
-                    Id="4b979b74-4cda-4d1c-84f3-c0450ff21113"
-                    LastKnownName="concreteAggregate : ConcreteAggregate"
                     LastKnownLocation="BehavioralPatternsDiagrams.uml" />
                   <lifelineMoniker
                     Id="486b1d59-216b-4897-9e0a-02b0fe8cace3"
@@ -6978,8 +7346,8 @@ Visitable2.Accept(visitor);</body>
                         LastKnownName="client : Client"
                         LastKnownLocation="BehavioralPatternsDiagrams.uml" />
                       <lifelineMoniker
-                        Id="4b979b74-4cda-4d1c-84f3-c0450ff21113"
-                        LastKnownName="concreteAggregate : ConcreteAggregate"
+                        Id="486b1d59-216b-4897-9e0a-02b0fe8cace3"
+                        LastKnownName="concreteIterator : ConcreteIterator"
                         LastKnownLocation="BehavioralPatternsDiagrams.uml" />
                     </coveredLifelines>
                     <operands>
@@ -6992,8 +7360,8 @@ Visitable2.Accept(visitor);</body>
                             LastKnownName="client : Client"
                             LastKnownLocation="BehavioralPatternsDiagrams.uml" />
                           <lifelineMoniker
-                            Id="4b979b74-4cda-4d1c-84f3-c0450ff21113"
-                            LastKnownName="concreteAggregate : ConcreteAggregate"
+                            Id="486b1d59-216b-4897-9e0a-02b0fe8cace3"
+                            LastKnownName="concreteIterator : ConcreteIterator"
                             LastKnownLocation="BehavioralPatternsDiagrams.uml" />
                         </coveredLifelines>
                         <guard>
@@ -7002,20 +7370,20 @@ Visitable2.Accept(visitor);</body>
                         </guard>
                         <operandOccurrenceSpecifications>
                           <operandOccurrenceSpecificationMoniker
-                            Id="d360249a-b8f8-43f9-a4e9-e8efb070bc8d"
-                            LastKnownName="OperandOccurrenceSpecification17"
-                            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-                          <operandOccurrenceSpecificationMoniker
-                            Id="5304228c-f6dc-432c-b22a-845247f1e0e8"
-                            LastKnownName="OperandOccurrenceSpecification18"
-                            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-                          <operandOccurrenceSpecificationMoniker
                             Id="a2f45cb4-505d-43d3-86ac-78c87831b40b"
                             LastKnownName="OperandOccurrenceSpecification19"
                             LastKnownLocation="BehavioralPatternsDiagrams.uml" />
                           <operandOccurrenceSpecificationMoniker
                             Id="8de2ab76-9109-42c9-b49f-2e2001136bb7"
                             LastKnownName="OperandOccurrenceSpecification20"
+                            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+                          <operandOccurrenceSpecificationMoniker
+                            Id="ce728fc1-1533-4c44-a656-6de2153b4e42"
+                            LastKnownName="OperandOccurrenceSpecification25"
+                            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+                          <operandOccurrenceSpecificationMoniker
+                            Id="a71aae87-c0f8-472f-86b8-56e87bba0c13"
+                            LastKnownName="OperandOccurrenceSpecification26"
                             LastKnownLocation="BehavioralPatternsDiagrams.uml" />
                         </operandOccurrenceSpecifications>
                       </interactionOperand>
@@ -7028,8 +7396,8 @@ Visitable2.Accept(visitor);</body>
                             LastKnownName="client : Client"
                             LastKnownLocation="BehavioralPatternsDiagrams.uml" />
                           <lifelineMoniker
-                            Id="4b979b74-4cda-4d1c-84f3-c0450ff21113"
-                            LastKnownName="concreteAggregate : ConcreteAggregate"
+                            Id="486b1d59-216b-4897-9e0a-02b0fe8cace3"
+                            LastKnownName="concreteIterator : ConcreteIterator"
                             LastKnownLocation="BehavioralPatternsDiagrams.uml" />
                         </coveredLifelines>
                         <guard>
@@ -7038,20 +7406,20 @@ Visitable2.Accept(visitor);</body>
                         </guard>
                         <operandOccurrenceSpecifications>
                           <operandOccurrenceSpecificationMoniker
-                            Id="812495ef-7fc7-48a6-8089-71da42ded4ba"
-                            LastKnownName="OperandOccurrenceSpecification21"
-                            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-                          <operandOccurrenceSpecificationMoniker
-                            Id="0d577226-3cda-4842-a34b-301d5f89ee09"
-                            LastKnownName="OperandOccurrenceSpecification22"
-                            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-                          <operandOccurrenceSpecificationMoniker
                             Id="a9331f17-4d92-4a0f-b2bd-61f8e22a8927"
                             LastKnownName="OperandOccurrenceSpecification23"
                             LastKnownLocation="BehavioralPatternsDiagrams.uml" />
                           <operandOccurrenceSpecificationMoniker
                             Id="74c912e3-e137-4a75-947b-675e1e14c436"
                             LastKnownName="OperandOccurrenceSpecification24"
+                            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+                          <operandOccurrenceSpecificationMoniker
+                            Id="b07deaa9-bed4-48c3-a6c9-fd143e7f5442"
+                            LastKnownName="OperandOccurrenceSpecification27"
+                            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+                          <operandOccurrenceSpecificationMoniker
+                            Id="790d9289-b8a3-4941-8889-0ea93f44863a"
+                            LastKnownName="OperandOccurrenceSpecification28"
                             LastKnownLocation="BehavioralPatternsDiagrams.uml" />
                         </operandOccurrenceSpecifications>
                       </interactionOperand>
@@ -7090,25 +7458,17 @@ Visitable2.Accept(visitor);</body>
                     Id="fe94bb88-aa88-4edc-8a21-679df1ca597a"
                     LastKnownName="OperandOccurrenceSpecification4"
                     LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-                  <operandOccurrenceSpecificationMoniker
-                    Id="c9c09864-6c52-46c5-9853-28c9aa51801e"
-                    LastKnownName="OperandOccurrenceSpecification7"
-                    LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-                  <operandOccurrenceSpecificationMoniker
-                    Id="22849fa6-14b0-490b-9981-184da45b86df"
-                    LastKnownName="OperandOccurrenceSpecification8"
-                    LastKnownLocation="BehavioralPatternsDiagrams.uml" />
                 </operandOccurrenceSpecifications>
               </interactionOperand>
             </operands>
           </combinedFragment>
           <operandOccurrenceSpecification
-            Id="c9c09864-6c52-46c5-9853-28c9aa51801e"
-            name="OperandOccurrenceSpecification7">
+            Id="a0d9ad14-8bf5-4bbf-856f-f40c678429d2"
+            name="OperandOccurrenceSpecification3">
             <covered>
               <lifelineMoniker
-                Id="4b979b74-4cda-4d1c-84f3-c0450ff21113"
-                LastKnownName="concreteAggregate : ConcreteAggregate"
+                Id="e1349c05-05d2-40d4-8060-d72ce9a90fc8"
+                LastKnownName="client : Client"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </covered>
           </operandOccurrenceSpecification>
@@ -7119,16 +7479,6 @@ Visitable2.Accept(visitor);</body>
               <lifelineMoniker
                 Id="486b1d59-216b-4897-9e0a-02b0fe8cace3"
                 LastKnownName="concreteIterator : ConcreteIterator"
-                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification
-            Id="a0d9ad14-8bf5-4bbf-856f-f40c678429d2"
-            name="OperandOccurrenceSpecification3">
-            <covered>
-              <lifelineMoniker
-                Id="e1349c05-05d2-40d4-8060-d72ce9a90fc8"
-                LastKnownName="client : Client"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </covered>
           </operandOccurrenceSpecification>
@@ -7183,22 +7533,32 @@ Visitable2.Accept(visitor);</body>
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="56abfaf4-f1ec-4d0c-9b8f-2ee3389fadb4"
-            name="MessageOccurrenceSpecification18">
-            <covered>
-              <lifelineMoniker
-                Id="486b1d59-216b-4897-9e0a-02b0fe8cace3"
-                LastKnownName="concreteIterator : ConcreteIterator"
-                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="ba46a06d-9cfc-4f23-b1b2-163fa172df70"
             name="MessageOccurrenceSpecification17">
+            <event>
+              <sendOperationEventMoniker
+                Id="83b679bd-34c4-4b38-a8bc-1aa0dd870902"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="e1349c05-05d2-40d4-8060-d72ce9a90fc8"
                 LastKnownName="client : Client"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="56abfaf4-f1ec-4d0c-9b8f-2ee3389fadb4"
+            name="MessageOccurrenceSpecification18">
+            <event>
+              <receiveOperationEventMoniker
+                Id="0981015f-e0ce-4da4-b0de-df2c6eb891ae"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="486b1d59-216b-4897-9e0a-02b0fe8cace3"
+                LastKnownName="concreteIterator : ConcreteIterator"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -7241,6 +7601,16 @@ Visitable2.Accept(visitor);</body>
             </covered>
           </executionOccurrenceSpecification>
           <operandOccurrenceSpecification
+            Id="ce728fc1-1533-4c44-a656-6de2153b4e42"
+            name="OperandOccurrenceSpecification25">
+            <covered>
+              <lifelineMoniker
+                Id="486b1d59-216b-4897-9e0a-02b0fe8cace3"
+                LastKnownName="concreteIterator : ConcreteIterator"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
             Id="a2f45cb4-505d-43d3-86ac-78c87831b40b"
             name="OperandOccurrenceSpecification19">
             <covered>
@@ -7250,79 +7620,79 @@ Visitable2.Accept(visitor);</body>
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </covered>
           </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification
-            Id="d360249a-b8f8-43f9-a4e9-e8efb070bc8d"
-            name="OperandOccurrenceSpecification17">
-            <covered>
-              <lifelineMoniker
-                Id="4b979b74-4cda-4d1c-84f3-c0450ff21113"
-                LastKnownName="concreteAggregate : ConcreteAggregate"
-                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-            </covered>
-          </operandOccurrenceSpecification>
           <behaviorExecutionSpecification
-            Id="64fdd06d-b0f6-48a3-aad8-fc3cbcf96f92"
-            name="BehaviorExecutionSpecification9">
+            Id="33559f96-a3f5-4971-9ae1-c8d74e960cb2"
+            name="BehaviorExecutionSpecification12">
             <coveredLifelines>
               <lifelineMoniker
-                Id="4b979b74-4cda-4d1c-84f3-c0450ff21113"
-                LastKnownName="concreteAggregate : ConcreteAggregate"
+                Id="486b1d59-216b-4897-9e0a-02b0fe8cace3"
+                LastKnownName="concreteIterator : ConcreteIterator"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </coveredLifelines>
             <finish>
               <executionOccurrenceSpecificationMoniker
-                Id="ce198eb8-cbe9-4549-9a2e-7ccbe0020633"
-                LastKnownName="ExecutionOccurrenceSpecification18"
+                Id="1faf05a4-4a2e-4a49-81cf-f18fcf420fc6"
+                LastKnownName="ExecutionOccurrenceSpecification24"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </finish>
             <start>
               <executionOccurrenceSpecificationMoniker
-                Id="1f4440f5-1471-467d-ad31-a442d898f788"
-                LastKnownName="ExecutionOccurrenceSpecification17"
+                Id="2c79eb7e-c42c-4fb4-b96e-507d50eef015"
+                LastKnownName="ExecutionOccurrenceSpecification23"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </start>
             <nestedOccurrences>
               <messageOccurrenceSpecificationMoniker
-                Id="e264d892-9c4a-4bd6-9396-059f777138d5"
-                LastKnownName="MessageOccurrenceSpecification30"
+                Id="1ba39d45-0e2e-426c-9620-40903ac7edde"
+                LastKnownName="MessageOccurrenceSpecification38"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
               <messageOccurrenceSpecificationMoniker
-                Id="3c0d8d12-08ac-4467-837f-e023227295b6"
-                LastKnownName="MessageOccurrenceSpecification31"
+                Id="50885bb7-d9b7-4cef-95c8-502eda735b53"
+                LastKnownName="MessageOccurrenceSpecification39"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </nestedOccurrences>
           </behaviorExecutionSpecification>
           <executionOccurrenceSpecification
-            Id="1f4440f5-1471-467d-ad31-a442d898f788"
-            name="ExecutionOccurrenceSpecification17">
+            Id="2c79eb7e-c42c-4fb4-b96e-507d50eef015"
+            name="ExecutionOccurrenceSpecification23">
             <event>
               <executionOccurrenceSpecificationReferencesEvent>
                 <executionEventMoniker
-                  Id="4a47a815-7264-443e-ba42-7c006d187603"
+                  Id="c67bf8ea-778b-4497-b8f2-1f81df896e93"
                   LastKnownName="ExecutionEvent"
                   LastKnownLocation="BehavioralPatternsDiagrams.uml" />
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
               <lifelineMoniker
-                Id="4b979b74-4cda-4d1c-84f3-c0450ff21113"
-                LastKnownName="concreteAggregate : ConcreteAggregate"
+                Id="486b1d59-216b-4897-9e0a-02b0fe8cace3"
+                LastKnownName="concreteIterator : ConcreteIterator"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="e264d892-9c4a-4bd6-9396-059f777138d5"
-            name="MessageOccurrenceSpecification30">
+            Id="1ba39d45-0e2e-426c-9620-40903ac7edde"
+            name="MessageOccurrenceSpecification38">
+            <event>
+              <receiveOperationEventMoniker
+                Id="73f98085-c396-4ba2-958a-739c21cd39c0"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
-                Id="4b979b74-4cda-4d1c-84f3-c0450ff21113"
-                LastKnownName="concreteAggregate : ConcreteAggregate"
+                Id="486b1d59-216b-4897-9e0a-02b0fe8cace3"
+                LastKnownName="concreteIterator : ConcreteIterator"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="9b7af1c3-8f93-4a3e-a6a5-dfdd683f0f00"
-            name="MessageOccurrenceSpecification29">
+            Id="1eb70c1d-9d32-4b80-a33c-e337420d49d7"
+            name="MessageOccurrenceSpecification37">
+            <event>
+              <sendOperationEventMoniker
+                Id="486d85ae-e0ac-4f88-9a4a-6401b2760536"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </event>
             <covered>
               <lifelineMoniker
                 Id="e1349c05-05d2-40d4-8060-d72ce9a90fc8"
@@ -7331,8 +7701,8 @@ Visitable2.Accept(visitor);</body>
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="8074806b-b902-476d-87ec-868ddf6696c3"
-            name="MessageOccurrenceSpecification32">
+            Id="9601b1d1-7d9c-4836-8196-8d1d7690b801"
+            name="MessageOccurrenceSpecification40">
             <covered>
               <lifelineMoniker
                 Id="e1349c05-05d2-40d4-8060-d72ce9a90fc8"
@@ -7341,30 +7711,30 @@ Visitable2.Accept(visitor);</body>
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="3c0d8d12-08ac-4467-837f-e023227295b6"
-            name="MessageOccurrenceSpecification31">
+            Id="50885bb7-d9b7-4cef-95c8-502eda735b53"
+            name="MessageOccurrenceSpecification39">
             <covered>
               <lifelineMoniker
-                Id="4b979b74-4cda-4d1c-84f3-c0450ff21113"
-                LastKnownName="concreteAggregate : ConcreteAggregate"
+                Id="486b1d59-216b-4897-9e0a-02b0fe8cace3"
+                LastKnownName="concreteIterator : ConcreteIterator"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification
-            Id="ce198eb8-cbe9-4549-9a2e-7ccbe0020633"
-            name="ExecutionOccurrenceSpecification18">
+            Id="1faf05a4-4a2e-4a49-81cf-f18fcf420fc6"
+            name="ExecutionOccurrenceSpecification24">
             <event>
               <executionOccurrenceSpecificationReferencesEvent>
                 <executionEventMoniker
-                  Id="d1c3cd78-f94d-4b66-96dc-b933b446f5aa"
+                  Id="4f52cb47-f077-49f2-a8ca-55fbab602635"
                   LastKnownName="ExecutionEvent"
                   LastKnownLocation="BehavioralPatternsDiagrams.uml" />
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
               <lifelineMoniker
-                Id="4b979b74-4cda-4d1c-84f3-c0450ff21113"
-                LastKnownName="concreteAggregate : ConcreteAggregate"
+                Id="486b1d59-216b-4897-9e0a-02b0fe8cace3"
+                LastKnownName="concreteIterator : ConcreteIterator"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -7453,16 +7823,6 @@ Visitable2.Accept(visitor);</body>
             </covered>
           </executionOccurrenceSpecification>
           <operandOccurrenceSpecification
-            Id="5304228c-f6dc-432c-b22a-845247f1e0e8"
-            name="OperandOccurrenceSpecification18">
-            <covered>
-              <lifelineMoniker
-                Id="4b979b74-4cda-4d1c-84f3-c0450ff21113"
-                LastKnownName="concreteAggregate : ConcreteAggregate"
-                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification
             Id="8de2ab76-9109-42c9-b49f-2e2001136bb7"
             name="OperandOccurrenceSpecification20">
             <covered>
@@ -7473,12 +7833,22 @@ Visitable2.Accept(visitor);</body>
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification
-            Id="812495ef-7fc7-48a6-8089-71da42ded4ba"
-            name="OperandOccurrenceSpecification21">
+            Id="a71aae87-c0f8-472f-86b8-56e87bba0c13"
+            name="OperandOccurrenceSpecification26">
             <covered>
               <lifelineMoniker
-                Id="4b979b74-4cda-4d1c-84f3-c0450ff21113"
-                LastKnownName="concreteAggregate : ConcreteAggregate"
+                Id="486b1d59-216b-4897-9e0a-02b0fe8cace3"
+                LastKnownName="concreteIterator : ConcreteIterator"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="b07deaa9-bed4-48c3-a6c9-fd143e7f5442"
+            name="OperandOccurrenceSpecification27">
+            <covered>
+              <lifelineMoniker
+                Id="486b1d59-216b-4897-9e0a-02b0fe8cace3"
+                LastKnownName="concreteIterator : ConcreteIterator"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </covered>
           </operandOccurrenceSpecification>
@@ -7493,16 +7863,6 @@ Visitable2.Accept(visitor);</body>
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification
-            Id="0d577226-3cda-4842-a34b-301d5f89ee09"
-            name="OperandOccurrenceSpecification22">
-            <covered>
-              <lifelineMoniker
-                Id="4b979b74-4cda-4d1c-84f3-c0450ff21113"
-                LastKnownName="concreteAggregate : ConcreteAggregate"
-                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification
             Id="74c912e3-e137-4a75-947b-675e1e14c436"
             name="OperandOccurrenceSpecification24">
             <covered>
@@ -7513,22 +7873,22 @@ Visitable2.Accept(visitor);</body>
             </covered>
           </operandOccurrenceSpecification>
           <operandOccurrenceSpecification
+            Id="790d9289-b8a3-4941-8889-0ea93f44863a"
+            name="OperandOccurrenceSpecification28">
+            <covered>
+              <lifelineMoniker
+                Id="486b1d59-216b-4897-9e0a-02b0fe8cace3"
+                LastKnownName="concreteIterator : ConcreteIterator"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
             Id="fe94bb88-aa88-4edc-8a21-679df1ca597a"
             name="OperandOccurrenceSpecification4">
             <covered>
               <lifelineMoniker
                 Id="e1349c05-05d2-40d4-8060-d72ce9a90fc8"
                 LastKnownName="client : Client"
-                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification
-            Id="22849fa6-14b0-490b-9981-184da45b86df"
-            name="OperandOccurrenceSpecification8">
-            <covered>
-              <lifelineMoniker
-                Id="4b979b74-4cda-4d1c-84f3-c0450ff21113"
-                LastKnownName="concreteAggregate : ConcreteAggregate"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </covered>
           </operandOccurrenceSpecification>
@@ -7588,12 +7948,12 @@ Visitable2.Accept(visitor);</body>
                 LastKnownName="OperandOccurrenceSpecification19"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
               <messageOccurrenceSpecificationMoniker
-                Id="9b7af1c3-8f93-4a3e-a6a5-dfdd683f0f00"
-                LastKnownName="MessageOccurrenceSpecification29"
+                Id="1eb70c1d-9d32-4b80-a33c-e337420d49d7"
+                LastKnownName="MessageOccurrenceSpecification37"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
               <messageOccurrenceSpecificationMoniker
-                Id="8074806b-b902-476d-87ec-868ddf6696c3"
-                LastKnownName="MessageOccurrenceSpecification32"
+                Id="9601b1d1-7d9c-4836-8196-8d1d7690b801"
+                LastKnownName="MessageOccurrenceSpecification40"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
               <messageOccurrenceSpecificationMoniker
                 Id="4c73f3dc-67cd-44c5-8aa4-e25fa847e311"
@@ -7652,38 +8012,6 @@ Visitable2.Accept(visitor);</body>
                 Id="b80fd8a7-94c0-42b2-b200-0314a1da4b79"
                 LastKnownName="ExecutionOccurrenceSpecification6"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-              <operandOccurrenceSpecificationMoniker
-                Id="c9c09864-6c52-46c5-9853-28c9aa51801e"
-                LastKnownName="OperandOccurrenceSpecification7"
-                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-              <operandOccurrenceSpecificationMoniker
-                Id="d360249a-b8f8-43f9-a4e9-e8efb070bc8d"
-                LastKnownName="OperandOccurrenceSpecification17"
-                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-              <executionOccurrenceSpecificationMoniker
-                Id="1f4440f5-1471-467d-ad31-a442d898f788"
-                LastKnownName="ExecutionOccurrenceSpecification17"
-                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-              <executionOccurrenceSpecificationMoniker
-                Id="ce198eb8-cbe9-4549-9a2e-7ccbe0020633"
-                LastKnownName="ExecutionOccurrenceSpecification18"
-                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-              <operandOccurrenceSpecificationMoniker
-                Id="5304228c-f6dc-432c-b22a-845247f1e0e8"
-                LastKnownName="OperandOccurrenceSpecification18"
-                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-              <operandOccurrenceSpecificationMoniker
-                Id="812495ef-7fc7-48a6-8089-71da42ded4ba"
-                LastKnownName="OperandOccurrenceSpecification21"
-                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-              <operandOccurrenceSpecificationMoniker
-                Id="0d577226-3cda-4842-a34b-301d5f89ee09"
-                LastKnownName="OperandOccurrenceSpecification22"
-                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
-              <operandOccurrenceSpecificationMoniker
-                Id="22849fa6-14b0-490b-9981-184da45b86df"
-                LastKnownName="OperandOccurrenceSpecification8"
-                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </topLevelOccurrences>
           </lifeline>
           <lifeline
@@ -7716,6 +8044,30 @@ Visitable2.Accept(visitor);</body>
               <executionOccurrenceSpecificationMoniker
                 Id="da719a4e-2fc5-4f66-9d6c-14de23beb691"
                 LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="ce728fc1-1533-4c44-a656-6de2153b4e42"
+                LastKnownName="OperandOccurrenceSpecification25"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="2c79eb7e-c42c-4fb4-b96e-507d50eef015"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="1faf05a4-4a2e-4a49-81cf-f18fcf420fc6"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="a71aae87-c0f8-472f-86b8-56e87bba0c13"
+                LastKnownName="OperandOccurrenceSpecification26"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="b07deaa9-bed4-48c3-a6c9-fd143e7f5442"
+                LastKnownName="OperandOccurrenceSpecification27"
+                LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+              <operandOccurrenceSpecificationMoniker
+                Id="790d9289-b8a3-4941-8889-0ea93f44863a"
+                LastKnownName="OperandOccurrenceSpecification28"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
               <operandOccurrenceSpecificationMoniker
                 Id="913f4eb3-8f13-4911-9b8e-564663fdf826"
@@ -7841,10 +8193,11 @@ Visitable2.Accept(visitor);</body>
           </message>
           <message
             Id="4681c679-9e8c-4004-98e2-f501b1e60fa4"
-            name="MoveNext()"
+            name="Go to next item"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ MoveNext() : bool">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
                 Id="ba46a06d-9cfc-4f23-b1b2-163fa172df70"
@@ -7878,40 +8231,41 @@ Visitable2.Accept(visitor);</body>
             </receiveEvent>
           </message>
           <message
-            Id="ce58ff41-9c7f-4424-8b4e-642179278f51"
-            name="Current"
+            Id="0681d793-d08c-4862-a751-3c6da326b6f2"
+            name="Get current item"
             messageKind="Complete"
             messageSort="SynchCall"
-            createSelfMessage="false">
+            createSelfMessage="false"
+            signatureText="+ Current() : T">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="9b7af1c3-8f93-4a3e-a6a5-dfdd683f0f00"
-                LastKnownName="MessageOccurrenceSpecification29"
+                Id="1eb70c1d-9d32-4b80-a33c-e337420d49d7"
+                LastKnownName="MessageOccurrenceSpecification37"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </sendEvent>
             <receiveEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="e264d892-9c4a-4bd6-9396-059f777138d5"
-                LastKnownName="MessageOccurrenceSpecification30"
+                Id="1ba39d45-0e2e-426c-9620-40903ac7edde"
+                LastKnownName="MessageOccurrenceSpecification38"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </receiveEvent>
           </message>
           <message
-            Id="fb29d840-3f03-446b-88e2-21f8a7bb19e2"
+            Id="9fc27de8-0899-4a0e-ba36-122a30a3f794"
             name="item"
             messageKind="Complete"
             messageSort="Reply"
             createSelfMessage="false">
             <sendEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="3c0d8d12-08ac-4467-837f-e023227295b6"
-                LastKnownName="MessageOccurrenceSpecification31"
+                Id="50885bb7-d9b7-4cef-95c8-502eda735b53"
+                LastKnownName="MessageOccurrenceSpecification39"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </sendEvent>
             <receiveEvent>
               <messageOccurrenceSpecificationMoniker
-                Id="8074806b-b902-476d-87ec-868ddf6696c3"
-                LastKnownName="MessageOccurrenceSpecification32"
+                Id="9601b1d1-7d9c-4836-8196-8d1d7690b801"
+                LastKnownName="MessageOccurrenceSpecification40"
                 LastKnownLocation="BehavioralPatternsDiagrams.uml" />
             </receiveEvent>
           </message>
@@ -8025,16 +8379,6 @@ Visitable2.Accept(visitor);</body>
     <packageHasNamedElement>
       <executionEvent
         Id="d3606f3d-2a83-4c63-8ef8-1ba5a65f2614"
-        name="ExecutionEvent" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <executionEvent
-        Id="4a47a815-7264-443e-ba42-7c006d187603"
-        name="ExecutionEvent" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <executionEvent
-        Id="d1c3cd78-f94d-4b66-96dc-b933b446f5aa"
         name="ExecutionEvent" />
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -13968,6 +14312,412 @@ Visitable2.Accept(visitor);</body>
           <operationMoniker
             Id="3bef5748-2285-47cb-9829-bfff4fef79b0"
             LastKnownName="ContextMethod"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="3986d82b-cc22-409f-a07d-a15c7b1ef539">
+        <operation>
+          <operationMoniker
+            Id="cdd6ab9b-8a22-44f8-a57d-3d7b4653a1fd"
+            LastKnownName="ExecuteCommand"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="5c38c82b-5eb1-4960-bd9b-e1a0841a7a0d">
+        <operation>
+          <operationMoniker
+            Id="cdd6ab9b-8a22-44f8-a57d-3d7b4653a1fd"
+            LastKnownName="ExecuteCommand"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="3f1ea530-1bac-48b4-bcfc-812ed3e5b290">
+        <operation>
+          <operationMoniker
+            Id="6215bf3c-b96a-4ab7-ae6b-30afdb1aa66e"
+            LastKnownName="Execute"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="d3265f9c-40a6-4e31-8b8b-e3cc8cc45ca6">
+        <operation>
+          <operationMoniker
+            Id="6215bf3c-b96a-4ab7-ae6b-30afdb1aa66e"
+            LastKnownName="Execute"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="cbdfceb9-598d-4db7-8dbd-7754a22fec78">
+        <operation>
+          <operationMoniker
+            Id="8c63bdd9-37ee-4220-9fc9-0d89ba0f4d34"
+            LastKnownName="Action"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="be37944b-ec01-439d-8d2e-ab6d1c6c5cae">
+        <operation>
+          <operationMoniker
+            Id="8c63bdd9-37ee-4220-9fc9-0d89ba0f4d34"
+            LastKnownName="Action"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="83b679bd-34c4-4b38-a8bc-1aa0dd870902">
+        <operation>
+          <operationMoniker
+            Id="db35ea9a-ec59-4ce0-8ee0-a59237f23176"
+            LastKnownName="MoveNext"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="0981015f-e0ce-4da4-b0de-df2c6eb891ae">
+        <operation>
+          <operationMoniker
+            Id="db35ea9a-ec59-4ce0-8ee0-a59237f23176"
+            LastKnownName="MoveNext"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c67bf8ea-778b-4497-b8f2-1f81df896e93"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4f52cb47-f077-49f2-a8ca-55fbab602635"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="486d85ae-e0ac-4f88-9a4a-6401b2760536">
+        <operation>
+          <operationMoniker
+            Id="2a71c909-08df-4341-b389-ec2e2e49b44b"
+            LastKnownName="Current"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="73f98085-c396-4ba2-958a-739c21cd39c0">
+        <operation>
+          <operationMoniker
+            Id="2a71c909-08df-4341-b389-ec2e2e49b44b"
+            LastKnownName="Current"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="e6b06c6e-cb2b-4578-9c6e-0dce2b7cbec7">
+        <operation>
+          <operationMoniker
+            Id="2e4dff4e-fb64-4fa7-a5f4-5347ab8b0e7f"
+            LastKnownName="Handle"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="60da42a3-6e01-45fc-b101-b9ffe2e92143">
+        <operation>
+          <operationMoniker
+            Id="2e4dff4e-fb64-4fa7-a5f4-5347ab8b0e7f"
+            LastKnownName="Handle"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="0cba4a60-2616-4ab0-94ea-aeee995dc7f9">
+        <operation>
+          <operationMoniker
+            Id="45f69723-3f2f-4edc-964f-431a50f7c27e"
+            LastKnownName="Handle"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="a4bcbc36-0995-4b69-a978-a048feed75f5">
+        <operation>
+          <operationMoniker
+            Id="45f69723-3f2f-4edc-964f-431a50f7c27e"
+            LastKnownName="Handle"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="e26be726-3d95-475c-9faa-b137889c0f69">
+        <operation>
+          <operationMoniker
+            Id="12812525-6255-451e-b07f-aef2a370803d"
+            LastKnownName="Save"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="ddd098e7-43b3-417d-a99b-eefef5e3d4f7">
+        <operation>
+          <operationMoniker
+            Id="12812525-6255-451e-b07f-aef2a370803d"
+            LastKnownName="Save"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="499936c1-48aa-4650-915f-decabe45d441">
+        <operation>
+          <operationMoniker
+            Id="477148b6-91ce-47e0-af91-a91c687fef2d"
+            LastKnownName="Save"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="a6e527d1-8b69-489b-b6b5-2aa68f992162">
+        <operation>
+          <operationMoniker
+            Id="477148b6-91ce-47e0-af91-a91c687fef2d"
+            LastKnownName="Save"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="7f3c90cd-23ff-4655-a255-cd68015213a4">
+        <operation>
+          <operationMoniker
+            Id="c661c4aa-cd84-4f4a-bdda-d3662d789613"
+            LastKnownName="Revert"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="504deb68-d8d8-44b1-b93d-f3c9ac717692">
+        <operation>
+          <operationMoniker
+            Id="c661c4aa-cd84-4f4a-bdda-d3662d789613"
+            LastKnownName="Revert"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="edae4e99-ac2f-4bf2-9585-a9a47cd5a3b2">
+        <operation>
+          <operationMoniker
+            Id="86c8d906-69a4-4d2c-8fa7-47dbcc519eea"
+            LastKnownName="Revert"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="4dc87273-a908-48ef-90c6-35c215ab2e62">
+        <operation>
+          <operationMoniker
+            Id="86c8d906-69a4-4d2c-8fa7-47dbcc519eea"
+            LastKnownName="Revert"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="d88b9f33-2bb1-47e3-8175-ed495abec11f">
+        <operation>
+          <operationMoniker
+            Id="ee801aef-f37c-4f40-bf16-152caeb04593"
+            LastKnownName="Attach"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="fd50d540-95b8-47fc-a6d3-4233648bff8a">
+        <operation>
+          <operationMoniker
+            Id="ee801aef-f37c-4f40-bf16-152caeb04593"
+            LastKnownName="Attach"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="1fd00adf-5214-404e-9dbd-ee77f62ccf96">
+        <operation>
+          <operationMoniker
+            Id="ee801aef-f37c-4f40-bf16-152caeb04593"
+            LastKnownName="Attach"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="bc4ce991-015f-42b2-a5aa-98707e4607d3">
+        <operation>
+          <operationMoniker
+            Id="ee801aef-f37c-4f40-bf16-152caeb04593"
+            LastKnownName="Attach"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="2e7f81f8-ec1f-43a8-a444-0457b4c26e8f">
+        <operation>
+          <operationMoniker
+            Id="009ef117-d274-4006-8529-f44dda4f99e1"
+            LastKnownName="Update"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="df58f16d-0abc-47eb-9d3f-6e9a6526f48d">
+        <operation>
+          <operationMoniker
+            Id="009ef117-d274-4006-8529-f44dda4f99e1"
+            LastKnownName="Update"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="091e71c0-5990-455e-9efb-45331e750bbe">
+        <operation>
+          <operationMoniker
+            Id="f7fcaf3a-0b9f-4814-8019-fb4947e6a31d"
+            LastKnownName="Update"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="e11f23d1-cb52-41ce-9185-7d25f96d4092">
+        <operation>
+          <operationMoniker
+            Id="f7fcaf3a-0b9f-4814-8019-fb4947e6a31d"
+            LastKnownName="Update"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="da3474b0-125d-4f6d-adc6-12b408933683">
+        <operation>
+          <operationMoniker
+            Id="59ef1498-7150-4b04-90a1-c760b2d12d0e"
+            LastKnownName="TemplateMethod"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="68b99f53-5d60-4beb-b0fd-962326233d93">
+        <operation>
+          <operationMoniker
+            Id="59ef1498-7150-4b04-90a1-c760b2d12d0e"
+            LastKnownName="TemplateMethod"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="fe4cbb07-e5a7-44c7-9534-104794944944">
+        <operation>
+          <operationMoniker
+            Id="8ab9b907-cc45-4fc8-86f6-7b033a4cc1fb"
+            LastKnownName="PrimitiveOperation1"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="04668582-a2ca-42c7-b1bf-a717d61a93bd">
+        <operation>
+          <operationMoniker
+            Id="8ab9b907-cc45-4fc8-86f6-7b033a4cc1fb"
+            LastKnownName="PrimitiveOperation1"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </receiveOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <sendOperationEvent
+        Id="e0191764-1880-4c23-9ead-86349da45230">
+        <operation>
+          <operationMoniker
+            Id="d0e58477-c434-48bf-bb53-e285f59df56b"
+            LastKnownName="PrimitiveOperation2"
+            LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+        </operation>
+      </sendOperationEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <receiveOperationEvent
+        Id="9dd5d979-a5de-4dc1-b019-00bdd7798ec9">
+        <operation>
+          <operationMoniker
+            Id="d0e58477-c434-48bf-bb53-e285f59df56b"
+            LastKnownName="PrimitiveOperation2"
             LastKnownLocation="BehavioralPatternsDiagrams.uml" />
         </operation>
       </receiveOperationEvent>

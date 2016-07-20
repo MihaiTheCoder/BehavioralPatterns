@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="ba538ac2-2696-4d11-8561-98a8f8856d28" name="Memento" linkedPackageId="2116ee0e-eece-45ce-aeab-af61aa6b326b" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="4262578a-6db9-43ae-878f-cece494994b9">
-      <profileInstance Id="09dc3d9b-b024-418f-b9c3-4893da4738ee" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="201a93e8-34a9-4f4e-b741-e31374393f13">
-      <profileInstance Id="3d56396c-4013-4622-9192-50cfacbfda8f" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <packageHasNamedElement>
       <interaction Id="d057ea1a-bc6c-40af-9935-455cfd1f49cb" name="Memento" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
@@ -755,7 +741,7 @@
               <messageOccurrenceSpecificationMoniker Id="9d9c3f39-d37c-4905-988d-89791200399a" LastKnownName="MessageOccurrenceSpecification16" />
             </receiveEvent>
           </message>
-          <message Id="89331f96-6246-49c0-8799-daab78de4d0f" name="Save(originator)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="89331f96-6246-49c0-8799-daab78de4d0f" name="Save" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ Save(originator : Originator)">
             <elementDefinition Id="4e752bd3-5b92-46f7-91cf-be3f34509ced" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="516ad415-4323-4af9-8b9c-776958092c52" LastKnownName="MessageOccurrenceSpecification17" />
@@ -764,7 +750,7 @@
               <messageOccurrenceSpecificationMoniker Id="162b0899-a1c6-42d3-be65-de3e0a086c4a" LastKnownName="MessageOccurrenceSpecification18" />
             </receiveEvent>
           </message>
-          <message Id="c1e7b342-15bd-4def-a2d1-a3c317deebda" name="Save" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="c1e7b342-15bd-4def-a2d1-a3c317deebda" name="Save" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ Save() : Memento">
             <elementDefinition Id="39404074-6180-4756-becc-fee6ccad0090" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="4c19afed-c3f5-4b41-bd93-205765e974fa" LastKnownName="MessageOccurrenceSpecification21" />
@@ -836,7 +822,7 @@
               <messageOccurrenceSpecificationMoniker Id="473f6d93-7926-4566-b5dc-15743125ace4" LastKnownName="MessageOccurrenceSpecification20" />
             </receiveEvent>
           </message>
-          <message Id="77c7d1af-ebd7-4f3a-a140-41f8a53122cf" name="Revert(originator)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="77c7d1af-ebd7-4f3a-a140-41f8a53122cf" name="Revert originator" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ Revert(originator : Originator)">
             <elementDefinition Id="78d5a6bb-0a5a-46d6-9941-e9056321f5c3" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="c5a2f43a-b60f-4acb-9076-db58300c9597" LastKnownName="MessageOccurrenceSpecification33" />
@@ -845,7 +831,7 @@
               <messageOccurrenceSpecificationMoniker Id="4ceef101-1803-4b86-b4fe-657aba2c358f" LastKnownName="MessageOccurrenceSpecification34" />
             </receiveEvent>
           </message>
-          <message Id="d65778f7-3e37-4e71-9c0b-9be07efe1585" name="Revert(lastMemento)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="d65778f7-3e37-4e71-9c0b-9be07efe1585" name="Revert originator using last memento" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false" signatureText="+ Revert(Memento)">
             <elementDefinition Id="ba12b11f-ffea-4910-ab1f-d775ef949607" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="20eca5f0-8578-45e3-a36e-52e91bbcd4d1" LastKnownName="MessageOccurrenceSpecification39" />
@@ -1024,5 +1010,19 @@
   </packagedElements>
   <package Id="2116ee0e-eece-45ce-aeab-af61aa6b326b" name="BehavioralPatternsDiagrams">
     <elementDefinition Id="ab0df1a1-6716-4f07-98a6-a60d1545f3de" />
+    <profileInstances>
+      <packageHasProfileInstances Id="4262578a-6db9-43ae-878f-cece494994b9">
+        <profileInstance Id="09dc3d9b-b024-418f-b9c3-4893da4738ee" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="201a93e8-34a9-4f4e-b741-e31374393f13">
+        <profileInstance Id="3d56396c-4013-4622-9192-50cfacbfda8f" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </SequenceDesignerModel>
