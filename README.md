@@ -489,6 +489,15 @@ Sequence diagram:
 * Visitor pattern allows for one or more operation to be applied to a set of objects at runtime, decoupling the operations from the object structure.
 * Visitor is similar to Iterator, the difference is that visitor pattern allows to process more complex structure with different types
 
+[VisitorClassDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/VisitorPattern/VisitorPatternClassDiagram.png "Visitor class diagram"
+[VisitorSequenceDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/VisitorPattern/VisitorPatternSequenceDiagram.png "Visitor sequence diagram"
+
+Class diagram for the visitor pattern:
+![alt text][VisitorClassDiagram]
+
+Sequence diagram for the visitor pattern:
+![alt text][VisitorSequenceDiagram]
+
 ### b. When to use Visitor pattern
 * Dynamic flavor: When you have a complex structure that doesn't change that much, but you need to add more types of processing
 
