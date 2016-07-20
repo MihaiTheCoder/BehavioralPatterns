@@ -142,6 +142,26 @@
     <Content Include="Observer\ObserverSequenceDiagram.PNG">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="StatePattern\StatePattern.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="StatePattern\StatePattern.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>StatePattern\StatePattern.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="StatePattern\StatePattern.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="StatePattern\StatePattern.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>StatePattern\StatePattern.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="StatePattern\StatePatternClassDiagram.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="StatePattern\StatePatterSequenceDiagram.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="TemplateMethodPattern\TemplateMethodPattern.classdiagram">
       <SubType>Content</SubType>
     </Content>
@@ -171,6 +191,7 @@
     <Folder Include="CommandPattern" />
     <Folder Include="Memento" />
     <Folder Include="IteratorPattern" />
+    <Folder Include="StatePattern" />
     <Folder Include="TemplateMethodPattern" />
     <Folder Include="Observer" />
   </ItemGroup>
