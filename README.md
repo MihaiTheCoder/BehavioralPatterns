@@ -355,7 +355,18 @@ This causes not only a memory leak, but also a performance degradation with an '
 ------------------
 
 ### a. Pattern description
+
+[StatePatterClassDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/StatePattern/StatePatternClassDiagram.png "State pattern class diagram"
+[StatePatterSequenceDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/StatePattern/StatePatterSequenceDiagram.png "State pattern sequence diagram"
+
 With the state pattern, a state machine is implemented by implementing each individual state as a derived class of the state pattern interface, and implementing state transitions by invoking methods defined by the pattern's superclass.
+
+Class diagram for the state pattern:
+![alt text][StatePatterClassDiagram]
+
+Sequence diagram for the state pattern:
+![alt text][StatePatterSequenceDiagram]
+
 ### b. When to use State pattern
 * Every time you have a single property that represents the state of the object
 
