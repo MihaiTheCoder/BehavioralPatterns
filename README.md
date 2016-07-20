@@ -521,7 +521,7 @@ Sequence diagram for the visitor pattern:
 * Every time you add a new visitable object, you need to modify all the visitors.
 
 ### e. Flavors
-* In languages like C#, instead of having all the Concrete Visitable implemement the Visitable, we could use
+* In languages like C#, instead of having all the Concrete Visitable implemement the Visitable, we could have ObjectStructure invoke the visitor using dynamic, so something like visitor.Visit((dynamic)visitable) and let c# redirect the call to the appropiate method.
 
 ### f. Examples
 * Calculate money of corruption subject: Starting class: CalculateMoney.WithVisitor.CalaculateMoneyWithVisitorExample
