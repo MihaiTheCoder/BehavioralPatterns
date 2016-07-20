@@ -415,6 +415,15 @@ If we want to implement this using state pattern, we would need to make a new cl
 ### a. Pattern description
 Strategy pattern (also known as the policy pattern) is a software design pattern that enables an algorithm's behavior to be selected at runtime. 
 The strategy pattern defines a family of algorithms, encapsulates each algorithm, and makes the algorithms interchangeable within that family.
+
+[StrategyClassDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/Strategy/StrategyPatternClassDiagram.png "Strategy class diagram"
+[StrategySequenceDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/Strategy/StrategyPatternSequenceDiagram.png "Strategy sequence diagram"
+
+Class diagram for the strategy pattern:
+![alt text][StrategyClassDiagram]
+
+Sequence diagram for the strategy pattern:
+![alt text][StrategySequenceDiagram]
 ### b. When to use Strategy pattern
 * Classical thing to say: Whenever you start to use a switch statement you should ask yourself whether you can use Strategy Pattern instead.
 * When you want to externalize part of the algorithm
