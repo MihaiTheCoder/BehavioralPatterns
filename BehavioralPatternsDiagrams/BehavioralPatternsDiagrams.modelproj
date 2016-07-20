@@ -162,6 +162,26 @@
     <Content Include="StatePattern\StatePatterSequenceDiagram.png">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Strategy\StrategyPattern.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Strategy\StrategyPattern.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Strategy\StrategyPattern.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Strategy\StrategyPattern.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Strategy\StrategyPattern.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Strategy\StrategyPattern.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Strategy\StrategyPatternClassDiagram.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Strategy\StrategyPatternSequenceDiagram.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="TemplateMethodPattern\TemplateMethodPattern.classdiagram">
       <SubType>Content</SubType>
     </Content>
@@ -211,6 +231,7 @@
     <Folder Include="CommandPattern" />
     <Folder Include="Memento" />
     <Folder Include="IteratorPattern" />
+    <Folder Include="Strategy" />
     <Folder Include="VisitorPattern" />
     <Folder Include="StatePattern" />
     <Folder Include="TemplateMethodPattern" />

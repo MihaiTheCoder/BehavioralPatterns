@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="39e15874-fbce-435e-9065-d3b4e0df4915" name="Strategy" linkedPackageId="c5c49223-d146-4f3e-9122-b41fca4dd91a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="3cb103b9-e55f-47bd-b96b-cf22fd87f393">
+      <profileInstance Id="f0b020fe-7576-4e73-b6db-280130ca01e0" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2eba6142-3549-4bd4-9b57-0b9a1256a7ea">
+      <profileInstance Id="8638116a-938f-4754-b644-b30ea670acb6" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="f9472d10-1875-42ef-b9ac-7b6e06edfce0" name="Strategy" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="245e211a-4f1b-4dc8-afc3-79dca47d5ed5" />
+        <ownedOperations>
+          <operation Id="a567e5f4-3f3f-4784-9113-c3f29f82c312" name="Algorithm" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="64c961c2-386c-4841-8b57-f513b2084643" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a9156c31-f483-4917-8668-d413dbd66718" name="Context" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="94677eab-4250-4e5a-9dd7-f855da9e4c53" />
+        <targetEnds>
+          <association Id="6a2b852d-08cd-4fdb-bfb3-d2cca0a86c02" isDerived="false" sourceEndRoleName="Context" targetEndRoleName="Strategy" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="f9472d10-1875-42ef-b9ac-7b6e06edfce0" LastKnownName="Strategy" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4fee0dd3-0b35-4e29-b709-464d4e182d1f" name="Context" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="21d6d08f-1f12-424d-86bb-3a2e3fef9189" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="51ae6a29-af1a-4c70-a313-32279cc22397" name="Strategy" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="df409d95-6414-456b-b2ad-04faf9fdcc38" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="81e2f771-3d1a-48d7-92cb-f4895c20d15d" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="fec42ffb-bf33-402e-8148-8de5e7b470f3" name="ContextMethod" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3bef5748-2285-47cb-9829-bfff4fef79b0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5bc41839-c186-4d8b-aef5-be3db56f1c72" name="strategy" direction="In">
+                  <elementDefinition Id="3ce7dee7-3fea-47d6-aa0d-faf485ab4f46" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6aee545a-131c-4586-a53d-ae4f3a65c864" LastKnownName="Strategy" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="6aee545a-131c-4586-a53d-ae4f3a65c864" name="Strategy" isAbstract="false" isLeaf="false" cachedFullName="BehavioralPatternsDiagrams::Strategy">
+        <elementDefinition Id="245e211a-4f1b-4dc8-afc3-79dca47d5ed5" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="620a4e4e-411d-4b72-92e6-5364f16bf24e" name="StrategyA" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="428bc647-4c8c-49b9-954e-e5f0491092b0" />
+        <suppliersInternal>
+          <interfaceRealization Id="cc8207bb-36bf-4ec5-882f-f6f68252d30c">
+            <interfaceMoniker Id="f9472d10-1875-42ef-b9ac-7b6e06edfce0" LastKnownName="Strategy" />
+            <elementDefinition Id="eb1fd137-103a-4170-a194-44632727f6f7" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="dfddc593-4b23-49d8-a314-9e1558ecb5e5" name="Algorithm" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="76021b31-6752-436e-8465-4c59d0dfa262" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3a7df2de-0126-4cec-9d88-52f3b80ea6b6" name="StrategyB" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="dae42b37-4eaa-4d65-b023-812bbcbcd9b3" />
+        <suppliersInternal>
+          <interfaceRealization Id="b5179f0c-4b85-4923-b7ce-e8208bfb3943">
+            <interfaceMoniker Id="f9472d10-1875-42ef-b9ac-7b6e06edfce0" LastKnownName="Strategy" />
+            <elementDefinition Id="d10590f8-b6f2-48d1-b48f-8d6e3266cc16" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="1ad1f8cc-eecc-4238-b821-ae896ad083a7" name="Algorithm" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1354ba78-5f31-4e63-831b-d504c9f133cf" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="c5c49223-d146-4f3e-9122-b41fca4dd91a" name="BehavioralPatternsDiagrams">
+    <elementDefinition Id="ab0df1a1-6716-4f07-98a6-a60d1545f3de" />
+  </package>
+</logicalClassDesignerModel>
