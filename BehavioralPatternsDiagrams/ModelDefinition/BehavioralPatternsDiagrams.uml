@@ -9895,6 +9895,22 @@ Visitable2.Accept(visitor);</body>
         name="Visitor"
         isAbstract="false"
         isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="f899742d-1fb1-4fc8-a6fa-d267b2b59a65">
+            <classMoniker
+              Id="f85385e9-07d8-4c72-8129-5c1c0dd39efc"
+              LastKnownName="ConcreteVisitable2"
+              LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+          </dependency>
+          <dependency
+            Id="d5f9fc5c-797f-4590-bcf5-324b15454140">
+            <classMoniker
+              Id="7f53fdbe-417d-42a9-beb3-75a35e43c23b"
+              LastKnownName="ConcreteVisitable1"
+              LastKnownLocation="BehavioralPatternsDiagrams.uml" />
+          </dependency>
+        </suppliersInternal>
         <ownedOperations>
           <operation
             Id="c1276c8d-e064-4317-9e5b-847dea55d2b7"

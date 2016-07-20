@@ -62,6 +62,16 @@ Visitable2.Accept(visitor);</body>
     <logicalClassDesignerModelHasTypes>
       <Interface Id="0c9349cf-ef19-4c0b-abb4-35df0037c2ff" name="Visitor" isAbstract="false" isLeaf="false">
         <elementDefinition Id="5fc44d25-51d6-4e41-9368-b80f94dc0252" />
+        <suppliersInternal>
+          <dependency Id="9bc2cbf0-4d2b-4867-9d9c-c46d7150c407">
+            <classMoniker Id="b790208f-b758-406f-9473-1ceeeb428270" LastKnownName="ConcreteVisitable2" />
+            <elementDefinition Id="f899742d-1fb1-4fc8-a6fa-d267b2b59a65" />
+          </dependency>
+          <dependency Id="774f393c-9022-46ad-9917-33c8172f1f97">
+            <classMoniker Id="9af4caec-bdc2-4fd9-bd3d-29db006d29d2" LastKnownName="ConcreteVisitable1" />
+            <elementDefinition Id="d5f9fc5c-797f-4590-bcf5-324b15454140" />
+          </dependency>
+        </suppliersInternal>
         <ownedOperations>
           <operation Id="7c217409-3a72-4344-942b-638e3981fd1a" name="Visit" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="c1276c8d-e064-4317-9e5b-847dea55d2b7" />
