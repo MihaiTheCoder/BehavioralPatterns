@@ -172,8 +172,11 @@ Also, we decided to keep the last ten placed bets, but we don't use them in the 
 In object-oriented programming, the iterator pattern is a design pattern in which an iterator 
 is used to traverse a container(Aggregate) and access the container's(Aggregate's) elements.
 C# interfaces helpers for Iterator pattern: IEnumerator<T>, IEnumerable<T>, yield for creating IEnumerable<T>
-Java: Iterator<E>, Iterable<E>
-Some use the term container, some use the term aggregate, is one and the same thing. From now, we will use only the aggregate term.
+Java: Iterator<E>, Iterable<E>.
+
+Interesting in java 8, [Iterable](https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html) /[Iterator](https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html) interface have changed, check them out.
+
+Some people when they talk about Iterator pattern use the term container, some use the term aggregate, There is no difference between the 2 terms.
 
 [IteratorClassDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/IteratorPattern/Iterator.classdiagram.png "Chain of responsibility class diagram"
 [IteratorSequenceDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/IteratorPattern/IteratorSequenceDiagram.PNG "Iterator sequence diagram"
