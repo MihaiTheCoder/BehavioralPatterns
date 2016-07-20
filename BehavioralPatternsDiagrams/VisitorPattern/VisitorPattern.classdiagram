@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="6da90ea9-5551-438a-99ed-622e2c8f955f" name="VisitorPattern" linkedPackageId="f38b7349-d8dd-494e-b5aa-6de347b9a80a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="1b6ef722-c707-488c-ad9e-b6aa41a937d7">
+      <elementDefinition Id="4888d080-bb02-4e87-9b21-3dd8e4198ddc" />
+      <body>visitor.Visit(this)</body>
+      <annotatedElements>
+        <classMoniker Id="9af4caec-bdc2-4fd9-bd3d-29db006d29d2" LastKnownName="ConcreteVisitable1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="abafffee-0455-4239-b355-5956a55b80cd">
+      <elementDefinition Id="098ac5be-fcbf-40d4-8257-a46e3d8b42f5" />
+      <body>visitor.Visit(this)</body>
+      <annotatedElements>
+        <classMoniker Id="b790208f-b758-406f-9473-1ceeeb428270" LastKnownName="ConcreteVisitable2" />
+      </annotatedElements>
+    </comment>
+    <comment Id="e448d450-c4c6-4e88-8df2-6cc2abf818b1">
+      <elementDefinition Id="1050cd03-d537-45bd-85b1-b3c18a077d79" />
+      <body>Visitable1.Accept(visitor);
+Visitable2.Accept(visitor);</body>
+      <annotatedElements>
+        <classMoniker Id="952c15a1-dad3-4593-a1cf-6f49d3e86a19" LastKnownName="ObjectStructure" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="606c2ea5-6c94-46b3-b3de-704590a19146">
+      <profileInstance Id="634d2086-5b13-4632-ad81-0d692e855bd7" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ff310861-ef10-42c2-bc9f-bdbc3406cddc">
+      <profileInstance Id="cd1b2edd-7883-4705-b8a1-f1962da489fe" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="966c5c7d-3073-4777-a86b-b144c1882a1b" name="Visitable" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4f2791eb-6d6e-4b2d-a7e9-d53de9a3946a" />
+        <ownedOperations>
+          <operation Id="640b2391-5c4e-4a90-a44f-426ad2083723" name="Accept" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bddb3ee9-3b26-40ab-bac7-5b7965e5c5b0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f4963e11-bef5-476e-97b9-ac1700dc32da" name="visitor" direction="In">
+                  <elementDefinition Id="3babfd51-ec09-4b90-851e-368e42ce4659" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="bf52cd1c-8606-490b-99f7-a82838501574" LastKnownName="Visitor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="0c9349cf-ef19-4c0b-abb4-35df0037c2ff" name="Visitor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5fc44d25-51d6-4e41-9368-b80f94dc0252" />
+        <ownedOperations>
+          <operation Id="7c217409-3a72-4344-942b-638e3981fd1a" name="Visit" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c1276c8d-e064-4317-9e5b-847dea55d2b7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="78d50c45-f10b-482a-b355-5757942ea3e0" name="concreteVisitable1" direction="In">
+                  <elementDefinition Id="2d526fc6-88f0-4ece-b896-f192403a9b40" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d834a882-f8b7-467a-b015-da6c9a82e49e" LastKnownName="ConcreteVisitable1" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ede4aefa-27bf-4901-91c9-46c21a6338e2" name="Visit" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="276d7679-aa4b-4f35-942b-a17d34afb368" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3e449b19-91f2-4ef4-b5e5-9e9746b8ec2b" name="concreteVisitable2" direction="In">
+                  <elementDefinition Id="ce1f41eb-a2be-44ac-b6ff-6c2ed014d183" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="45e0aba7-3f9a-4c59-8efd-f96a5e578144" LastKnownName="ConcreteVisitable2" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="bf52cd1c-8606-490b-99f7-a82838501574" name="Visitor" isAbstract="false" isLeaf="false" cachedFullName="BehavioralPatternsDiagrams::Visitor">
+        <elementDefinition Id="5fc44d25-51d6-4e41-9368-b80f94dc0252" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9af4caec-bdc2-4fd9-bd3d-29db006d29d2" name="ConcreteVisitable1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7f53fdbe-417d-42a9-beb3-75a35e43c23b" />
+        <suppliersInternal>
+          <interfaceRealization Id="bc453c67-c9d4-45ff-95bd-96bee44c306b">
+            <interfaceMoniker Id="966c5c7d-3073-4777-a86b-b144c1882a1b" LastKnownName="Visitable" />
+            <elementDefinition Id="8ac727b2-e778-4133-9416-cba5a2304a74" />
+          </interfaceRealization>
+          <dependency Id="f17a5010-b182-41b8-b8f8-5678e6129fa0">
+            <interfaceMoniker Id="0c9349cf-ef19-4c0b-abb4-35df0037c2ff" LastKnownName="Visitor" />
+            <elementDefinition Id="88fe7997-f94c-4365-8b74-5fce49e84f98" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="052594c7-4204-449b-b546-c4ba1d000c65" name="Accept" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8dbce00b-a3ed-4b38-a991-81a02e547f85" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8e1f55b5-381e-47e1-97a5-2f2ed37defb0" name="visitor" direction="In">
+                  <elementDefinition Id="8a50e5d7-0c29-42ba-b3e5-a0921be92511" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="bf52cd1c-8606-490b-99f7-a82838501574" LastKnownName="Visitor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="0d9638dc-4cf3-4ce7-ac9e-3c3e64146720" name="Visitable1SpecificOp" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a67eba5e-b74b-4560-ae6a-81d970057beb" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b790208f-b758-406f-9473-1ceeeb428270" name="ConcreteVisitable2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f85385e9-07d8-4c72-8129-5c1c0dd39efc" />
+        <suppliersInternal>
+          <interfaceRealization Id="1b4fca6b-7e68-435f-8b29-60fdd02274a7">
+            <interfaceMoniker Id="966c5c7d-3073-4777-a86b-b144c1882a1b" LastKnownName="Visitable" />
+            <elementDefinition Id="25c39f7a-45d2-4e45-80d4-9c14c43e03da" />
+          </interfaceRealization>
+          <dependency Id="095cf925-9940-4bd8-b724-9092a35c5a7b">
+            <interfaceMoniker Id="0c9349cf-ef19-4c0b-abb4-35df0037c2ff" LastKnownName="Visitor" />
+            <elementDefinition Id="f1247bee-2cbb-4320-8452-94ef8737c0a4" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="55363512-f14e-4727-abd8-2c25a710728d" name="Accept" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a9ae07af-2235-4e85-a54d-f3a9e72cf2d0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="03e7e50f-d150-4908-b574-7e838454acab" name="visitor" direction="In">
+                  <elementDefinition Id="c30fd591-cff4-43e9-8560-2b87a91152e5" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="bf52cd1c-8606-490b-99f7-a82838501574" LastKnownName="Visitor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ab47c280-ff03-4475-8ed9-680185431cc8" name="Visitable2SpecificOp" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2d83fe5c-e6de-4234-89b0-e289e2b38e5e" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="d834a882-f8b7-467a-b015-da6c9a82e49e" name="ConcreteVisitable1" isAbstract="false" isLeaf="false" cachedFullName="BehavioralPatternsDiagrams::ConcreteVisitable1">
+        <elementDefinition Id="7f53fdbe-417d-42a9-beb3-75a35e43c23b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="45e0aba7-3f9a-4c59-8efd-f96a5e578144" name="ConcreteVisitable2" isAbstract="false" isLeaf="false" cachedFullName="BehavioralPatternsDiagrams::ConcreteVisitable2">
+        <elementDefinition Id="f85385e9-07d8-4c72-8129-5c1c0dd39efc" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="40e6ec4f-4d74-4bc2-b558-8bda273be455" name="ConcreteVisitor1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e63dc2d4-edb6-4cfe-8cb9-f87be4e4988e" />
+        <suppliersInternal>
+          <interfaceRealization Id="fbddf5ab-ffba-401a-a7fe-47cc703d0909">
+            <interfaceMoniker Id="0c9349cf-ef19-4c0b-abb4-35df0037c2ff" LastKnownName="Visitor" />
+            <elementDefinition Id="3dc8c920-09c7-4f73-90bd-5373abbede40" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="221e6cc0-8024-486b-ad5f-60b847796b81" name="Visit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d342f8a5-52dd-4f4a-ac4b-f37959518739" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1d284add-a1b1-4e36-88ad-802505fc9d14" name="concreteVisitable1" direction="In">
+                  <elementDefinition Id="2d0e81b8-1e6c-478b-a81a-21d36beef119" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d834a882-f8b7-467a-b015-da6c9a82e49e" LastKnownName="ConcreteVisitable1" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="21830de4-e03a-4a86-92ac-dbe98eac8dd4" name="Visit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b1772a7a-d1d8-4526-affd-06031d38e30f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="989159b8-b499-420b-b11e-67c1738e9882" name="concreteVisitable2" direction="In">
+                  <elementDefinition Id="426cba3e-9a8a-4028-93fa-8a5f05e4fbf4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="45e0aba7-3f9a-4c59-8efd-f96a5e578144" LastKnownName="ConcreteVisitable2" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f8629e06-5b5f-455d-8040-c98097d3b65b" name="ConcreteVisitor2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="60589496-bfeb-4763-bbe0-f851014858d1" />
+        <suppliersInternal>
+          <interfaceRealization Id="d469b839-ff25-48a3-bdb3-b54e1e208762">
+            <interfaceMoniker Id="0c9349cf-ef19-4c0b-abb4-35df0037c2ff" LastKnownName="Visitor" />
+            <elementDefinition Id="b08e137a-28ce-4db7-ab63-4922aed2ed09" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="2b1c8727-6bda-44db-9558-6a787f860921" name="Visit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="db40dfb4-132d-4854-9385-736df65794f9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="177f86cb-493d-46ea-b8b0-20d79305cb4a" name="concreteVisitable1" direction="In">
+                  <elementDefinition Id="182a2c2b-357e-4625-a908-4a253da8410a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d834a882-f8b7-467a-b015-da6c9a82e49e" LastKnownName="ConcreteVisitable1" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="56aebe3b-d4d9-40ed-93d0-79e58112eb91" name="Visit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c361c574-c640-4bc8-a43e-633a8e33d700" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="53bd4431-f322-4a74-95f1-d118ca161c73" name="concreteVisitable2" direction="In">
+                  <elementDefinition Id="09245980-3b77-4409-ad81-31a89e712acf" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="45e0aba7-3f9a-4c59-8efd-f96a5e578144" LastKnownName="ConcreteVisitable2" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="952c15a1-dad3-4593-a1cf-6f49d3e86a19" name="ObjectStructure" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b306245d-314e-4a0b-939b-86555170ffdd" />
+        <suppliersInternal>
+          <dependency Id="d1d0886a-26d4-47f2-92fb-10462a0c074c">
+            <interfaceMoniker Id="0c9349cf-ef19-4c0b-abb4-35df0037c2ff" LastKnownName="Visitor" />
+            <elementDefinition Id="c1b17a49-e4ae-4397-b706-fa2ee448187a" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="e3df4437-6b68-4cf2-b45a-bae56cc40497" isDerived="false" sourceEndRoleName="ObjectStructure" targetEndRoleName="ConcreteVisitable2" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b790208f-b758-406f-9473-1ceeeb428270" LastKnownName="ConcreteVisitable2" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="742e2246-d36c-45dd-9e29-6d81c9dcd6e7" name="ObjectStructure" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8fed88e4-36f3-4b23-9836-21863f5b0318" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e4a8b1e8-bfd1-4d12-90ad-fbcc51c12f52" name="ConcreteVisitable2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="35e8e350-53db-42f4-a172-21ce41e15937" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5d31fa17-feda-4a9e-8c05-54d56380a51d" />
+          </association>
+          <association Id="bf509660-cb6a-4bf7-bd2c-d9e810e56b58" isDerived="false" sourceEndRoleName="ObjectStructure" targetEndRoleName="ConcreteVisitable1" isLeaf="false" isAbstract="false">
+            <classMoniker Id="9af4caec-bdc2-4fd9-bd3d-29db006d29d2" LastKnownName="ConcreteVisitable1" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1671bf21-f953-4d80-bef1-04d761b25928" name="ObjectStructure" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="47f69d05-395a-404b-9814-07aabed6af78" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="14bd6a0f-fc6f-4735-8c00-904f2cd96b24" name="ConcreteVisitable1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="4d94d080-91dd-4d9f-8dc8-ea1f51e163ff" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0d0dbb6e-86e1-4801-9df7-2c303a944336" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="a9455733-579c-4a1c-9c4a-e5391bec754c" name="Visitable1" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="34365cb6-ff8e-43d1-b8f0-826f2f883908" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f291c876-2ff9-4bf0-8509-d477340a2c63" LastKnownName="ConcreteVisitable1" />
+            </type_NamedElement>
+          </property>
+          <property Id="717ba222-6d85-4728-bf1e-fd18d1a3f779" name="Visitable2" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bea6f9ad-18fd-4ffa-98ae-aecadb0930d7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e34af342-a63e-4f63-8a8e-764651616328" LastKnownName="ConcreteVisitable2" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="01b46a30-1e80-4301-83b8-de0af8e3f88c" name="Visit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c6194959-7e3f-43ba-a347-7be73a6ffcbf" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="391ecec9-6e9b-48fe-9bda-b77623e29233" name="visitor" direction="In">
+                  <elementDefinition Id="d0ec3911-bad5-43ed-9830-8f2ec07a0fe7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="bf52cd1c-8606-490b-99f7-a82838501574" LastKnownName="Visitor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="f291c876-2ff9-4bf0-8509-d477340a2c63" name="ConcreteVisitable1" isAbstract="false" isLeaf="false" cachedFullName="BehavioralPatternsDiagrams::ConcreteVisitable1">
+        <elementDefinition Id="7f53fdbe-417d-42a9-beb3-75a35e43c23b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e34af342-a63e-4f63-8a8e-764651616328" name="ConcreteVisitable2" isAbstract="false" isLeaf="false" cachedFullName="BehavioralPatternsDiagrams::ConcreteVisitable2">
+        <elementDefinition Id="f85385e9-07d8-4c72-8129-5c1c0dd39efc" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="f38b7349-d8dd-494e-b5aa-6de347b9a80a" name="BehavioralPatternsDiagrams">
+    <elementDefinition Id="ab0df1a1-6716-4f07-98a6-a60d1545f3de" />
+  </package>
+</logicalClassDesignerModel>

@@ -182,6 +182,26 @@
     <Content Include="TemplateMethodPattern\TemplateMethodPatternSequenceDiagram.PNG">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="VisitorPattern\VisitorPattern.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="VisitorPattern\VisitorPattern.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>VisitorPattern\VisitorPattern.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="VisitorPattern\VisitorPattern.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="VisitorPattern\VisitorPattern.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>VisitorPattern\VisitorPattern.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="VisitorPattern\VisitorPatternClassDiagram.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="VisitorPattern\VisitorPatternSequenceDiagram.png">
+      <SubType>Content</SubType>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\BehavioralPatternsDiagrams.uml">
       <SubType>Content</SubType>
@@ -191,6 +211,7 @@
     <Folder Include="CommandPattern" />
     <Folder Include="Memento" />
     <Folder Include="IteratorPattern" />
+    <Folder Include="VisitorPattern" />
     <Folder Include="StatePattern" />
     <Folder Include="TemplateMethodPattern" />
     <Folder Include="Observer" />
