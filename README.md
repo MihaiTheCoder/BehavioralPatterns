@@ -322,6 +322,7 @@ Class diagram for the observer pattern:
 ![alt text][ObserverClassDiagram]
 
 Sequence diagram for the observer pattern:
+
 ![alt text][ObserverSequenceDiagram]
 
 ### b. When to use Observer pattern
