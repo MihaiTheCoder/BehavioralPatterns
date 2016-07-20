@@ -175,6 +175,16 @@ C# interfaces helpers for Iterator pattern: IEnumerator<T>, IEnumerable<T>, yiel
 Java: Iterator<E>, Iterable<E>
 Some use the term container, some use the term aggregate, is one and the same thing. From now, we will use only the aggregate term.
 
+[IteratorClassDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/IteratorPattern/Iterator.classdiagram.png "Chain of responsibility class diagram"
+[IteratorSequenceDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/IteratorPattern/IteratorSequenceDiagram.PNG "Iterator sequence diagram"
+
+Class diagram: 
+
+![alt text][IteratorClassDiagram]
+
+Sequence diagram(the only reason why we have do..while and not while is so that I can represent it in the diagram correctly, generally people are writing while if they cannot use foreach variant provided by language (foreach in c# case), while(Iterator.MoveNext()) Process(Iterator.Current); 
+
+![alt text][IteratorSequenceDiagram]
 ### b. When to use Iterator pattern
 
  When you want to just parse over some data without bothering how to parse it
