@@ -411,6 +411,7 @@ If we want to implement this using state pattern, we would need to make a new cl
 		* AcceptanceTestsFail - move user story from state Resolved to state Active
 		* AcceptanceTestsPassed - moves user story from state Resolved to state Closed
 	* Motivational example class: ScrumExample.ScrumMotivationalExample
+	* Role based state flavor: Starting class: ScrumWithRoleStates.ScrumStateWithRoleInterfacesExample
 
 
 8. Strategy pattern
