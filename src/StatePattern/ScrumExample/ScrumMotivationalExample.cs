@@ -30,6 +30,11 @@ namespace StatePattern.ScrumExample
         public UserStoryState State { get; set; }
     }
 
+    public enum UserStoryState
+    {
+        New = 0, Active = 1, Resolved = 2, Closed = 3, Removed = 4
+    }
+
     /// <summary>
     /// User story states: New, Active, Resolved, Closed, Removed
     /// Actions on user stories: 
