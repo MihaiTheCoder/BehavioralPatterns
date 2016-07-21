@@ -386,7 +386,7 @@ Sequence diagram for the state pattern:
 If we want to implement this using state pattern, we would need to make a new class for all the combinations of the all the states.
 
 ### e. Flavors
-* hierarchical state pattern
+* role based state pattern
 * Classical state pattern
 
 ### f. Examples
