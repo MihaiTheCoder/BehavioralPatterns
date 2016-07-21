@@ -24,6 +24,12 @@ namespace StatePattern.ScrumExample
         }
     }
 
+    public class UserStoryMotivational
+    {
+        public string Name { get; set; }
+        public UserStoryState State { get; set; }
+    }
+
     /// <summary>
     /// User story states: New, Active, Resolved, Closed, Removed
     /// Actions on user stories: 
