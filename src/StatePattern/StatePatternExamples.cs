@@ -1,5 +1,6 @@
 ﻿using StatePattern.FanExample;
 using StatePattern.ScrumExample;
+using StatePattern.ScrumWithRoleStates;
 using StatePattern.TVExample;
 using System;
 using System.Collections.Generic;
@@ -32,6 +33,9 @@ namespace StatePattern
 
             GoToNextStep();
             ScrumStatePatternExample.Run();
+
+            GoToNextStep();
+            ScrumStateWithRoleInterfacesExample.Run();
         }
 
         private static void GoToNextStep()

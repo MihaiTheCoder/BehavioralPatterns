@@ -39,7 +39,7 @@ namespace StatePattern.ScrumExample
     /// User story states: New, Active, Resolved, Closed, Removed
     /// Actions on user stories: 
     /// Create - creates a new user story in state New
-    /// RemoveFromBacklog - moves a user story from state New to State removed
+    /// RemoveFromBacklog - moves a user story from state New to State Removed
     /// StartImplementation - moves user story from state New to state Active
     /// MoveToBacklog - moves user story from state Active/Removed to state New
     /// CodeFinishedAnUnitTestsPassed - move user story from state Active to state Resolved 

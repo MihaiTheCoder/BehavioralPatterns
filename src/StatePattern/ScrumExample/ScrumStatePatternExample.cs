@@ -25,10 +25,13 @@ namespace StatePattern.ScrumExample
             //but leaving that asside, assuming we will have to add another transition availalable that can be executed only from one state
             //we will have to modify all the existing states, just to throw the exception.
             
-            
+            //To view what are the allowed transitions, is very hard when using state pattern with roles
         }
     }
 
+    /// <summary>
+    /// State interface
+    /// </summary>
     public interface IScrumState
     {
         void RemoveFromBacklog();
@@ -41,11 +44,25 @@ namespace StatePattern.ScrumExample
 
         void AcceptanceTestsPassed();
 
-        void CodeFinishedAnUnitTestsPassed();
+        void CodeFinishedAndUnitTestsPassed();
     }
 
+    /// <summary>
+    /// Context
+    /// User story states: New, Active, Resolved, Closed, Removed
+    /// Actions on user stories: 
+    /// Create - creates a new user story in state New
+    /// RemoveFromBacklog - moves a user story from state New to State removed
+    /// StartImplementation - moves user story from state New to state Active
+    /// MoveToBacklog - moves user story from state Active/Removed to state New
+    /// CodeFinishedAndUnitTestsPassed - move user story from state Active to state Resolved 
+    /// AcceptanceTestsFail - move user story from state Resolved to state Active
+    /// AcceptanceTestsPassed - moves user story from state Resolved to state Closed
+    /// </summary>
     public class UserStory
     {
+        public IScrumState State { get; set; }
+
         public IScrumState New { get; private set; }
         public IScrumState Active { get; private set; }
         public IScrumState Resolved { get; private set; }
@@ -62,7 +79,6 @@ namespace StatePattern.ScrumExample
 
             State = New;
         }
-        public IScrumState State { get; set; }
         public int Name { get; internal set; }
 
         public void AcceptanceTestsFail()
@@ -89,12 +105,15 @@ namespace StatePattern.ScrumExample
             State.StartImplementation();
         }
 
-        public void CodeFinishedAnUnitTestsPassed()
+        public void CodeFinishedAndUnitTestsPassed()
         {
-            State.CodeFinishedAnUnitTestsPassed();
+            State.CodeFinishedAndUnitTestsPassed();
         }
     }
 
+    /// <summary>
+    /// Concrete State
+    /// </summary>
     internal class ScrumStateNew : IScrumState
     {
         private UserStory userStory;
@@ -116,7 +135,7 @@ namespace StatePattern.ScrumExample
             Console.WriteLine("Development didn't even started, you should check your tests");
         }
 
-        public void CodeFinishedAnUnitTestsPassed()
+        public void CodeFinishedAndUnitTestsPassed()
         {
             //throw the exception
             Console.WriteLine("Before you can finish the code, you should have started implementation"); 
@@ -130,8 +149,8 @@ namespace StatePattern.ScrumExample
 
         public void RemoveFromBacklog()
         {
-            //throw the exception
             Console.WriteLine("User story removed");
+            userStory.State = userStory.Removed;
         }
 
         public void StartImplementation()
@@ -141,6 +160,9 @@ namespace StatePattern.ScrumExample
         }
     }
 
+    /// <summary>
+    /// Concrete State
+    /// </summary>
     internal class ScrumStateActive : IScrumState
     {
         private UserStory userStory;
@@ -162,7 +184,7 @@ namespace StatePattern.ScrumExample
             Console.WriteLine("Development is not yet done");
         }
 
-        public void CodeFinishedAnUnitTestsPassed()
+        public void CodeFinishedAndUnitTestsPassed()
         {
             Console.WriteLine("I'll notify the testers!");
             userStory.State = userStory.Resolved;
@@ -170,8 +192,8 @@ namespace StatePattern.ScrumExample
 
         public void MoveToBacklog()
         {
-            //throw the exception
             Console.WriteLine("Moved userstory to backlog");
+            userStory.State = userStory.New;
         }
 
         public void RemoveFromBacklog()
@@ -187,6 +209,9 @@ namespace StatePattern.ScrumExample
         }
     }
 
+    /// <summary>
+    /// Concrete State
+    /// </summary>
     internal class ScrumStateResolved : IScrumState
     {
         private UserStory userStory;
@@ -208,7 +233,7 @@ namespace StatePattern.ScrumExample
             userStory.State = userStory.Closed;
         }
 
-        public void CodeFinishedAnUnitTestsPassed()
+        public void CodeFinishedAndUnitTestsPassed()
         {
             //throw the exception
             Console.WriteLine("The item was already resolved");
@@ -233,6 +258,9 @@ namespace StatePattern.ScrumExample
         }
     }
 
+    /// <summary>
+    /// Concrete State
+    /// </summary>
     internal class ScrumStateClosed : IScrumState
     {
         private UserStory userStory;
@@ -254,7 +282,7 @@ namespace StatePattern.ScrumExample
             Console.WriteLine("User story is already closed");
         }
 
-        public void CodeFinishedAnUnitTestsPassed()
+        public void CodeFinishedAndUnitTestsPassed()
         {
             //throw the exception
             Console.WriteLine("Item was already closed");
@@ -262,6 +290,7 @@ namespace StatePattern.ScrumExample
 
         public void MoveToBacklog()
         {
+            //throw the exception
             Console.WriteLine("Item was already closed, cannot move to new state");
         }
 
@@ -278,6 +307,9 @@ namespace StatePattern.ScrumExample
         }
     }
 
+    /// <summary>
+    /// Concrete State
+    /// </summary>
     internal class ScrumStateRemoved : IScrumState
     {
         private UserStory userStory;
@@ -299,9 +331,9 @@ namespace StatePattern.ScrumExample
             Console.WriteLine("Item was removed, you can only move it to backlog again");
         }
 
-        public void CodeFinishedAnUnitTestsPassed()
+        public void CodeFinishedAndUnitTestsPassed()
         {
-         
+            //throw the exception         
         }
 
         public void MoveToBacklog()
