@@ -502,6 +502,7 @@ Sequence diagram:
 ### a. Pattern description
 * Visitor pattern allows for one or more operation to be applied to a set of objects at runtime, decoupling the operations from the object structure.
 * Visitor is similar to Iterator, the difference is that visitor pattern allows to process more complex structure with different types
+* Represent an operation to be performed on elements of an object structure. Visitor lets you define a new operation without changing the classes of the elements on which it operates. [GoF]
 
 [VisitorClassDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/VisitorPattern/VisitorPatternClassDiagram.png "Visitor class diagram"
 [VisitorSequenceDiagram]: https://github.com/MihaiTheCoder/BehavioralPatterns/blob/master/BehavioralPatternsDiagrams/VisitorPattern/VisitorPatternSequenceDiagram.png "Visitor sequence diagram"
