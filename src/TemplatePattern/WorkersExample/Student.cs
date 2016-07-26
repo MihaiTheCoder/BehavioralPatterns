@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace TemplatePattern.WorkersExample
 {
+    /// <summary>
+    /// Concrete class
+    /// </summary>
     public class Student : Worker
     {
         protected override void WakeUpAndDrinkCoffee()

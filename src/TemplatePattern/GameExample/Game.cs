@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace TemplatePattern.GameExample
 {
+    /// <summary>
+    /// Framework/Abstract class
+    /// </summary>
     public abstract class Game
     {
         protected abstract void InitGame();

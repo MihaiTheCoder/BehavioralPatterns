@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace TemplatePattern.WorkersExample
 {
     /// <summary>
-    /// Framework class
+    /// Framework-Abstract class
     /// </summary>
     public abstract class Worker
     {

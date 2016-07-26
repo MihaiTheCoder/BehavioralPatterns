@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace TemplatePattern.GameExample
 {
+    /// <summary>
+    /// Concrete class
+    /// </summary>
     public class Football : Game
     {
         protected override void EndGame()
