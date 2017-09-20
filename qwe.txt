@@ -1,0 +1,1012 @@
+commit 37d38b9164aaa7a8f5ba5cd3bab527ae25f0bf50 (HEAD -> refs/heads/master, refs/remotes/upstream/master, refs/remotes/origin/master, refs/remotes/origin/HEAD)
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Tue Jul 26 14:33:18 2016 +0300
+
+    Update README.md
+
+commit 9e7f17df12956c1f3289499c586912a39dfea9a2
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 26 14:27:47 2016 +0300
+
+    Add comments so that it's easy to know what each class represents on Template method pattern
+
+commit 3aa13623693f6a62a7b9a92c91c71327ccd4e88b
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Thu Jul 21 15:35:12 2016 +0300
+
+    Update README.md
+
+commit 9179a832a833806ea9f40f1eaaa4571f553baa6b
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Thu Jul 21 14:22:43 2016 +0300
+
+    Update README.md
+
+commit 1d04dafb70104deb123910c30aa2f3cf52a171fc
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jul 21 13:59:57 2016 +0300
+
+    Add BehavioralPatterns project back again in the solution (somehow it was gone)
+    Update Scrum example on State pattern
+    Add Scrum pattern using state role interfaces
+
+commit 2bea7d280f37ae8de3bff0fb046e8d2196c64325
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jul 21 11:50:54 2016 +0300
+
+    Move UserStoryState to MotivationalExample
+
+commit 1a429e7490de3533a1f447db4a3952f57f2d60d4
+Merge: 8ced7d9 42ef8ee
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jul 21 11:49:34 2016 +0300
+
+    Merge branch 'master' of https://github.com/MihaiTheCoder/BehavioralPatterns.git
+
+commit 8ced7d951bbb8a2fa2f30dd7454ccf372687547a
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jul 21 11:49:27 2016 +0300
+
+    Move UserStoryMotivational to the motivational example file
+    Update the scrum state pattern example with description about some pitfalls of classsic implementation
+
+commit 42ef8ee7b33b299011865f3c74df7188a50e8bf5
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Thu Jul 21 11:16:07 2016 +0300
+
+    Update README.md
+
+commit 462ee43283a0eeac45c587a4108553a287976673
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 20 17:53:06 2016 +0300
+
+    Remove diagrams from BehavioralPatterns solution, so that people without Visual Studio Ultimate may open withotu seing errors.
+    Add another solution BehavioralPatternsWIthDiagrams where we have also the modeling project
+
+commit b9192b8408aa553f46d359c4e222ccd2711ba89f
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Wed Jul 20 17:45:51 2016 +0300
+
+    Delete .travis.yml
+
+commit 8f3e415f2a3a7aea6bc929dcae0d20c9c2ef0c90
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Wed Jul 20 17:45:45 2016 +0300
+
+    Delete build.sh
+
+commit b9f73147e226e7634f3eee460a784d6003dab5b3
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Wed Jul 20 17:35:14 2016 +0300
+
+    Update README.md
+
+commit 35723516bf5e470374c4ebd8812aff9bd033f493
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Wed Jul 20 17:24:04 2016 +0300
+
+    Update README.md
+
+commit ff34854b0e84f6ae51930a653e171e89064ebaf1
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 20 17:10:45 2016 +0300
+
+    Update ChainOfResponsnsibility sequence  diagram (make it smaller)
+
+commit c787152031d412e0497d52066dc9c6dc436dbea5
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Wed Jul 20 16:58:56 2016 +0300
+
+    Update README.md
+
+commit 12bec9253c28710be11df48c8d059777c31a64f4
+Merge: faab9ed 5c77223
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 20 16:38:43 2016 +0300
+
+    Merge branch 'master' of https://github.com/MihaiTheCoder/BehavioralPatterns.git
+
+commit faab9ed177659b647826dac4941e9d0fa8d8fd6e
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 20 16:38:37 2016 +0300
+
+    Update diagrams
+
+commit 5c7722323f05a2de65937435120fe9aa3131082c
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Wed Jul 20 14:58:22 2016 +0300
+
+    Update README.md
+
+commit 8b23652c8e26b464f213ce4a0f266e8719406d55
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 20 14:47:46 2016 +0300
+
+    Add StrategyPattern diagrams
+
+commit 580d242142309a99480b6d7c6ae87a4ba27edf01
+Merge: 99642bc ead2594
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 20 12:25:13 2016 +0300
+
+    Merge branch 'master' of https://github.com/MihaiTheCoder/BehavioralPatterns.git
+
+commit ead259471432e8440c849d7c0a5e8a9c0d0c2759
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Wed Jul 20 12:26:22 2016 +0300
+
+    Update README.md
+
+commit 99642bcea8466180dce02d9351c46ab9684af2d8
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 20 12:25:08 2016 +0300
+
+    Update visitor class diagram
+
+commit b359a6af9f4de7542e8d5d51155b983ab9d425b2
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 20 12:18:01 2016 +0300
+
+    Add visitor pattern diagrams
+
+commit 4507e2aa082d240ec2b4353b748115d365c1276f
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Wed Jul 20 09:38:42 2016 +0300
+
+    Update README.md
+
+commit e2a95b7d6a188976764bfbb88fb346ed2c664cdd
+Merge: 1c2c8f3 1039d12
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 20 09:33:00 2016 +0300
+
+    Merge branch 'master' of https://github.com/MihaiTheCoder/BehavioralPatterns.git
+
+commit 1c2c8f35888ea9426a3a449b2fc2cb15e4efeccd
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 20 09:32:52 2016 +0300
+
+    Add state pattern diagrams
+
+commit 1039d12404b80b99df7e0a32311dc9d1aad04c61
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Mon Jul 18 17:49:47 2016 +0300
+
+    Update README.md
+
+commit d82a64cbd18a09ea3ac346f217f2b169d0510a29
+Merge: 2e89181 376035e
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Mon Jul 18 17:42:25 2016 +0300
+
+    Merge branch 'master' of https://github.com/MihaiTheCoder/BehavioralPatterns.git
+
+commit 2e89181e6221fe0430bccc27256e65fe08f633a7
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Mon Jul 18 17:42:18 2016 +0300
+
+    Add more comments to MementoPatternExamples
+
+commit 376035e0b8ac2e0e3bb11395d82c7437f8ce460d
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Mon Jul 18 17:30:03 2016 +0300
+
+    Update README.md
+
+commit 7f6b83edab816f3475284c4bc37f3929f8f5e4b4
+Merge: 2308d54 f4d76e8
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Mon Jul 18 17:11:54 2016 +0300
+
+    Merge branch 'master' of https://github.com/MihaiTheCoder/BehavioralPatterns.git
+
+commit 2308d5422ff898d87231cd3a895b15926c0ae63c
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Mon Jul 18 17:11:40 2016 +0300
+
+    Add iterator pattern diagram
+
+commit f4d76e8bffd15c5a5ade5373ae722efa504f3c3a
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Mon Jul 18 16:15:59 2016 +0300
+
+    Update README.md
+
+commit c15730272d0e765bd1db9feb2be8d1333591dd14
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Mon Jul 18 16:09:18 2016 +0300
+
+    Add Memento diagrams
+
+commit 83e82e03ab4dc5314d7a14291189ec75e16c688a
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Mon Jul 18 15:45:28 2016 +0300
+
+    Add compressed employee example
+
+commit 7192d9e9ce50bda67044dee9cdc7aa1b769fd415
+Merge: 07b8236 1548beb
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Mon Jul 18 11:50:38 2016 +0300
+
+    Merge branch 'master' of https://github.com/MihaiTheCoder/BehavioralPatterns.git
+
+commit 07b82366152afaf325d3c7ef080b27336e4d44f7
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Mon Jul 18 11:50:32 2016 +0300
+
+    Add iterative memento example
+
+commit 1548beb8f6779a01770e69e72b88fb535f39d0df
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Thu Jul 14 17:03:18 2016 +0300
+
+    Update README.md
+
+commit fc90a107e09cc977b4479bce58bb163e27130009
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Thu Jul 14 17:02:56 2016 +0300
+
+    Update README.md
+
+commit 1f22109ebde34cc1bc8977f86cac0c693abc22b9
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Thu Jul 14 17:01:28 2016 +0300
+
+    Update README.md
+
+commit f51be64faf09039e6bae803b76ddd594180a819d
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Thu Jul 14 17:00:03 2016 +0300
+
+    Update README.md
+
+commit 24022c1436552e2e2c328974033067b3a59964b5
+Merge: db34ff7 3b4b80d
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jul 14 16:55:01 2016 +0300
+
+    Merge branch 'master' of https://github.com/MihaiTheCoder/BehavioralPatterns.git
+
+commit db34ff70a4f94f108365020f2c688346bbcbafa6
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jul 14 16:54:53 2016 +0300
+
+    Add template method pattern diagrams
+
+commit 3b4b80dc65b325e28c20abfd31d869c8ae1b7d43
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Thu Jul 14 16:43:07 2016 +0300
+
+    Update README.md
+
+commit ba5bfb7f6a35ad198dc906c0d282a7fca813148a
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Thu Jul 14 16:42:01 2016 +0300
+
+    Update README.md
+
+commit 23c932e8d2a328f9fb2f1cce0458cc3fce4fe0c4
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Thu Jul 14 15:09:05 2016 +0300
+
+    Update README.md
+
+commit 59860c2c6e5be92451b4f044c50ad3df8ad2c966
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jul 14 15:03:45 2016 +0300
+
+    Update StockExchange example from mediator pattern
+
+commit a78413dd958c1fd947b0a435273c67b6cdc54c9b
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jul 14 14:56:05 2016 +0300
+
+    Update StockExchange example
+
+commit 01bf96e974f604500369706d1f9e7be28e1eda6f
+Merge: dc7a546 a13b573
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Thu Jul 14 14:51:45 2016 +0300
+
+    Merge pull request #3 from MihaiTheCoder/play
+    
+    Play
+
+commit dc7a54659d7aef844f3bba93482c551f2d5b392e
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jul 14 14:49:06 2016 +0300
+
+    Update readme on master
+
+commit a13b573e00a699e45ae960fb8fc960da500c96dc
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Thu Jul 14 14:46:27 2016 +0300
+
+    Update README.md
+
+commit f7191b84f329fa0e6e5fd2cff421092ab251043b
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jul 14 14:41:38 2016 +0300
+
+    Add command pattern diagrams
+
+commit f1e170a46700b2f2609c1f2491249de088a5713a
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Thu Jul 14 14:22:22 2016 +0300
+
+    Update README.md
+
+commit ae6774d316bcbafd8fc3a71642da6ad297749f14
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jul 14 14:14:17 2016 +0300
+
+    Remove extra spaces
+
+commit 7cdf6362d68f10ae4d2f320a6401290e035b5cf5
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jul 14 14:14:03 2016 +0300
+
+    Add Chain of responsibility diagrams
+
+commit 0b0264561ea796cade1543593aee8af49bb5c44e
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jul 14 12:43:21 2016 +0300
+
+    Fix namespace
+
+commit 7ec689d3822131255274b73d8627a81d78b012f4
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jul 14 12:40:24 2016 +0300
+
+    Update project.json to latest version of .net core
+
+commit b91ad81b68635537d75dbdae04f344b3cf7d8a56
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Thu Jul 14 11:04:36 2016 +0300
+
+    Update README.md
+
+commit 55099fdfa4f73eefa413d715511f3c8e7b4160e0
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jul 14 11:00:01 2016 +0300
+
+    Add AirTrafficController class diagram
+
+commit 255ad935f51522d7c93001ff11fc566736a6e010
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Thu Jul 14 10:50:02 2016 +0300
+
+    Update README.md
+
+commit 0c5e809a21a6ee7d8527f86f88f0bc6fe7f98383
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jul 14 10:38:52 2016 +0300
+
+    Make Colleagues in MediatorClassDiagram a little bigger to be seen better
+
+commit b48fd0392f78d644369072f329162ae7705c1e2f
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jul 14 10:36:24 2016 +0300
+
+    Add Mediator class diagram
+
+commit 3ec034025023913df7153b6d6baac77b1bdacad1
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Thu Jul 14 10:15:51 2016 +0300
+
+    Update README.md
+
+commit 86a0e5e4a715fa87e7554582bc40d4aee540896a
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jul 14 10:05:26 2016 +0300
+
+    Delete duplicate snapshots of the diagrams
+
+commit db0f5bbbc64c8acf3a438b4bb0dc69c9b307cc25
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jul 14 10:03:29 2016 +0300
+
+    Add modeling project to have diagrams for patterns
+
+commit 939f15bfa6fa873f0a79f66f9f3090ab98c75732
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Thu Jul 14 00:10:14 2016 +0300
+
+    Update README.md
+
+commit 04ff002e7b028ea92f1d3d389d9a9cbba5597376
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Thu Jul 14 00:07:24 2016 +0300
+
+    Update README.md
+    
+    Add Behavioral patterns description
+
+commit 196c596c2b61c2d03b85dc523f3b60d2d3ae3dfd
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Wed Jul 13 23:29:09 2016 +0300
+
+    Update README.md
+
+commit d0aa28478f42b836fb69e177c3b40e1cdfa0f7b5
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Wed Jul 13 20:08:58 2016 +0300
+
+    Update README.md
+
+commit a055b3267b274c66e731ecf457d08d34cf4d164e
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Wed Jul 13 18:55:33 2016 +0300
+
+    Update README.md
+
+commit 5802009ffbf7958a4bbfcd36952cb4a1bbaa8798
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Wed Jul 13 18:53:54 2016 +0300
+
+    Update README.md
+
+commit f081ab6b9c7e9b65513596652dafb217454a42cc
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 13 17:42:20 2016 +0300
+
+    Update readme formatting
+
+commit d0b03cd1974da9cec6f4344d2aeacaa7ab9fd282
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 13 17:33:58 2016 +0300
+
+    Update readme with visitor description
+
+commit 689509c5de1322075ea4dd355d33002f16a55271
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 13 16:47:20 2016 +0300
+
+    Update description for visitor
+
+commit 7d013ce48b61d18db8620254c21c2f54c4d0b4fe
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 13 14:41:54 2016 +0300
+
+    Update readme
+
+commit a9167c30e317516518403bd61c1efb94a90d661a
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 13 14:41:39 2016 +0300
+
+    Move fun examples down
+
+commit 6acb465f3ecd6550508e25dffb295172bfcb477c
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 13 14:23:04 2016 +0300
+
+    Remove build status, as it looks harder to add build to .net core
+
+commit 176b3724783406ad6e2bb14d97811ecacb0ffd01
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 13 14:13:59 2016 +0300
+
+    Try with simple travis.yml
+
+commit 2b85bd0d31d2c5ec8930a5336ba279a78fc9565b
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 13 14:03:47 2016 +0300
+
+    permission access for travis
+
+commit e75c139e7ac6da88f2181778e3cd303671bfc9de
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Wed Jul 13 13:57:03 2016 +0300
+
+    Update build.sh
+
+commit 20aa9e6b7ecadb12339dc5c7d977c88d9d8df379
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Wed Jul 13 13:56:12 2016 +0300
+
+    Update .travis.yml
+
+commit 89de55081ceeac91238fd17457bc6c616d710381
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 13 13:51:36 2016 +0300
+
+    Add build.sh and travis.yml
+
+commit 7aa555313bfb004a4134da13c143deef86c8efaa
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 13 13:42:11 2016 +0300
+
+    Update readme
+
+commit e5b5fc1a51c6b8db663d0b020668ea6fe3e46d2d
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 13 12:45:40 2016 +0300
+
+    Replace var with actual code so that people can see that it's observable, not observer
+    Update Observer pattern description/ State pattern description
+
+commit 5a2705af49b92b91764d566a2e7ce9fb250b4fed
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 13 09:34:32 2016 +0300
+
+    Update memento description
+
+commit b3c6a985e2d2d4ee5e3a132fc4b933686c6a8ea0
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 12 18:20:19 2016 +0300
+
+    Add Mediator pattern description
+
+commit 508a23c6f7e470dfec472d0425135c85f29c0fc7
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 12 16:49:12 2016 +0300
+
+    Add iterator pattern to readme
+
+commit e3a75f8c26df31ac182cf5d458c99b497c9ceb2e
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 12 15:43:55 2016 +0300
+
+    Update description of command pattern
+
+commit 7629d91988df57f5daa92eb8fe435f21803b34ca
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 12 14:31:28 2016 +0300
+
+    Update readme
+
+commit adb81a856f5ff729c37353441a46b85c07a163e5
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 12 13:46:04 2016 +0300
+
+    Update readme
+
+commit 0c3b57fc9a041f9a3ddfb5c3e20c212955f20c01
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 12 13:45:41 2016 +0300
+
+    Update readme
+
+commit 4da3853e35f79114a193f04a4ba307d00b02bf53
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 12 13:44:51 2016 +0300
+
+    Flavors update
+
+commit 1ef2c4beb1d107b29efd3db4be2c51a45e845a1c
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 12 13:44:16 2016 +0300
+
+    Update readme
+
+commit cf54236bff76d520a690a38aed6eba555226d8bb
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 12 13:43:04 2016 +0300
+
+    Update readme
+
+commit 7d7e4f4878be9cc98228adea0eff0da29aa186a5
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 12 13:42:08 2016 +0300
+
+    Update readme
+
+commit 9c6d0169f07f3c456e5cb1623d0cba30a6048f7f
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 12 13:40:41 2016 +0300
+
+    Update readme
+
+commit af4a7f49bf1d26556019d9198364e19373680725
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 12 13:39:38 2016 +0300
+
+    Update readme
+
+commit 14bd8fa4d1d05d33ed58a038e8dab1235a9e39df
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 12 13:39:16 2016 +0300
+
+    Update readme
+
+commit 465ed40bc5a8775729aec6c091e1856de5a250df
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 12 13:36:59 2016 +0300
+
+    Update readme
+
+commit 06b7793f13a554f4b0eb5525e64284e33f1d7988
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 12 13:35:37 2016 +0300
+
+    Update readme
+
+commit 814e5a093cb413081e09523ba977d12cc29d9e5d
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 12 13:32:58 2016 +0300
+
+    Update readme
+
+commit a63c77153f8f76a0ade58690097674696b31be40
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 12 12:55:22 2016 +0300
+
+    Leave a blank line before examples described
+
+commit ca20391c1516e50a5e63ea2b2d82dc106e599756
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 12 12:53:23 2016 +0300
+
+    Update readme
+
+commit f0f5177e6d672ec63c40bc9e51cf3057534e6f7b
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 12 12:52:47 2016 +0300
+
+    Update readme
+
+commit b7e77e94e9073608332310ac30d3ad7d5616905c
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 12 12:50:41 2016 +0300
+
+    Update readme with Chain of responsibility example
+
+commit 97fbc20387fd9356fe8c2c94f4b8808aee5f36e5
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 12 12:24:44 2016 +0300
+
+    Update readme
+
+commit 301167a30f635af9862f9dcb9597b4dde8d73bd2
+Author: Petrutiu Mihai <mihaipetrutiu@yahoo.com>
+Date:   Mon Jul 11 19:03:42 2016 +0300
+
+    Update readme
+
+commit c7bc1e6f367c3504a320dbb36925b74da3dc4e7a
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Mon Jul 11 15:33:47 2016 +0300
+
+    Add some description comments to Mediator pattern
+
+commit 67790912056e57eccacd743a38543397f08bef57
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 6 15:08:23 2016 +0300
+
+    Add dynamic visitor example
+
+commit 3c1aa09ec00532d7667f41ab5de6f6d14bf2b893
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 6 14:45:43 2016 +0300
+
+    Add CalculateMoney with visitor pattern
+
+commit d5d4fc3f86fcd1e58fc369763f3e0195da015cf6
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 6 11:54:25 2016 +0300
+
+    Add VisitorPattern example
+
+commit 9d16508e681bf978b98ff1ee1ad6c8b5ea9eda24
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 6 10:24:01 2016 +0300
+
+    Add game example to template pattern
+
+commit 97fb73c7fd9f6fa093e43a06ed1b09e7621f281c
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 6 09:58:21 2016 +0300
+
+    Add description to template pattern
+
+commit 161e6b7c038c4f64f5540c8e52516d7c2607058a
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 6 09:38:55 2016 +0300
+
+    Add template method example
+
+commit a8aa2a5a18264aeb04ec715a0506c34cdc129442
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jul 6 09:18:37 2016 +0300
+
+    Update paths to file from ReadBigFilesExample
+
+commit f08167ff1af8a5e2c090da403676af4e76565be6
+Author: Petrutiu Mihai <mihaipetrutiu@yahoo.com>
+Date:   Tue Jul 5 21:06:26 2016 +0300
+
+    Finish StrategyPatternExamples
+
+commit 8e9bc9f061b8e257be4f6a254bf57ba929fa6c93
+Author: Petrutiu Mihai <mihaipetrutiu@yahoo.com>
+Date:   Tue Jul 5 21:04:06 2016 +0300
+
+    Add interview example with strategy pattern
+
+commit 998c9ea23219e1e7bfec20aa24b99d5e934624fe
+Author: Petrutiu Mihai <mihaipetrutiu@yahoo.com>
+Date:   Tue Jul 5 20:57:31 2016 +0300
+
+    Add Strategies for ArrangeInterview
+
+commit 31e6e4c30be01228835f13455ae795bbff939672
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 5 12:57:53 2016 +0300
+
+    Update to print also the last number
+
+commit 4f7eadb7d810c5898893a17299fc59d7d525604e
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 5 12:48:14 2016 +0300
+
+    Remove empty lines not needed for MagnificLoopExample
+
+commit 31257994a2ef90a4321a0a056d4dd179631dab2f
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 5 12:47:36 2016 +0300
+
+    Implement loop without if/loop
+
+commit c174b23929fe4a800bbe0babfe6b68ace3b817a6
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jul 5 09:21:08 2016 +0300
+
+    Add strategy pattern example, count without loop or if
+
+commit aeaa1b627d6c76b685c4bb36a6aa04d94cacd519
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Mon Jul 4 16:04:59 2016 +0300
+
+    Remove IEquatable from Card
+
+commit 21327fc73ff2d6b72d96e588af2ed71211afd840
+Author: Gardient <gradient93@gmail.com>
+Date:   Mon Jul 4 14:39:26 2016 +0300
+
+    revert the automerge changes
+
+commit 3eee148d7628cce8d1ee06b8f00f276dbade7bda
+Author: Gardient <gradient93@gmail.com>
+Date:   Sun Jul 3 22:27:53 2016 +0300
+
+    Use straight and flush validators for straightflush validation
+
+commit a977b697fa0f9f269e767bc314c16dbe65daf26c
+Author: Petrutiu Mihai <mihaipetrutiu@yahoo.com>
+Date:   Sat Jul 2 17:34:09 2016 +0300
+
+    Add ArrangeInterview motivational example
+
+commit 015b1d3f9a1338ed9db524b0bdf67b37a581f90f
+Author: Petrutiu Mihai <mihaipetrutiu@yahoo.com>
+Date:   Sat Jul 2 16:06:50 2016 +0300
+
+    Add description and when to use strategy pattern
+
+commit 39874384d2a48b589711ef377705cc8cc0cbe16e
+Author: Petrutiu Mihai <mihaipetrutiu@yahoo.com>
+Date:   Sat Jul 2 15:18:07 2016 +0300
+
+    add comments to mark what class what represents in strategy pattern
+
+commit 474a923c60e5de90fe67cb124d2dd0114ef35755
+Author: Petrutiu Mihai <mihaipetrutiu@yahoo.com>
+Date:   Sat Jul 2 15:15:38 2016 +0300
+
+    Strategy pattern shipping example
+
+commit 63c5ae3ab11aa7c6fab10e504abded356c27c593
+Author: Petrutiu Mihai <mihaipetrutiu@yahoo.com>
+Date:   Fri Jul 1 13:33:29 2016 +0300
+
+    Add strategy pattern basic example
+
+commit b5997ced9978485095447ee68a2610518ce0ce55
+Author: Gardient <gradient93@gmail.com>
+Date:   Fri Jul 1 00:31:12 2016 +0300
+
+    ze poker hand checker
+
+commit 0a6d290c3e7f2ea8f8deeb176dc9096f87029eea
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jun 30 17:52:11 2016 +0300
+
+    Add User story example on state pattern
+
+commit f9631ea99a4e76a696573570e5a39ae47b1e9b80
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jun 30 12:15:58 2016 +0300
+
+    Add FanExample
+
+commit 9ad9211adcb96d43109d56a22da4f797d269cac5
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jun 30 11:42:20 2016 +0300
+
+    Add motivational example to TV example
+
+commit 243a824e19d8028cec05ea8937e018c059848997
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jun 30 10:43:25 2016 +0300
+
+    Update TV example
+
+commit d0ea0a7d56d6abca1ad612d83815c487c68eb3c1
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jun 30 10:36:25 2016 +0300
+
+    Remove unnecessary field from TVContext
+
+commit 10175aca16766216620125fe3bdb66904155800a
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jun 30 10:34:56 2016 +0300
+
+    Add state pattern example
+
+commit 8d7babb645e1e77d87f8892b18b6fceedf72ae48
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jun 28 18:08:25 2016 +0300
+
+    Update observer pattern description
+
+commit 55ed135ee16a594d60a9f6da9156406ce7c8fcf8
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jun 28 17:59:13 2016 +0300
+
+    Add RX variance to Stocks example on Observer pattern
+
+commit 5d639bf0abe37610894400ba57cec6166f50a951
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jun 28 17:26:33 2016 +0300
+
+    Add stock example on Observer pattern
+
+commit 4a69b3da179330897a37d7f4177825ee19f5acb2
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jun 28 11:35:15 2016 +0300
+
+    Update to .net core
+
+commit d47e43aaa5c8400b42076bff0afda55aa043b150
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jun 23 22:13:11 2016 +0300
+
+    remove unnecessary this qualifier
+
+commit 3ecd8e332be1c6f2c0136fdfe42d25abaac6402c
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jun 23 22:06:34 2016 +0300
+
+    Update Observer pattern
+
+commit c66816b938a88d84fbe77c4eee5cdbef047d6f18
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jun 23 21:39:13 2016 +0300
+
+    Add observer pattern
+    Update memento pattern examples class to have run as static method
+    Update behavioral patterns program.cs to maintain the order
+
+commit 2894347140b728f289c2458dfd23bcfb85369c98
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jun 23 21:05:18 2016 +0300
+
+    Update when to use and print the pitfalls
+
+commit 05709db77e620536d94e662b4d620d7039cd40ee
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jun 23 21:03:26 2016 +0300
+
+    Add another example of the memento pattern
+
+commit 37151a23c790248c209ac719415ef1e4123d6113
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jun 23 20:43:37 2016 +0300
+
+    Add basic memento pattern
+
+commit 0a130b0405591ab624ff1275007835345c70f813
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jun 23 19:45:10 2016 +0300
+
+    Add another air traffic controller example for mediator
+
+commit 06d201c917c40bca1d2f9beade5de5174f6c867d
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jun 23 17:54:44 2016 +0300
+
+    Add partial example UsersToGroups
+
+commit a632b5a6d9b52c792c16009db21ac196697ef6b9
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jun 23 17:04:16 2016 +0300
+
+    Add mediator examples
+
+commit 68f0822bfee14306ee4744bf3e566b9940cceaa7
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jun 23 10:23:16 2016 +0300
+
+    Add pattern descriptionn on iterator pattern
+
+commit 494e3650f9bac0d624f87e5830420a49e4fab89c
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jun 23 10:07:17 2016 +0300
+
+    Update description on ChainOfResponssibility and Command pattern
+
+commit 2f98e10ee2b053c6d5493d28918d72c0b0242d48
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jun 23 09:41:01 2016 +0300
+
+    Undo initial program to run all examples
+    Remove unnecessary variable from StockSchedule
+
+commit dd93a7c09946a33738094e6bd2d5f965a38c056a
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jun 23 09:39:23 2016 +0300
+
+    Update Command pattern example by adding more examples using buy/sell stock
+
+commit ae4beae6c230df5eb051c158435a3041c20f31b7
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jun 23 09:02:08 2016 +0300
+
+    Change CommandPattern from console to library
+    Remove Random from StockSchedule
+
+commit e1fd32ab8fdc81f7d1d872abb41e1f6d29da0123
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jun 23 08:50:37 2016 +0300
+
+    Remove extra ValidationResult not used
+
+commit 976cae10137b24928ccce2e60d61ebb9e227f13f
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jun 23 08:48:59 2016 +0300
+
+    Add test log files
+
+commit 2b1d12606b3f66572df86b7e59be3ec89597a4d1
+Author: Petrutiu Mihai <petrutiu.mihai@gmail.com>
+Date:   Wed Jun 22 20:17:55 2016 +0300
+
+    Create README.md
+
+commit 47cd9fc73d4ce9af8f3a1b6c46035c26c20eaa6a
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jun 22 19:38:12 2016 +0300
+
+    Change order of patterns
+    Change on Iterator example to go from simple to complex
+
+commit 35c3c5722db26ac097b11aaa3b999f5a4597b9bd
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jun 22 19:37:05 2016 +0300
+
+    Add Iterator pattern
+
+commit 1ab706016efc9b97c00f4e9aba3b15c90503f805
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Wed Jun 22 16:24:25 2016 +0300
+
+    Add command pattern
+
+commit 90fd5764d4fe85afaee194386844cfded09e599d
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Tue Jun 21 16:57:39 2016 +0300
+
+    Remove command pattern, as I don't see it relevant
+
+commit 36c3127081f0f233e039340c4aeb80ca7b557200
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Thu Jul 14 12:00:45 2016 +0300
+
+    Add project files
+
+commit 76b83a04a4202b6242345f08dd40ca09cf45fc32
+Author: Petrutiu Mihai <mihai.petrutiu@qubiz.com>
+Date:   Mon Jun 13 10:21:45 2016 +0300
+
+    Add .gitignore and .gitattributes.
