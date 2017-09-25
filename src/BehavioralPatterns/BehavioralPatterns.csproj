@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <AssemblyName>BehavioralPatterns</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>BehavioralPatterns</PackageId>
+    <RuntimeFrameworkVersion>1.0.4</RuntimeFrameworkVersion>
+    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="..\IteratorPattern\FileExample\SampleFiles\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChainOfResponssibility\ChainOfResponssibility.csproj" />
+    <ProjectReference Include="..\CommandPattern\CommandPattern.csproj" />
+    <ProjectReference Include="..\IteratorPattern\IteratorPattern.csproj" />
+    <ProjectReference Include="..\MediatorPattern\MediatorPattern.csproj" />
+    <ProjectReference Include="..\MememntoPattern\MememntoPattern.csproj" />
+    <ProjectReference Include="..\ObserverPattern\ObserverPattern.csproj" />
+    <ProjectReference Include="..\StatePattern\StatePattern.csproj" />
+    <ProjectReference Include="..\StrategyPattern\StrategyPattern.csproj" />
+    <ProjectReference Include="..\TemplatePattern\TemplatePattern.csproj" />
+    <ProjectReference Include="..\VisitorPattern\VisitorPattern.csproj" />
+  </ItemGroup>
+
+</Project>

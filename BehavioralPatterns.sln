@@ -1,37 +1,36 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3820200F-354C-41E6-8F34-B301F5D621C2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4780CECA-2B6F-4F79-97C5-D1B483CFC881}"
 	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ChainOfResponssibility", "src\ChainOfResponssibility\ChainOfResponssibility.xproj", "{89536824-683F-4351-8789-406D7BDD922D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponssibility", "src\ChainOfResponssibility\ChainOfResponssibility.csproj", "{89536824-683F-4351-8789-406D7BDD922D}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CommandPattern", "src\CommandPattern\CommandPattern.xproj", "{454B2A43-8251-4667-8DE3-67E489908DB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandPattern", "src\CommandPattern\CommandPattern.csproj", "{454B2A43-8251-4667-8DE3-67E489908DB9}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "IteratorPattern", "src\IteratorPattern\IteratorPattern.xproj", "{6F3B7F9A-4D9C-4506-A5F7-3FF5CF4376BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IteratorPattern", "src\IteratorPattern\IteratorPattern.csproj", "{6F3B7F9A-4D9C-4506-A5F7-3FF5CF4376BD}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MediatorPattern", "src\MediatorPattern\MediatorPattern.xproj", "{2A63BD0A-9D07-4755-9B16-5DDBEB075B80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatorPattern", "src\MediatorPattern\MediatorPattern.csproj", "{2A63BD0A-9D07-4755-9B16-5DDBEB075B80}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MememntoPattern", "src\MememntoPattern\MememntoPattern.xproj", "{1DE3FDD3-D025-49D8-BEF4-D5F0688F89E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MememntoPattern", "src\MememntoPattern\MememntoPattern.csproj", "{1DE3FDD3-D025-49D8-BEF4-D5F0688F89E8}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ObserverPattern", "src\ObserverPattern\ObserverPattern.xproj", "{D48DB558-0228-4ACE-88A8-A202E5C57849}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObserverPattern", "src\ObserverPattern\ObserverPattern.csproj", "{D48DB558-0228-4ACE-88A8-A202E5C57849}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "StatePattern", "src\StatePattern\StatePattern.xproj", "{0B5B470D-45A4-4F6B-8DAD-D0116C40B6FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatePattern", "src\StatePattern\StatePattern.csproj", "{0B5B470D-45A4-4F6B-8DAD-D0116C40B6FB}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "StrategyPattern", "src\StrategyPattern\StrategyPattern.xproj", "{01B9D869-AF89-4919-8445-79206848FB5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrategyPattern", "src\StrategyPattern\StrategyPattern.csproj", "{01B9D869-AF89-4919-8445-79206848FB5F}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TemplatePattern", "src\TemplatePattern\TemplatePattern.xproj", "{E657BF85-C23A-46DE-B837-6939D51C3321}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplatePattern", "src\TemplatePattern\TemplatePattern.csproj", "{E657BF85-C23A-46DE-B837-6939D51C3321}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "VisitorPattern", "src\VisitorPattern\VisitorPattern.xproj", "{CDDB889F-3038-4796-95B1-47E1834DA93D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisitorPattern", "src\VisitorPattern\VisitorPattern.csproj", "{CDDB889F-3038-4796-95B1-47E1834DA93D}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BehavioralPatterns", "src\BehavioralPatterns\BehavioralPatterns.xproj", "{E3092EE0-1282-4AB4-9FA2-0338348D8FD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BehavioralPatterns", "src\BehavioralPatterns\BehavioralPatterns.csproj", "{E3092EE0-1282-4AB4-9FA2-0338348D8FD1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,5 +98,8 @@ Global
 		{E657BF85-C23A-46DE-B837-6939D51C3321} = {3820200F-354C-41E6-8F34-B301F5D621C2}
 		{CDDB889F-3038-4796-95B1-47E1834DA93D} = {3820200F-354C-41E6-8F34-B301F5D621C2}
 		{E3092EE0-1282-4AB4-9FA2-0338348D8FD1} = {3820200F-354C-41E6-8F34-B301F5D621C2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F084AC56-5A6A-4C79-B49F-FCD7D45BC709}
 	EndGlobalSection
 EndGlobal
